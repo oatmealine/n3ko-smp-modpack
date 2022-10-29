@@ -1,0 +1,10 @@
+Vanilla Tweaks Crafting Tweaks
+Version: 1.19
+Packs:
+	craftable bundles leather
+	more trapdoors
+	more bark
+	more stairs
+	more bricks
+	back to blocks
+	universal dyeing

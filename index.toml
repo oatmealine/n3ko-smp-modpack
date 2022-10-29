@@ -21,6 +21,10 @@ file = "config/debugify.json"
 hash = "c6a76414122b48284665b596b076961d10522d4d1cba97511aaa5c453897e95e"
 
 [[files]]
+file = "config/isxander-main-menu-credits.json"
+hash = "dd848c66639ce00b979835162f47f890a18c9f67e4746f96ff60dbe32ad20da4"
+
+[[files]]
 file = "config/openloader/data/Cow Origin/README.md"
 hash = "18a6109465935de1467cf1839e813c2ae18aad1c9ed8ee967316d494d29968e7"
 
@@ -65,6 +69,1770 @@ file = "config/openloader/data/Cow Origin/pack.mcmeta"
 hash = "5f4e3cc3a17c5af14781c25f2f5b2857490db23c8b4aed5fe53e6de879e2b33e"
 
 [[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/Selected Packs.txt"
+hash = "92577c3e43c69e0764fb887c7e81d80927871cd253ce2be17841ac64cd0108b2"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/craftable_bundles_leather/advancements/recipes/bundle_leather.json"
+hash = "0200f33c84d5a6c6ae3306156724abe3e63d38079c02e630c45b3b19dfbdc179"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/craftable_bundles_leather/recipes/bundle_leather.json"
+hash = "2409bfe97d21d779aa8e0d2af1976727c12026a5a246184446b4cebde148c948"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/acacia_stairs.json"
+hash = "24440c617f9176b510ec4601e49e3bd46afd88f7ec6583cb33745799746ec844"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/acacia_trapdoor.json"
+hash = "0e187e50d383267a4019d18165f497a7afa2434a0908cc7b0acd2c9ccff58978"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/acacia_wood.json"
+hash = "5ed22832ffec3b9170419a278bcde6d3e1b1bd147e07b267033d2af4b92db155"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/andesite_stairs.json"
+hash = "b8a00be0106138ce7f5c339a87687ccf12fcc3e1200634297b4c80ce2af0f70b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/birch_stairs.json"
+hash = "79aabf602d7fd21ccbc25eb26d5e3d34b381b28c670a0d535ab25d5384170240"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/birch_trapdoor.json"
+hash = "70288677b2f0ce0637521acb1b8496f82065a2a289de842088bf87d3aa499a2a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/birch_wood.json"
+hash = "decde741ab56fc88ab7a00ecc6d49e1fb7595a21f0c66d43539035fe8127e94c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/blackstone_stairs.json"
+hash = "2e29bf5e260bdce47873e07b1c3317e7bd566fc71520559a9304d5570b3df235"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/brick_stairs.json"
+hash = "a6fce5a3812347ca4588600b69c4d59e14bda274df902001813a70eebcc0a3ab"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/bricks.json"
+hash = "5aa7a027e7b6179ceec8c552b4e9b667f3cff3a63277b32f668903318b5db72e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/cobbled_deepslate_stairs.json"
+hash = "affba091ee14677b486664dae9123f5a4aca0bf8d9d8bd96b713effb128b29bd"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/cobblestone_stairs.json"
+hash = "180970ff3732e87828eceb4004d2f54f64d83e683abb82bdb5177f3bca3b07e0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/crimson_hyphae.json"
+hash = "b91d4834e09ac7b287e6a83ceb768214a92e7605fbc0fe1bb79119b89a815318"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/crimson_stairs.json"
+hash = "d8439c28bbcf3ce826a0a3401c653526e43d7bef39bdaa268e0272e8cde5bd99"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/crimson_trapdoor.json"
+hash = "36caa2f1391c7a1ed17ca927ae76be4ac3e41ecfd39384e417cd0abbe92fa367"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/cut_copper_stairs.json"
+hash = "ecdcee71618b46c4573bae32b9e0687892c1fc09b3935652e1b07f84d83b3d47"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/dark_oak_stairs.json"
+hash = "51a2256fa66f0d2e04ee95c2592a3ed9c997e13c6e41196a423933209670f418"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/dark_oak_trapdoor.json"
+hash = "d77589bb3be64704bbf533dd365807d5d7441672b202661b5ba0df7076fab52e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/dark_oak_wood.json"
+hash = "09b031197e0a8d12f9f4ac80cfd39ced2c456af8fa1494751c4e5c5b297b8213"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/dark_prismarine_stairs.json"
+hash = "f2c189ce4de170c109b1146b9bec9525629242065a5d2dc60fe66e880040ccf7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/deepslate_brick_stairs.json"
+hash = "a932d5ae783320b335d8aaf62f3c77465f1fc512e8ac3c44a40d5468de414159"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/deepslate_tile_stairs.json"
+hash = "fef201414142be39c208f959710da5437105737c7bc7861d63d467014f1dd5cf"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/diorite_stairs.json"
+hash = "bc9ae05f609badb7f83d89fc3ceb04f219315b81b998b89dbb29d40f0739bf2a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/end_stone_brick_stairs.json"
+hash = "a81911896a6cda4d607caf4faed073c68313154e564876fdbccc5d05e279d6d6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/exposed_cut_copper_stairs.json"
+hash = "7f10a39b6fd3a7f95176fb735f9a05dcd9606642d2b43052e1d54ae2c47ab152"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/granite_stairs.json"
+hash = "386f95146b6a1feaaaa0be723427f8ebba3e169d0ec53b1a3c7fdf80989ff3ba"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/jungle_stairs.json"
+hash = "93ebcb827dfcf3e97893c319a1020fa4b36a974e4611a2044f06cb900b23c924"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/jungle_trapdoor.json"
+hash = "19a30a82c6b3130a252615611194af664b181ca8ffacf197c54e2f1702bed626"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/jungle_wood.json"
+hash = "c098b19efb7c43c6c5e65eee877c403eb094fae6fd3dab34d241cc398f41d2a7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/mangrove_stairs.json"
+hash = "17c90599b404a55c03c67d925a5e14463d76cdea4b3dbb95527ddec61a887d05"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/mangrove_trapdoor.json"
+hash = "ae04e5bc53295d6795b2ede2325b0df5b211e2831565edc893cb744c8f258967"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/mangrove_wood.json"
+hash = "f3d26b4fff8c9b018c7cf5959014ff1cfbda6904eabd031ff9ce8deb36535a2a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/mossy_cobblestone_stairs.json"
+hash = "7a540fab81730a017891905cc5d4ce5c47c3aaa795239e843d4b24ab75fcc2a7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/mossy_stone_brick_stairs.json"
+hash = "29e379c5795b4aa49197e15a50048db288f44f96b413d591ad85a073533af1ad"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/mud_brick_stairs.json"
+hash = "09ca4dc36745b80376e1ecee55d3163f6a09396b22287f336e5179927dd4d0eb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/nether_brick_stairs.json"
+hash = "b11b20deb7afe17f1b4726ee5aa242d80536dbd67da4a60ba660799cb3fd3a34"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/oak_stairs.json"
+hash = "b93b093c3a9570709c919480aa5324ed22afdbc2e871b5fb2cbcae7528a9239d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/oak_trapdoor.json"
+hash = "97ed6e9d3714a305a62ed03b2ad1a706bae4141a0c5760714b917ae1b843a52c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/oak_wood.json"
+hash = "ee2d22f68915997cbf6cf851ecaeb5207349871f5a1433790b41c149ae420533"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/oxidized_cut_copper_stairs.json"
+hash = "11780b9f1a1f469bdfa1e03690101408a5d0b55fed5f58b0a0c4ab20f2642452"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/polished_andesite_stairs.json"
+hash = "318d8c50ec1429954b6e6dc15de96dd32dbfd8c55ba4612b7ae9532c21d63d56"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/polished_blackstone_brick_stairs.json"
+hash = "053bad3a1554b08f8bf026d71e5e8ea576eee9446a912e287ffeb27e9273f9bb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/polished_blackstone_stairs.json"
+hash = "15089192f8c6871f0aca7e7e9261a31fe5f51665b305c45a47b3ab47f6b07b7d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/polished_deepslate_stairs.json"
+hash = "7ea902ef733a5fc07aed53ea8b93b40beb519f00a6878ea8eff03b8ee1898d3f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/polished_diorite_stairs.json"
+hash = "ed51e96f0474f254944eeb7649ef252b7ca0befa6ce156f3ca40f9bc855791b7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/polished_granite_stairs.json"
+hash = "13bbb5fa4d4e69cac446933829e3d6c123d543cfcbc9441aaed078a30f1a282e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/prismarine_brick_stairs.json"
+hash = "94aa104fce88c4d122816e547c5e46cbd63c98be1e243a4b6330e1e8c1befcd0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/prismarine_stairs.json"
+hash = "d8435b2cf355422258d74f70b47a9dfa295d19ac028fa26f34520813d253ee36"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/purpur_stairs.json"
+hash = "c7a68f1eca94b793235188456c80086348177a5f1aef7446cd6ea46de0d28c9f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/quartz_stairs.json"
+hash = "b817182da9056570d4c0311be8e43ff5f317f54f593c18afeba9bb08f4531a73"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/red_nether_brick_stairs.json"
+hash = "a2ca1e414c237d57b8545bdfc79da5a7d558cbf291434e150adc5f5593fc15f8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/red_sandstone_stairs.json"
+hash = "656fa0f541d5e646587644d914ec335a318af998b98b899ae90ef7303f7a57a9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/sandstone_stairs.json"
+hash = "5b322495c976f945009e7620f71508f6be8cde8daec939f7a0e65467add2a0a6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/smooth_quartz_stairs.json"
+hash = "f74543de6408b3fe817cc72d4f1ed21de8b07f5a3d43e007e0cec2cc35401d8c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/smooth_red_sandstone_stairs.json"
+hash = "b9ea2c34c4ab86a4fe95000dcd42ccbf211b13dc4bd66b8457bccf0ae730ab82"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/smooth_sandstone_stairs.json"
+hash = "6d69993f001844957f579b85879686ee5827eb80611a0bd1036a15d515806a7d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/spruce_stairs.json"
+hash = "ba9525fac9e6d516fe7a6a92fa03454456484ee76746dc915340a61bda01d282"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/spruce_trapdoor.json"
+hash = "01f5df521bfc96231cac973e8bd6d740c8f2bf6d25c6accbd10214df324db667"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/spruce_wood.json"
+hash = "faa3eb9e9601669fdfda47bf3da9a4c67d7dba8210a5a1b9991631b419cb44a3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stone_brick_stairs.json"
+hash = "7e6c7db8e8dd57a6c4b8b746f459ebb70c973a101f38760a2e81583b695ea221"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stone_stairs.json"
+hash = "a52fc3f93fa453f1bfa05e32d7d596c6d92235c270f24bc3b1549a04013d5e40"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_acacia_wood.json"
+hash = "62e42c847f1dae759cadbe7a5ee97919fcb0c368f070e5f91b5ac66b52dc6928"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_birch_wood.json"
+hash = "f3e4d2941bb3d3da186cc721f0da3d6bb66a2ef48fa757221d3818bdc515a95e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_crimson_hyphae.json"
+hash = "466c3cf2dc1e6187a964ef3de6f393b2342c51293d30f70abb0e9eb0cc72df3d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_dark_oak_wood.json"
+hash = "5f164aff5dda874c2dc768c28d805756ccc6b281c7186910a65ec04c5ddc314e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_jungle_wood.json"
+hash = "3bd31bc5fbd5c1d8974c0f286804fc22b94be8c9b13bcf705a298c1bc8ed2196"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_mangrove_wood.json"
+hash = "bc296703eb77ef46cd6a180f578b5831349e5b7fe6fe0a442226b0b01df3f5ab"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_oak_wood.json"
+hash = "82c559bdaf34c20943db0412bae8dbd580a69debf4e0fb0956f267efc30e6202"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_spruce_wood.json"
+hash = "be62eabb3f367177c942b77629cac6bd2f46fcaab0cb15029372c442e466ea3e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/stripped_warped_hyphae.json"
+hash = "bf9b6c9f0b0ecf674bbb671bd05805dff40bd0d9ed3735b17f89631d65a70ccb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/warped_hyphae.json"
+hash = "9678e4c4f4b00591ea8ce602ee747a99ada7926542487807206f82e21e47e44b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/warped_stairs.json"
+hash = "91d38ee03dfbdb23e352277269fd72b688d6c72b68203fb322aa4bc7ee41ec00"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/warped_trapdoor.json"
+hash = "0e8ae1f934ff585157c73d57ce4810c026ec5878fc0f26702a708b9e2dc0bb04"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/waxed_cut_copper_stairs.json"
+hash = "4a2cbe56552686824a03effb6e676ec00dae1ebbf7a04f90dcad0f1d33aae5f5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/waxed_exposed_cut_copper_stairs.json"
+hash = "5608a9f32e0499bbafeff22ff8479dcc3cdd5f71b1cd5b78d2d3adc8341aacd8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/waxed_oxidized_cut_copper_stairs.json"
+hash = "d662236945e353f437387a2bc41a84f6e7bfcda64c867829c1d46acfde38b162"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/waxed_weathered_cut_copper_stairs.json"
+hash = "42339b3c1bc25c38ebacc3b2cd2f13b0bf25d4e308a727369f37d45e20009338"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/minecraft/recipes/weathered_cut_copper_stairs.json"
+hash = "f2eafaeab410f4281366cf82a46ccecf4b978a91bbe7bc58b3e10c59ea688bca"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/more_stairs/tags/items/quartz.json"
+hash = "5a1c4c7211be5532783b70f223d2502966b60850208817aaa8abea43c529774a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/acacia_planks.json"
+hash = "7904758b9431834faa15610d25d375b56f28cc1053cccd950426ca5342228bf4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/andesite.json"
+hash = "561a18766fd73c5339e8d0bef33f6c8118ba31a29447dbe1f8400ad7b0fa6346"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/birch_planks.json"
+hash = "651e873eea742537c9c955bb6449b39327b6067478d0cc70730712427d643bed"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/blackstone.json"
+hash = "8cec7c312dd4fcf36e920bbf4e82e27b53c6bf50664e1492fc103b92bc719299"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/bricks.json"
+hash = "e7090604d2be4bbfb1f66b2040e17b54fe91b61e2aed308f74aa9ce69474edef"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/cobbled_deepslate.json"
+hash = "f3b2778afceb4822f00b277280450f6df6f0cb8de7641b6acd2ee25a3e221f42"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/cobblestone.json"
+hash = "6673a6edfd6dbe5969c6d0aed6c2032c000cc63d6f6e5d2f94c9f167b5229a80"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/crimson_planks.json"
+hash = "3b75acc80f653b71ea2a8b7b97ecc2585ef3ccb196f9236889d6e615fc01467d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/cut_copper.json"
+hash = "2544a5ca8756ad5c740befa46489c537172ca6b6c7656cde8795f7309dfbdbcd"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/cut_red_sandstone.json"
+hash = "289707cfdc4acc488e5fb410512d97370f1df3b710b28e0d1050b1ceedd55497"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/cut_sandstone.json"
+hash = "494d1d709e65adefd83a0755fcdc7c52f2301578310e6312691c2c912e497144"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/dark_oak_planks.json"
+hash = "b6e4c3dbdbc0578cb9878ff0c5699b71e1c97b53229731ddde1d58fe44642f36"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/dark_prismarine.json"
+hash = "a0ccf87c6782ba53113d11a23fff8b6eece8c9986780cb19dfa5519dd3086fe8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/deepslate_bricks.json"
+hash = "6ad50a79d98df2596394046cbfd92890d139ebe45b13c095cfe15a43a3ed2823"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/deepslate_tiles.json"
+hash = "f705d0b19f48bf9c7f723013c87e1a9977a30d1788ea3d44f8059b651f145e7b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/diorite.json"
+hash = "43b38129f8ba12c8a373c87d50f00393fcb34cfa411b8f451bd555b41e450761"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/end_stone_bricks.json"
+hash = "1cae0b6c5b03a203f929092a19a81adc248e2e2742b7113b4e6bccd648bc667a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/exposed_cut_copper.json"
+hash = "4dad5bb1f3c014a73e205e31206c8518e5615df525002aa561ac1646ee846750"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/granite.json"
+hash = "cd09376e06408ead88b821771e1533b85abe13fbeb75f3b6a730c623c7d4f6bf"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/jungle_planks.json"
+hash = "b026f53e5c3099ef809621feb36200876131b8f44b99d9c2fdfd40dbf70adda4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/mangrove_planks.json"
+hash = "a8e40a04e9d3823bf42515d11a9b76cf8f1b5388973a19f3ab95add1a568ec38"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/mossy_cobblestone.json"
+hash = "07106c2f74275cc637d2f8fde76e46982dafdff63d250f05103f201a146726af"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/mossy_stone_bricks.json"
+hash = "c5e487d0a241a6dfb448df4666ccc8dd068264cb78e98b1710f8e47b35e5cd8a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/nether_bricks.json"
+hash = "5d4719a14b535c494499b40b4e2d237ebd5b3d2d0b5d083580c655df107927b8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/oak_planks.json"
+hash = "e6ebd46e0479f7c6586b425c268414aabbc528672fe904dbd2db810ae0f38e61"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/oxidized_cut_copper.json"
+hash = "eac0a9f8e4f97c42c711c330dbdc403e41fb009692b8dfb32adad04914b044d7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/polished_andesite.json"
+hash = "79bcee5713ca913b95bceb80d5d7aabc6b77a6c5ead4e182d0ed80d380d1c2ad"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/polished_blackstone.json"
+hash = "124766001e44d0c902a5eb80b91d85a4d3febd93fdb810ae22b93bb0ab8af130"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/polished_blackstone_bricks.json"
+hash = "1b3bcf194e55c38856c4b2fa8524fa4cc0e45eee025b28af042c0398c34fcd24"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/polished_deepslate.json"
+hash = "96cca9f39fd8406876b12ed87d01922b1364bc2a68819c6d3087645568eb57ff"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/polished_diorite.json"
+hash = "1625683d6d1812e45cae1ee5bcd020e2aad4bfb6b429c4b13215042d6de1fd3d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/polished_granite.json"
+hash = "62a345be2f9b6886606ad5a3a8213949015737e9bd4306cd9fa40c2e49ef8d44"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/prismarine.json"
+hash = "7afbc5bec64394939b28a4f4cbd5d0ef9cc54d7a822d50abba401010a23f9216"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/prismarine_bricks.json"
+hash = "9296a58959f671be9d9722665c3172d0b1c70013eaabacd14dde383344365f83"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/purpur_block.json"
+hash = "a068fd7b2e3ac41296f1eab54d596dfcd39fe0b75be0cb32f8e97dfaa7a22972"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/quartz_block.json"
+hash = "b3de4fde6e78e693d9079322eb7b704bb24f1ecefe2181ac33bb4f87370f7da9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/red_nether_bricks.json"
+hash = "d40a116aa8eb85f018f300e02158e99aee3b03a19e827c1c7f3ef94be02fb2a0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/red_sandstone.json"
+hash = "864edafde3ecf0bd1ebea6dd7ba0f7d145d8a8758f6963a65324f44c21040607"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/sandstone.json"
+hash = "789ab0da3d6822d9bd8b6f17bb985095a6353cb996176624c5b08a6807b0988b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/smooth_quartz.json"
+hash = "ba81d08498a6f8179916054e8b62c5028faa5fbc1517e3e4ce0b3ddcd0f4a1dd"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/smooth_red_sandstone.json"
+hash = "9cc5de6987a4b603ed718d43397a9abcf78b63187d79ffc4031749e97abb7c5b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/smooth_sandstone.json"
+hash = "292a1fb32cd8c649f465b699214d20fbe1f0a4961e9ae000467aa8e2c72e5f91"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/smooth_stone.json"
+hash = "350ad431e9d4641adcb16ad4e6aa0da8eb43539f27d50354484f2cc47183c8cd"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/spruce_planks.json"
+hash = "ad5769284981b6439d75a1c87496bda2f30bf747f97f9f7e9ef836427017aab1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/stone.json"
+hash = "2474a4336e87a5fbad8bd5accfbe19ec2f17b510bb2495fb99616e30f2f6dd0f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/stone_bricks.json"
+hash = "cb1e99c7a850f6db2e3e5d368ca41096506be451e69d588cda7531859f47bec6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/warped_planks.json"
+hash = "2d65535ffc3615b035189f0281170745c768b8106f0a5267b444892cb83d0f71"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/waxed_cut_copper.json"
+hash = "658aae97aa19213fb6e34dc5e412cb58aab8a5def77376cbddc6dac0e11a5b42"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/waxed_exposed_cut_copper.json"
+hash = "bdb27570277484a0ce27dd417cfd647a21f61cd1317269f2e045559346cac45c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/waxed_oxidized_cut_copper.json"
+hash = "8050e26afb949933e045a8fd7984862dfbaa8bf1655623076e58ca00e1d7cff8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/waxed_weathered_cut_copper.json"
+hash = "96253e1f963e3247b75e0f7b890a6afafcdb230762823a4211339714f1225180"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/slabs/weathered_cut_copper.json"
+hash = "5c7ed3331569e159929371f1df4dd110fffd56635c8e6bc2d1983bb6a948643f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/acacia_planks.json"
+hash = "f27846c7a5ef031dd449da482409f71b74bf7ae033a3da38022659389e23c547"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/andesite.json"
+hash = "24ee637ff03fc26cd1f64f1c6296d6ff45d11df2a26f4f4e4685e739241ccaf8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/birch_planks.json"
+hash = "6b53e8567c1d2482b4db1563b039acba5d01b702837be44a541f46da115cfbb8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/blackstone.json"
+hash = "8b818f5e234b871ca1c60c1104dd38e26c60d58661e738fff52b892593a3f9f2"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/bricks.json"
+hash = "2517b6490c0d1ce79545f0319e4c450c8f4a9ca34a50026750868d490a670c89"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/cobbled_deepslate.json"
+hash = "bf764d7bdbded24744848e5ccddd237d695b3e3ba6d62e1deefeaf873c38ec8a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/cobblestone.json"
+hash = "1fd3e839babbe7a28d9982e2a8ecc002dd8652ccc5b03b703ad5eeeda95d6b65"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/crimson_planks.json"
+hash = "d16ac1aace22c7eb0ca55b71bb77e9454d4c604b11152e38df6db9db659c2525"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/cut_copper.json"
+hash = "577552a13457fb4328d17ff6c5a396bcd950df1d016b89cb4119ea6610725564"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/dark_oak_planks.json"
+hash = "561369696cc4b26caf31ac67029154851308bd5d91248cc33034b2c82fbd1d40"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/dark_prismarine.json"
+hash = "ee541907fe369e6750d54aa60aeb8e6297a15f2e9ddd6dc736290aa737433386"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/deepslate_bricks.json"
+hash = "750bbc4b4405daa8a598f98391033318f2373e21eab0411e2a819188f9954fe0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/deepslate_tiles.json"
+hash = "d7ff94cba66c9d58593743320b3141fc988be694b1d330afbb83bf2d83ce3b5e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/diorite.json"
+hash = "c2214938b1faaef0a394cc6e71f8a4dedb1ee088808d91e05e55e87fe04cd22b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/end_stone_bricks.json"
+hash = "f0663a96766e58ab48f20ddcdfdb24daa9e3cf7ce2bbd43613190f8b6e38d041"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/exposed_cut_copper.json"
+hash = "c0880088a3e5810db40f6d9e23c50b6a9cd395f238d3ef825c2f316b47c05614"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/granite.json"
+hash = "16c16f7b2473f3bcf08186a584e0413601a95ca03be9c4530294da9c24c0f0b1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/jungle_planks.json"
+hash = "49282be79a9e5e0a19164335caafca30544205aeb9e884519bf2a9e3afda17e7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/mangrove_planks.json"
+hash = "d3bfe390354cc869602c7d6940e022cda78188a548a816721f09c2a3a97023ef"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/mossy_cobblestone.json"
+hash = "fa57e31b4c67d1f5d1d2913a5bbf11d63022804b79589b833c72f85f4d530e8b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/mossy_stone_bricks.json"
+hash = "affb221a9be87aa06eefad6f39daba2d18eab9025b48c4d1b4d7e7eaddeb6019"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/nether_bricks.json"
+hash = "920791aecdad5322d696295d187d5c5182429a673ff74762779c10c7359aa26f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/oak_planks.json"
+hash = "ac22a8bcde5e4ed436eba8994c933845e5ab605f2415ff1d702b3423c3a12880"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/oxidized_cut_copper.json"
+hash = "7197ccf45be9799c1947b2ffdf89f5da4f0b7855960193794240ac14ea618bf5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/polished_andesite.json"
+hash = "38872045669dc95a26f881b13d11e74b07478b388be06f7db14d32afcec30c51"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/polished_blackstone.json"
+hash = "9ab3699edd1c8851a9da157fe7446518dfcf99f3305db03214d2d0d0003c19d4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/polished_blackstone_bricks.json"
+hash = "d7fa5f91996fdadeebf24612c6400b7b8ea20527122152f49d8964361a397c28"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/polished_deepslate.json"
+hash = "9578c197b72a60147157fbf4b4c252b0f7e2bf9a16ba8260e573ba8f8202fca8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/polished_diorite.json"
+hash = "11310fdf85a201c668f0b304c6d3aab45b9621bc6fac39a43693090f718734c5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/polished_granite.json"
+hash = "bf22ae4633bf196fc0f9beb21974f3ee73e6419548efd26596bbc12a61922602"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/prismarine.json"
+hash = "8f51c40a09b997220753a2c38f159c2f6f1e4c31cafcf3db2b83861b99b03b9c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/prismarine_bricks.json"
+hash = "cf6796cf64b29689569555bb9992fa2e330a61504621e3e09bed36b1f8478531"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/purpur_block.json"
+hash = "ae8f9f62be378c38f18497a12a806cc388c6b64405097906ee8a6049df4e0e18"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/quartz_block.json"
+hash = "e752e25c6b7f7162d12e61f24adf330df247f1ce03d05a856f52999c085ec355"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/red_nether_bricks.json"
+hash = "c09202938b51310f0d5b9eae03bfb0c5bf9968ebfd2a5ee177cdfe8111c4f2a1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/red_sandstone.json"
+hash = "e94a2546ecede35573ec32794faabd6c76fcfe5518d8c6552552d9cdfe972bfe"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/sandstone.json"
+hash = "30b773f674e172809bb16ca0513ef8075221412392cde648bc2ea24fb91099c9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/smooth_quartz.json"
+hash = "765b1aaf8768a639b3352596b841d10184c282890688f4aa0b99a5d1250e78f3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/smooth_red_sandstone.json"
+hash = "4e76d22c3bece8c6511c340c79ecbba6352325550ddf6c6b62d1a176a72d34ea"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/smooth_sandstone.json"
+hash = "ace86606d133825e582d6890f43d257da602754783d210d8d1aeb44f268e5267"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/spruce_planks.json"
+hash = "53b262eb59f8bc2685339f26e8ffaadd192c5e386ef30172428a93b4b2ac5331"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/stone.json"
+hash = "46732f8d0fe15c32292d299c5086515036ba9320eeb554c620341955bdd870fa"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/stone_bricks.json"
+hash = "dcadd8887f75a4601d51e45265260ab2747239b5d0a07f65e5acc79c8a44f9c3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/stone_stairs.json"
+hash = "43b966fac5a025ee0d4c1f50ca2ecf5df2d5f10bff5516533c080f1a247c075d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/warped_planks.json"
+hash = "ca7c7566e7ab09644774476106ae4592ac2dafaf7a41a00f564ede878ea7d453"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/waxed_cut_copper.json"
+hash = "0387ec31bb6985099bbabdd6ecdf1bfb5d823a0b852a5b1349d9cb984a9d2664"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/waxed_exposed_cut_copper.json"
+hash = "6f6bc71263fb903808c1a6bc673435fcea8c3999c0972c07156ea08d3a795e7e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/waxed_oxidized_cut_copper.json"
+hash = "fdb4ea44df662f21b5c686914a8978b3c847f4d6aa4100cfb1060e0493428e52"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/waxed_weathered_cut_copper.json"
+hash = "b6128b519052afefe339b8ad5de37a97ca24ace03cefc64b7eeb08d67d5fba4e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/advancements/recipes/building_blocks/stairs/weathered_cut_copper.json"
+hash = "7266fc01935059cb4a21687a83eef8b6a9cc4455b77a0daf592345bfc020929c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/acacia_planks.json"
+hash = "02c23ebd13e26dc03bb57e8aec85cc8865a8619e229e34a9acbdd6b3c48028eb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/andesite.json"
+hash = "e11cb629815dda7a1bf849e26831d450b3e50dcb6f5e21a95de492a15785091e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/birch_planks.json"
+hash = "283f4a2f4f4c3705878453cd70245a1d708d818ac23f654e876dbfd492e905db"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/blackstone.json"
+hash = "96bfa128d0463709ba59ca0625a86f707468e0ab1eb3de4b478c3c60a7ad1988"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/bricks.json"
+hash = "28250f59d9dd7ece6fd73e93ef7084eb66f66f0b36ea25c7eb4249918745e64e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/cobbled_deepslate.json"
+hash = "f406752edeff119fb0e0c262bd62a5619fa2523a836a7e64ed5f3ff0e2ec055b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/cobblestone.json"
+hash = "1c7a466927bd452eee6a64d5f25c84821febf2c7a05e9986342c40b29aa596a3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/crimson_planks.json"
+hash = "95b2b7b86f97b1d1c43df039abfc74ae90593faa9a4aee41de31fea6aabed1db"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/cut_copper.json"
+hash = "2ebdba7f9a985b5f071fae3d90fb69ead91a12ae6e4233aa687a6032cf33e150"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/cut_red_sandstone.json"
+hash = "4ff039ca0adab5e73e1e6b71c3e0afbc01b44eaf01ab5f5cf11c4b4cf2dc3177"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/cut_sandstone.json"
+hash = "c109437f945a87f2ed14fa81f0ec55939ee24b4ea4a0db593be29e21a059637c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/dark_oak_planks.json"
+hash = "5eed0fb37e4e45563addf6e9a30d826da7f86570a08227520669d287ce1c7122"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/dark_prismarine.json"
+hash = "c3c92ee0fabfc8f50e379dd57d7b35570fabda87c5e867eddeac70386883a077"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/deepslate_bricks.json"
+hash = "6dba615ffbb37b1475d859c25c36ed1a6e94ccd580ca02748498413eda3030bd"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/deepslate_tiles.json"
+hash = "707b0c8a2e0d48a51286b4ba95cc5689c7cbea59b54959b1a5d19ecb15eaaf9b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/diorite.json"
+hash = "20d1c2fdc9a5e769e53fb3414c0b50a58034be5c716513d09752bc91235e299d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/end_stone_bricks.json"
+hash = "ab66aa4a2facbc3a258ae9c644c7c3bd0bdb857014f8be3988234f39b0c2acbb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/exposed_cut_copper.json"
+hash = "d692254b37ed0f254feac89c4e70d49e84bb4e889203d5c290f099636e128db7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/granite.json"
+hash = "90f27e18e524ab13eeb6909ac77681b8dfbac038dd796149c016bb8105ad4c04"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/jungle_planks.json"
+hash = "37988f2f69583a7f4fedab938f890c9eaa064e88cd6d19f4d9f61daf42be1c71"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/mangrove_planks.json"
+hash = "1ef32158b91705f5898a4c930cc456477ed50fec9cdf4177ae448741b48e0bf3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/mossy_cobblestone.json"
+hash = "aa994f547f5e0b34a031c52ab1fa9ceab3817433c72e05057883f53179f81c19"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/mossy_stone_bricks.json"
+hash = "af5360a2218dc496596897eda36ad5a0ed929bdc6f2d06a99d9c248246460b1a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/mud_bricks.json"
+hash = "c34c6aa602e86be11eb9f76f47a137f689a7ef63495d996cf8bdb536498d8a48"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/nether_bricks.json"
+hash = "653876adeac36e46f20c09ca55759ee99a6f2f51fe8abd3961c75f8f2bad2846"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/oak_planks.json"
+hash = "0330f589a2216e25fc9447d7d1cc36f5ee8a4dcf001637af57d6a542a3c19202"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/oxidized_cut_copper.json"
+hash = "c9aa3bc05d96a9c2d7bcce6ad6d05bd71cce50f64ac75ff123c72651aa48d70f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/polished_andesite.json"
+hash = "97f98df5fbf22e3f40a290cb3619eed381d986507cd94230088b23fc884aeb26"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/polished_blackstone.json"
+hash = "39bba79a535e3836ba69602e578c9a2e017ffbbb64ea5c88dc8e0d8df0e8a910"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/polished_blackstone_bricks.json"
+hash = "4e52314768ab51147ada3ade4eda9b9c0563a30fa24b7833f2bc85654c221762"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/polished_deepslate.json"
+hash = "a52eb909f3cfc97b9d1211efe4a401bc6bf2a2c2fd34662e998c29f25877b027"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/polished_diorite.json"
+hash = "27a8732a9d84af4a8af999c77e75406a3d72e3de748d39ea6c534dc4aa06a84a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/polished_granite.json"
+hash = "4b48c87c7f45b0e5d32374bbce739601bdfc75d0ed3c59d86116bd3d5fd6f0e2"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/prismarine.json"
+hash = "04a30e5ac78ba7aa853633c5dc0a872495e2da54bab8d6aab34b1b8e3fbbe50f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/prismarine_bricks.json"
+hash = "c09e7f0ef1a801b94f6ab640c2d21735a2071fbeec2af3cedfebd7af2bed3da1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/purpur_block.json"
+hash = "4a26d63e59ad52982de04b13b73678d31fe94ba79371d51a19c7d9f6c7f0c773"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/quartz_block.json"
+hash = "092c0fe2d177b3f0364861b68e9ae76c8fdcdf6640e20350dbbbd0809aba6098"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/red_nether_bricks.json"
+hash = "40b0df61fa59f726d3fb9fe3e15e3399bb6b4049a28071be6a2ccbdefc4969b8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/red_sandstone.json"
+hash = "4da4a9aa74d1cd1271a7c543b46144eda7c24a6806ebc61d90cb90ac4a6594f7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/sandstone.json"
+hash = "a49741c3afad58b4d157149d1cb3b71e4e4c8ace5708cdcc7a537e63cb67d5ed"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/smooth_quartz.json"
+hash = "0d1b2743a8720b20c2e701edf74a118188ea45e6aca323ad0e887c1fee81e55b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/smooth_red_sandstone.json"
+hash = "4e60a00854b9f8ac0fdb7ea62766eb962601b6a5a798c80260eea543f3483d7a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/smooth_sandstone.json"
+hash = "a24904860ae8b9a234a71cdb4977398f8167e889e0a9e1c4da5e88ec56e19eb0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/smooth_stone.json"
+hash = "229253adc975c207c45f1f72ceca1299afd6577cdd02ea53ef04889986ec9789"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/spruce_planks.json"
+hash = "d3b2a3db249771f816d458b7386039be20dadeca5afd54f6931a6693e6bc8f86"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/stone.json"
+hash = "74ce8d7e9d658cf321ffeb3160be9e755b58187a07b4e5caf9ccb9c1a4816d8c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/stone_bricks.json"
+hash = "4eedd1d4a1a07b76444d55f49c44d3833b8c4dd3793accfda78b96c73265d12f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/warped_planks.json"
+hash = "6d280520dcf4cc03bbdba979a21b7f4d495b173f7e495f64de78bf2f797f12c1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/waxed_cut_copper.json"
+hash = "80a31ab0a0bcef8f034f32bde04c097ba9839390c18009eaccbc8268f40f644b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/waxed_exposed_cut_copper.json"
+hash = "345b9411c69e7fa4914e326943ed0ea16386e2e2c04684575d8a6de9601e7657"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/waxed_oxidized_cut_copper.json"
+hash = "695b9389c37580461505eb5f25ecbfe19452d38dc84215e87ffa2ed4552ee00f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/waxed_weathered_cut_copper.json"
+hash = "b5bb1638547bb4ed259475087575124b0496b229bf224f1119b118d22ee4a471"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/slabs/weathered_cut_copper.json"
+hash = "6a9c262a660c3abc6601be12546f610ff8f8cacb8ff1806d2734507aba06509f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/acacia_planks.json"
+hash = "dd3c9ec035775706fd96caa90e1a38654026d2b29feb0db34290dcc0e6a67cb9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/andesite.json"
+hash = "96114632fc380dc550ffb69fc25e386e59ffba5c23ca67aa298255135e6529ec"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/birch_planks.json"
+hash = "385ef1a74634eb5d47a56e81b0e31a0357cf4d448bfde18052af2cb24bdb4922"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/blackstone.json"
+hash = "71493e52f20a3e9ad75e78a8ec5e61125e382afd2c04cbb21efa360214350fd7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/bricks.json"
+hash = "2e993131de5bff0cf0b17fd0cbef397291156fca97c58ae6543027e3ed5a0977"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/cobbled_deepslate.json"
+hash = "4d5e45ebe0e5fcb64671136cc7fdb239b8f940290ecb27ed10f2b4b0d955beb4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/cobblestone.json"
+hash = "bfd768d4ec1a22a9b503a6cf7c9734fb890e25518f58f4d64123dc970f293e03"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/crimson_planks.json"
+hash = "9f4a193f1b786a21f4e3c106b41e4ee7e8950375ce1cf33ffd5c53ee2a2d26c5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/cut_copper.json"
+hash = "4d47cb474fa270fa2d7baf457684ec24ace28561f6274ffbfd50dfa001c08a76"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/dark_oak_planks.json"
+hash = "133d8cc2574f496868c0382dd6c06dca6f753efaf85e6846fc6b94f32f48b662"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/dark_prismarine.json"
+hash = "708d439af5f717ad5cf281398cedd7573d0247785bac2396f019facd5c22177e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/deepslate_bricks.json"
+hash = "8e91baef72a7ef8aca8404d549ec1f3b3a2b90e4a1ec4fc8d3a9cd1e4062dcbc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/deepslate_tiles.json"
+hash = "fc972ce89a4c66e2cec84bb227e67c9d9556cb59e7501ce28f1dbe901caf08e0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/diorite.json"
+hash = "8b21f9cf5e0a05c1b3f7551dad3d546a4244007c74a966029c9cb06ea83e8a4c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/end_stone_bricks.json"
+hash = "fe2e8954258a784732f8727e3eaca0176deffe3f71978dcc0dd5cfb8f1ba55ce"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/exposed_cut_copper.json"
+hash = "401857a1dc941ef9891a0de7af3f650e0ac62da9ffd37cf86d5c1a3df7a7ccda"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/granite.json"
+hash = "c0df00ea06e1de421d3c336d696dfed17ed81f1f1c2a9fc152515f0d64d8b0a2"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/jungle_planks.json"
+hash = "46e9781c3cb30d4840ec73af1f2ee2fe861b8d311bff1e9c7da52b3b0340b9f5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/mangrove_planks.json"
+hash = "0346e53b29fcd539dccfc820458914874caad4404dc145b36573db4ad094eced"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/mossy_cobblestone.json"
+hash = "22d0c8a217b8e1604ae3c6a8fb5a58212d50016f046deb397adfe38e34564b98"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/mossy_stone_bricks.json"
+hash = "7e21b452bd647bb2423e8e925475595eedc964dece002f332051f84d4d862721"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/mud_bricks.json"
+hash = "c88d4d17701a362fffd61afbed865d09beabc0f7b4c2c728bb4429f96b7fed5b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/nether_bricks.json"
+hash = "9861f12674c25d6f441495b7c42fa3025739e2181daf2427d2dc4bf216f8d043"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/oak_planks.json"
+hash = "4e9b32e851ce33c6b3b4c495c3d9c94e608eb882f7394f001f2a7e204b6ce3fe"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/oxidized_cut_copper.json"
+hash = "a18efbe102f70a682bb2b883772d1761fe7911cf9a400f4708d2ae4aadb0b668"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/polished_andesite.json"
+hash = "f1e6cff1a1f3e093b6983bb05188209ef39fbff2f119f9baacb1f94f87267dde"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/polished_blackstone.json"
+hash = "6ebc170b261d3171f512cabee8a3b643d466a435578452325b2f3549606fbe55"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/polished_blackstone_bricks.json"
+hash = "db832ad3d0255539c7383eee279cebe5e2cf89feca6868d80191cc64cac48503"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/polished_deepslate.json"
+hash = "3738cd0d87d0655f4dac49ea2775adc665b5ee7057f026b3372a08e2980ce062"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/polished_diorite.json"
+hash = "9f5a150f8e541fd0728a1e276fb34b4fdf6c1acb6ef22257cf8bd9d3d136ef3d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/polished_granite.json"
+hash = "d0dd9246825abcfd1770d7cba1f3f180343630221ff6dd5801dac21b9acb0f1a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/prismarine.json"
+hash = "8de5ceb520e902a9f7e53c715bf6eac9e5f8846505ffc58c5fe7dc9c0ca5cbe0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/prismarine_bricks.json"
+hash = "f4736389c57e9a39f24933e1e8cf5c3349698929d7743fb51ebbb39dc42092da"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/purpur_block.json"
+hash = "f5aa4d443a4edbc3538dc19554f71b6582355d8618ea20879687499923dfc08e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/quartz_block.json"
+hash = "f48f9454aa757dbf5ec8d691e1d1591704721ab415d4ddcdfbd6354ed30bec8f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/red_nether_bricks.json"
+hash = "6226fbedc4fc4384287c6dfcf39fa2fc3fd87a8c330a2611122aba7ce1e9aefc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/red_sandstone.json"
+hash = "cef9cfb5b7999d0b6f20789fb6bb8c354b544ed46192a3cf4d8003e64772325a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/sandstone.json"
+hash = "ec4990c8fb80ea6fb56d710595546a1b1abc8dc0bd2ef26dd205c43f31cd919a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/smooth_quartz.json"
+hash = "d48669403c5959b07e17e93d890eb048be61c36514001d101d18d14255d2d300"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/smooth_red_sandstone.json"
+hash = "401d34e70b236556a8d5ec92e92b39e330d922ef021389b32e5b0346c0c70063"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/smooth_sandstone.json"
+hash = "b94e02c10a49c485e228ed1540d9c25fe78f84331c1215c63af9f44f93b3fe19"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/spruce_planks.json"
+hash = "f92876830a36e1e55625ac80725c7b2ccb751fa33d057fad50056ad2b518cee6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/stone.json"
+hash = "8e92104554796dd9d154ae516c02d965beefecbb714813bc29f7d6dcf3dbdcad"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/stone_bricks.json"
+hash = "b085d05c9d6bfc41bb878ab55b4b157eea531b7fe59e4cb51c2e35ffd054ef8a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/stone_stairs.json"
+hash = "8e92104554796dd9d154ae516c02d965beefecbb714813bc29f7d6dcf3dbdcad"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/warped_planks.json"
+hash = "f6c1105dad8429f2e96f14a07bbe1d6b0d70e6d4fc4f2f5f75ac3677fe65279f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/waxed_cut_copper.json"
+hash = "65ecabe462ff7bee336f6b6183ee31527c916239aa8dd10c565b0eec16bfe2c8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/waxed_exposed_cut_copper.json"
+hash = "5e375b7a6a1c34d5c7cdbf32f471d1025995a28cf0122292fa92b2c5e9f7b6b9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/waxed_oxidized_cut_copper.json"
+hash = "40d8160bf3c27b0f6c698e71ad78be71a1a5dc2c00bacd30e07ba455011cbfbc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/waxed_weathered_cut_copper.json"
+hash = "5cdca6d7c1322bb59077732bbda9312e2f2764bc5259b257b82115668b86b101"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/slabs_stairs_to_block/recipes/stairs/weathered_cut_copper.json"
+hash = "61ea8095c23b0002057c55823d3651dfce3fdf52fd62683440ed981a951a7e6b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/bed.json"
+hash = "ec94925613bfffa18b525f4e4ad89f2fc2538555aeab4cf6c5faa431ee95ffc4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/candle.json"
+hash = "2e16f6a2a0dfb918671c48e9d7e0da3ccad787a918917405a6a5e17102e0c5a6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/concrete_powder.json"
+hash = "46cdd097cc85fe3787fa772e5593d5ca62e97e264b32b90d66e247a390f84ccc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/glazed_terracotta.json"
+hash = "de4c74747feff4511c8abf5e1df6625441f79dfae7d3c1584101c3df84854ffa"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/stained_glass.json"
+hash = "58831d59dd17dde6b8c68af3bea19d470b4fdf5f82d47228885e7e0b673ae26d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/stained_glass_pane.json"
+hash = "8b2d4e42dce327bf8ddb80c11782337869a02a0a774edbd54697c52d6f4c113d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/terracotta.json"
+hash = "5b211d9d24d3f1e3a3e4a52cd458d1fd42b2a8c9e3c8a6aead9f99f49ceb1028"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/advancements/recipes/building_blocks/universal_dyeing/wool.json"
+hash = "08b05c0788a7655c70f992c5a937b40851d5285603d481858f92e75e4bd57998"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_bed.json"
+hash = "3add8e83f05be96f72a4fb7aa1f98eec34c011ff96e8f6ad90f2050b533d8c2b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_candle.json"
+hash = "d38574cacf4d9467bf064845916a4108faf0db8f127e5b35de1759a498785931"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_concrete_powder.json"
+hash = "ffec2f1062d12553e9948bde872f11c8226e0439c3ea56cdaa8be64cc12bc94e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_glazed_terracotta.json"
+hash = "56068e75bcd0e73b0ccc026f084ef98dfd4a8ac42fd34e69d181cf91acdd3723"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_stained_glass.json"
+hash = "ef02c0e149639596fedb46263148ae04b00241321e0e8c5f43eb9b338f584dfa"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_stained_glass_pane.json"
+hash = "95de384cb451fecfd9c5766735c9d96b0568da122ab0f4d2f91b75d8607371b5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_terracotta.json"
+hash = "495c9f9af9c2532ed83da8b02e35e909a58e2d9276d17b0136489f1c9676ef4c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/black_wool.json"
+hash = "d7493e6be796a1d1b7f456227f5bf699dfe58a8b7b813e6c8cb163a804ec90a5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_bed.json"
+hash = "18c96381eb652a7d03169cff66e0b76f7a32f471b9f5f02b1a3480262d483d70"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_candle.json"
+hash = "5ddf41fab54310d67139b977e69fb68e5a0202e98fd4cc598ef5dea5b6ef29b4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_concrete_powder.json"
+hash = "9031fea077945d14c7e20319f53d1dc1a673fd241660339ba221f01b4895156e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_glazed_terracotta.json"
+hash = "2c7a5f9452954c17c4b7d0d4300d27efd19d8b20ddc061b959f64dad1516c813"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_stained_glass.json"
+hash = "1679a0ae60879774fd39546f77503d3e5e46f7f4f00c38b126bca6ec3f600b05"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_stained_glass_pane.json"
+hash = "d9ec0e26b86038ecfc75ff14ef835f1343fec7e90441c2e55d38cb1e4b8aa710"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_terracotta.json"
+hash = "3e05ba26b0fcbdb7184cdba23c90ea43d8e9f9835b07b8a74c8b348c5205ade4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/blue_wool.json"
+hash = "be0a44c6b146d3314b9913160272cb3b2f84ccae2abc5b70b9682a04d76e537a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_bed.json"
+hash = "196ba271ce1873d2bf9213cbc3d54f9eebef4ba32ffe56d422cb8e62065b207f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_candle.json"
+hash = "d325859ec11db8c99066dbca7b34e7a4e4e1ab31b169f94c5d083b8e7ed0a945"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_concrete_powder.json"
+hash = "0b4890f1d9e89ba3e402529d68401b5bb842f36178d9ab4f399a1e621dfdd749"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_glazed_terracotta.json"
+hash = "5f1a557dede5162bd270eeecaf339ff90026fb4dc8546ebaf022c13b472d2265"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_stained_glass.json"
+hash = "e34fee7de594e17edc7ce12c8197806434f96d6bf6bee96e5a9c2ebd1c015515"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_stained_glass_pane.json"
+hash = "5b2de905e82972649ad9caa00c8d7a614e546225fc3565d9b25f99e41ee4347a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_terracotta.json"
+hash = "8f36f902af23c2adfc839e81370795860d4bcb5cc0ada236ead52da1250811c1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/brown_wool.json"
+hash = "9fae6bc5f20386ed911b13a65e214fb674113d89994ed08cc28010fede083f01"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/candle.json"
+hash = "9c54f7e54950a221976a45e21e0b5dc3ecb6d0192c3f1c84da0201f4c414cef6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_bed.json"
+hash = "daddf064456f99891a5c3821562fc942f7bf74cd300be109365a736a7da333b7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_candle.json"
+hash = "102b7be9bb0c81ec160ec317eac5dae010fc4b2c74a7627a6c5d2fe7569bd563"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_concrete_powder.json"
+hash = "ec8507b0cad660fbe599a8656e93d3195bc4ab74e86b5328f02ab14108edaad8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_glazed_terracotta.json"
+hash = "93fe8549f388048add08aa450cb85d3514377ae5edc9e6e6cbacbddd19158a54"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_stained_glass.json"
+hash = "a14409d6c9927ebcace6d16d019399f02c7d7c4404be7b58c97e283eddbe1c74"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_stained_glass_pane.json"
+hash = "4296625ad758252633bf0fee592287a297f305c702d381b4672b5184f347bbd1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_terracotta.json"
+hash = "770b0a8d888080f3dd41eeb3a5c7dc68f4a8527dc0d6d2966e3d4ab4e119e14d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/cyan_wool.json"
+hash = "77166e0bfae150ffc69e1c421c8e81dee9d38332e850b8f01b70bc2033841b3a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/glass.json"
+hash = "53fcf45d6aa8125c10f2fc02ecb86df349a0fbf5de832c5bb423fd8728838927"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/glass_pane.json"
+hash = "697f263b73bbd65563b6887b97e122fc595f4ae54504944441c9cec12ab3934a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_bed.json"
+hash = "57a672ddcdce777fa3593acffc8a26d557181d52f5442ad6cec65b93bea91229"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_candle.json"
+hash = "8f0c1e52e3219414f4100ab361aebe64668f0024b1365a6472468d1e0d99fca2"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_concrete_powder.json"
+hash = "a1aab13f9079d67edbcb6d64476c4714d671b83d8ecbee71cc47146a0aee9851"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_glazed_terracotta.json"
+hash = "d5be90d2597ca26d2a60c3e7c5a66cd264db2ba35f5a8739c45492630efcf5b3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_stained_glass.json"
+hash = "9c6ac64e3488c93ad9c640bb723da00f17ef7981760ab221c27ad2d9218be4b5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_stained_glass_pane.json"
+hash = "22889f81fc55a3254032e569a14cc283553efa14c164bdd891e07beb78c24b79"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_terracotta.json"
+hash = "16d2b398c3aadc93d7708d3f5d8fc127ebc4fa0c3f7e48deedb74c775e830199"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/gray_wool.json"
+hash = "1824b8d0e757f0d71f8bbdd51fd27cb79648ff6e504a2123964da4dcff0087d9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_bed.json"
+hash = "11826ee39d52c73d73e2bdf9015c7fafc849c2cdd716f5a52dc51df8a7ae0d5c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_candle.json"
+hash = "8b8ef60b0359967ae3cd46b86cb92385249973895f4364865e2632dfc3d4c2a7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_concrete_powder.json"
+hash = "19a22e0f485f5bfcf97e89752063a7f4673b3a56bbc6760ae513de4854b03d21"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_glazed_terracotta.json"
+hash = "e19a19d0013bd8baf914d39efc579cc0e36fd28539aee7aaef1e223255e1d74f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_stained_glass.json"
+hash = "d6c20381a485beb3c3a4a519e0ce4e1c6217edfb1c22150521a440fd285b865a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_stained_glass_pane.json"
+hash = "44d1739afcee7a7fdf5d3d08e1e553c8745d79279ec1073279f971d9b5c2abe2"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_terracotta.json"
+hash = "0090c7891a656ea977c350fb4bf2ef0f2a767fd7dec16ed667c979f5f02fe94e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/green_wool.json"
+hash = "45dd70eca4494831601c75020ecb5d4185228aa67b8f57c13ad76d31115c1d33"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_bed.json"
+hash = "c2be0993723e16af587eaf997a4f6fb08ff36ee52a0c699582f01d6ff6faa4ac"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_candle.json"
+hash = "ddf727f3bae2a4d56483a6c5e66618153132578d2ddb82cd1fabd38cd13adb27"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_concrete_powder.json"
+hash = "4796b227f17f35e85709d335ced84162a3110884ea871c85e8c44c1390fa0a89"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_glazed_terracotta.json"
+hash = "504a033f648ff06a0911f0e376cc4d426e42554f972d4ef68eb50e7e9f3d7da6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_stained_glass.json"
+hash = "d67e930fd52f3740f4cb7fc18966496e9e6fcea0bc3d80adb35adb9fa6559e7c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_stained_glass_pane.json"
+hash = "53a022823cbdd5b5e94c52bc9aed44c7121296a17be6d671212bf82f2f84ecaa"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_terracotta.json"
+hash = "df99307818f097308c066461b1e912b9cfee69852779643bef68f407875b97af"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_blue_wool.json"
+hash = "ac08d65b1111f5640c3442f31f2ed0fbb806a34ef5dbbe5eab5b1ffd4ad43e95"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_bed.json"
+hash = "ca38ecc1b6dc0564cc0d7d41e8ceebf856faac322794d633e36384b515d10dc7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_candle.json"
+hash = "9c86215a971c8e0cd48d8883a80b132cdda15cf2a8cef551e001c17fcf748d0c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_concrete_powder.json"
+hash = "d11a2ee8e412a3be10212dc7259fb532f7a5d6c0e1a9f8fbb808715d33702102"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_glazed_terracotta.json"
+hash = "df4b590f568a34f7247ecc783c2239baa943da32d111f29ceff27ce8bb1d727a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_stained_glass.json"
+hash = "b2922a897bdd226f1560970bdb5d11ff927420d7e88c96fefa4d1672de0cd844"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_stained_glass_pane.json"
+hash = "77169698c642dd5b6a19d8e0f1019aae59a1817e9513f8ae4efcd44f9b983f70"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_terracotta.json"
+hash = "37c0f88f83b362dc1e28f8306de8616599be74d8742be7327723893ffc5028e7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/light_gray_wool.json"
+hash = "18f3802f7d8e69ed8e4bd032a7fc7cee8cfe7a0ca033611c7eb7a6031b22b6b8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_bed.json"
+hash = "0cfcb1bb23fc44dda2674674846d11df11e6b970635457ec5c926e48f053e40a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_candle.json"
+hash = "667407fdd4e02dabe92b49711ec910c04afe78a9693c3d044859b9fc2bc6a375"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_concrete_powder.json"
+hash = "945228cc3f86e4a46ba971f56d1daf1e2fe98f45b5baf00ce1cecb4ac614f679"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_glazed_terracotta.json"
+hash = "5593525de71f3b454383c89be84d619f8a93ad4091cc7faa96bba5b0098e6ebe"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_stained_glass.json"
+hash = "0d0d4afd5f1af813c16e6254f0e96a97dd93c9ddf614d9816fe45489334c658e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_stained_glass_pane.json"
+hash = "d3c992a08be6e2292f12b288e2a1252cd243cd543772d9da6597cf5ac38709d5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_terracotta.json"
+hash = "e3dd14cc0c2f1271a31aa32612e99bf3f33c43160a1e23c13ca9a8d3a7fca5fd"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/lime_wool.json"
+hash = "a8d7c0942042a6c0be3b4bcfc03a1df493531b2beea982a4648cb63234f9cd51"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_bed.json"
+hash = "144eb2fdfbed9d235889c3b3b0e83f2c7026024215a1e64c4dfa5c8a039f37c6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_candle.json"
+hash = "8c462539db536bbb3d99a299923a5c423832f58f1a6178e21dd96e1a507b5ee9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_concrete_powder.json"
+hash = "4c364b6089c7093372816a98c8106518ce9e9e48df7ed7d213ba7a2d9e329334"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_glazed_terracotta.json"
+hash = "069f93c2ab1d853d71d98946aca162dbe9ade00d876456a2b2a3ed19358875f4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_stained_glass.json"
+hash = "00b136daef30942de194cb66c3f5162d5da1f16a2b1bcba2dc5629ccb7277a37"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_stained_glass_pane.json"
+hash = "6f4774f24be888a92e3ba7203728729df1f48142437325adbfb99698622d185c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_terracotta.json"
+hash = "42b628322ef747eef8ea3da26bf2ba1e5d693983e1d3f7ab7497f1fc0df413fc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/magenta_wool.json"
+hash = "1e6798fc0b4b4ec294f85be7117a4d7aa0de2a52c312a354cca11eba0301dc05"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_bed.json"
+hash = "7d2344daca132527203f578fc5a041923199cdc7be210cf62b1d5712307a68d1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_candle.json"
+hash = "2087e394c5a0b6e0054976f4291f7df9ba0a59ad81daf829a9198b60361d8887"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_concrete_powder.json"
+hash = "23f5e028ff0b1f0dce7d91e13a1df65553d3a0654ada205109bffbfb8f5b42ed"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_glazed_terracotta.json"
+hash = "26e3c7fd53738f2c9eee7b2f652716b6bbe34e4e43c5ed5905e96ba670dcda23"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_stained_glass.json"
+hash = "d61ead40f402f4364b72db7fbddac3b185dbfd8402c28b37b73c2f6d60e2dadc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_stained_glass_pane.json"
+hash = "ef48a77620906eea7c84511573cc4e904b87a3d31775667153aa4f9201caa0fb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_terracotta.json"
+hash = "5edfeead8deb33a596962986feb5eacd8297100f954140c5bfda8edfb1d02ee4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/orange_wool.json"
+hash = "1fb7bb0d7f2ccaee8606044226de8d48f44f291cd81ef067c9a0f81a22554da0"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_bed.json"
+hash = "e979aa01896d0419f432a30b18cacc055d1401a9ebc2c78355a1e18f7a0a953d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_candle.json"
+hash = "53b30ec0424556320c6e5c1593b6cb4b058400586f5745ffe267735eeacf56f9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_concrete_powder.json"
+hash = "b9ddf84fc4f7110eb98af15aee3c7345dec3a6fe6c5a8fffbccaabbf82c91e0f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_glazed_terracotta.json"
+hash = "b11c7cc88b6878b3816f4d85b72a39b159a5dbbbcbb9fb35a4e1f2a6245bc526"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_stained_glass.json"
+hash = "bd31489b538a9ef96d1a09f2e4dfe683697809f6c92c95b693358e364abeed59"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_stained_glass_pane.json"
+hash = "49799f60165f5d043b06cb73d7c79c9100bf93b66c25d1c54a221aeb1538a16f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_terracotta.json"
+hash = "871323137a4b98e479ed018d7ca6fcfa4b50443105adc5ce01d75b8f9c7f34a9"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/pink_wool.json"
+hash = "58e7364ea6a569b2afb0efd3f71adb5ff1272715995cd10a888563eaad92295d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_bed.json"
+hash = "00ee829b5f8c5c08292ccc41d658dea232548563d2be80c14b913a0f145818f7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_candle.json"
+hash = "5be2531fc3657499c96378d74a3d0413f2f8bca6fbe1e08c3f01f434b7195168"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_concrete_powder.json"
+hash = "850a84b71b07a495702e87e78a26cb86b19cf2a6798c0db136a0bd4f952d49d7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_glazed_terracotta.json"
+hash = "0e1422152048bc8bbcd472a2dd6de4883b5004fed46c7655df0b0c00b8628bcc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_stained_glass.json"
+hash = "e016fb749eb5f37aba9673120023d12824e28fdb7eca43c17e5b27b392e45cd5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_stained_glass_pane.json"
+hash = "5bb7d9f6b8e5dbff4ecfb19556df040c004976fe15757f09b83eea92d1550620"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_terracotta.json"
+hash = "164deaa5398a5576bb7bd7bb4e5bbecf445829789dafe989b1c6efef40ef5b9a"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/purple_wool.json"
+hash = "5b5792f3e6da5ec352c47cb39e9e43a2edf6189117b1335f817432e8a99b6fa7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_bed.json"
+hash = "b7648fc0b85f67cb944aad31703635a35bc896351824fe18e4cd1596e5aedfc6"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_candle.json"
+hash = "9a13a9d169a39a1f106d3a92c61d0c4b55ca6709927e287b6198e1e06c8408f8"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_concrete_powder.json"
+hash = "708c429a4769c68305831f2ff2202f9c3d902ca78d157a5302a0e3a73ead9f69"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_glazed_terracotta.json"
+hash = "1f4d45a09c2d7dd0ff02cf1ae9d19bbac0fb499b1ad3b7699698aa7f8b9ed52f"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_stained_glass.json"
+hash = "c74e97a4eb331415ac609b36bd47ae7cba6cd68b5aed207dc095168e06696a97"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_stained_glass_pane.json"
+hash = "9bd52e2e3f565a787dbd018a287d47e61e5ae03c2102b6491ce5dedfca7514b3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_terracotta.json"
+hash = "50d4a271a2e2633cb1a06f6718b6dc1400cecc6a195ea33f36b4eec79319d536"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/red_wool.json"
+hash = "d15c7d48b15d734c870d24ee18d910510329abf37b744b5a9befc8cd43a69138"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/terracotta.json"
+hash = "a2a04eef16b2424e77f20212f839ed875d59c5502f4cad74ef0c3b25493fa3a1"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_bed.json"
+hash = "89b816634096a972e7acd8d4ce18d65b321142ef3366a8efeb418369c4e7af3e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_candle.json"
+hash = "04540fd6a0b2fe51d48398ede2d6382b9c870cf84f93a12d5c50dcd474fe60ad"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_concrete_powder.json"
+hash = "5844091620669c6c5c451f62cb774c5fdd29a4efb4a02d8e8de61279141f2f5b"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_glazed_terracotta.json"
+hash = "a7345da3f3a1d801bc889b7d9d2fd48005d7410f8d166d5d223712236a458dbb"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_stained_glass.json"
+hash = "ff9ffb554e6b3332ef1170ce20517cd719b71a21d3c4947037614c95e2d2939d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_stained_glass_pane.json"
+hash = "5c24a5df92b8369b0e3bc291c5625f31bb2389289a5f1f100dbcf7041e334bd4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_terracotta.json"
+hash = "ba61a60ade0d58039c9eab37412312ab07b3c698db8155bd60918435c93a0644"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/white_wool.json"
+hash = "f673ea35af2b366e7e6019c2bc47ae42bdb63d642a86d891114e85f3e967cfe4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_bed.json"
+hash = "3fc6a14fc89ee0b8409ff3c0ebd5fadf8d49f2b11b912fe653aeb649900c1a49"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_candle.json"
+hash = "7de1fc034f062104c1ac61a37f82f9754c1bf18b0dd984d26f31b9f893c169a7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_concrete_powder.json"
+hash = "4a88b86c731d0c64ba819f4305f302754a00f67c00dfe2d7e5b60e7346cf9358"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_glazed_terracotta.json"
+hash = "2eabe6287f05c62dacef793e38615c8d6ad523f5a7fa949c72e51eb89869f1dc"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_stained_glass.json"
+hash = "da9e77c12dfe2e331715e56fa1b4c414284ea28e41b0c1280d758cdc35cb7d36"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_stained_glass_pane.json"
+hash = "a6afa084fb19b0adf9ac0094ac66f6ee34eea1802dc032d6c44c1ea318798b8d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_terracotta.json"
+hash = "1b6d71626d481629dce579b906c426aa435cae7d4ed197939804b41c812499d3"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/recipes/yellow_wool.json"
+hash = "ad1bd72a4469b1ecc4cd8d57d274ba73ce4516e435ca543311551bf2f4a8da8e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/bed.json"
+hash = "28793a8ea070df989f7a7e7ca16225b9083a3604c595054dd7179fdd3c19ad7d"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/candle.json"
+hash = "a2c59880746ab65a1dacbd45088e1f7d8f23530b8c72d9b4a7e7b7cd1a82bcc4"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/concrete_powder.json"
+hash = "6e69194f4688e658267ad157e9de0289a5a88c59f2416e625b94daeda46142c5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/dyes.json"
+hash = "46f8a11ea28b8bb67d043f63b8528febb45be55f10a11f893596b07a7d960b95"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/dyes/black_dye.json"
+hash = "02d5a21097ba5ea906785dd0f27cfce13a7d7e5e5293820b92fc1f82f815ffa7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/dyes/blue_dye.json"
+hash = "1959b8b31fbed61856df4703f7c0bd4663a41289a6371a9b750922b76d64c55e"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/dyes/brown_dye.json"
+hash = "8d69bad118aa731be3ebef6f23afbc4e5ea8615c5f9552adf4606ce3bdfe23d7"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/dyes/white_dye.json"
+hash = "f5a33a047cd9068dd327b905289f59e72fa7e3a857b8f512df337cd8891f6dca"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/glazed_terracotta.json"
+hash = "0e2277ee68e9a8e8d46ac87b90f805675328198c3f7830beeb28c768410b7477"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/stained_glass.json"
+hash = "3ab00bc168c4f9048706d70900dfbf7c0f398a5aa793faf940644c344eab9661"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/stained_glass_pane.json"
+hash = "84838d3a1d0757e8e6bdd0eebb285cccff1ffab7138af24e7c3396a892ea49a5"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/data/universal_dyeing/tags/items/terracotta.json"
+hash = "8a33231d202390b7adbdf6292b7f1ab21684aaac6ceb14d9e80c9253b7f69a4c"
+
+[[files]]
+file = "config/openloader/data/Vanilla Tweaks Crafting/pack.mcmeta"
+hash = "11765756a547b06892f7a8abeef9a66be4594fabbc26006bbbd8db7be694a3e2"
+
+[[files]]
 file = "config/openloader/resources/vineboom/assets/minecraft/sounds.json"
 hash = "d4169788f5fa73d93f27ce48684ef45a5e83d1992f87cfe33eba45c6bc92ed06"
 
@@ -87,6 +1855,10 @@ hash = "27f407419c3e3c29513fcc0c423a181e80da82c928190e68d05fd29d0d638302"
 [[files]]
 file = "config/pehkui/config.json"
 hash = "4636ebda37f9e7effb81ce1f9e526e35dcfe5a431f660ef33b3dcef35b784f58"
+
+[[files]]
+file = "config/yosbr/options.txt"
+hash = "30bc75e0c70b81f06f30ba18bf6e631c65a644d94e0f604ec358176d6ad2ceda"
 
 [[files]]
 file = "mods/ad-astra-fabric.pw.toml"
@@ -159,6 +1931,11 @@ hash = "7f9e55e68d368516e8d8b93f4716ffdb87fcbdc64def7478b2db0ede13609e79"
 metafile = true
 
 [[files]]
+file = "mods/cleancut.pw.toml"
+hash = "12485f0ca3d0e35804c01af3e2d034c253d7762943f1e8e889b66f745b52c76b"
+metafile = true
+
+[[files]]
 file = "mods/clickthrough.pw.toml"
 hash = "1a22f8e7f1718b40216542f41669501144c80bf1c5bbec265177aeaa8e93495a"
 metafile = true
@@ -179,8 +1956,8 @@ hash = "89b77cf775f282a4c755d0839f20d2078af8fc5b2915cb526d118b9d9694c995"
 metafile = true
 
 [[files]]
-file = "mods/create-deco.pw.toml"
-hash = "4330040818fae4f5393c4a9de4f304d58d949482f27b88f2ae0f06213e862351"
+file = "mods/controlling.pw.toml"
+hash = "8f0f7af3cdf271e3692f6f6e8f75775c10c30f85787d7aa8f02bdc8e762ec47f"
 metafile = true
 
 [[files]]
@@ -204,13 +1981,13 @@ hash = "2836be90ea231d36f26eb597a74eed13c023ec57d0fc2e72d8a26b16578fd495"
 metafile = true
 
 [[files]]
-file = "mods/ebe.pw.toml"
-hash = "b668875d7f22033e43efeef4c1772f8567d6b33b06f7b16e17ccb3bbcb23dc47"
+file = "mods/enderscape.pw.toml"
+hash = "21c89cfc789fe0171ea2911506f4ba2584a1f7e1fdfab36434a86c8a2e05b431"
 metafile = true
 
 [[files]]
-file = "mods/enderscape.pw.toml"
-hash = "21c89cfc789fe0171ea2911506f4ba2584a1f7e1fdfab36434a86c8a2e05b431"
+file = "mods/equipment-compare-fabric.pw.toml"
+hash = "9b6419b364a51bd7ebf53e10093cd1356b32644b596095b47689152f27a79bae"
 metafile = true
 
 [[files]]
@@ -254,8 +2031,18 @@ hash = "25af0cbb0e6c510cbba95a7d5dbe264b8d91b69549b186f50bde498d954c2b91"
 metafile = true
 
 [[files]]
+file = "mods/i-know-what-im-doing.pw.toml"
+hash = "4191daf9db203945cd504e0489ce9008f718bb69fa8ce36cf3847ab28f05355c"
+metafile = true
+
+[[files]]
 file = "mods/iam-music-player.pw.toml"
 hash = "9c64e2a4cf18d6ef005b7dbc54a4e812a95bf5d705e68f3b4b2a040c810f9c1e"
+metafile = true
+
+[[files]]
+file = "mods/iceberg-fabric.pw.toml"
+hash = "60f6269fd7d2aa52defc49fc4963a6736581b341910c7e537c9dbcb97525f83c"
 metafile = true
 
 [[files]]
@@ -289,6 +2076,11 @@ hash = "ea127e8f74006f3a9ce099f9e96adaa3b3f4f281231ece703c4e7f9732137ebd"
 metafile = true
 
 [[files]]
+file = "mods/lib.pw.toml"
+hash = "440c3684ef8e18e0787e29db7884acc50f5b02605525d50e9a83b6ea6af8cae6"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
 metafile = true
@@ -296,6 +2088,11 @@ metafile = true
 [[files]]
 file = "mods/lovely_snails.pw.toml"
 hash = "b8c6a8b674c85002ba0d4feb98f02522424680d2bffbf68d592d45bcaf382330"
+metafile = true
+
+[[files]]
+file = "mods/main-menu-credits.pw.toml"
+hash = "1527caee4fc4f26b525a41a95dd07dae21ab3c8d2c391237c79396abf7e9b2d7"
 metafile = true
 
 [[files]]
@@ -314,8 +2111,8 @@ hash = "37b69a71c010cb7e4d10a84a7c0e44373566ddb19aaaf4428ff2bb9ade0692e1"
 metafile = true
 
 [[files]]
-file = "mods/ok-zoomer.pw.toml"
-hash = "30f0c5e8dc4aa086b4152f12c899574fd3d08e7124cd6a25a24cb9815099ebab"
+file = "mods/no-angled-brackets.pw.toml"
+hash = "3174e711d4a698469e52255efd240e3013d95065435de8b5b3aab105b68902c6"
 metafile = true
 
 [[files]]
@@ -351,6 +2148,21 @@ metafile = true
 [[files]]
 file = "mods/phosphor.pw.toml"
 hash = "f257c1d69a789d7ddcb0578d5987a7fc2eaf1681f1718600c51bd2ce6bce5f19"
+metafile = true
+
+[[files]]
+file = "mods/pick-up-notifier-fabric.pw.toml"
+hash = "0ef974ad7c07c9a37f6c05ea34c478fbe774c1b5e9b6540c3d6816009e05533a"
+metafile = true
+
+[[files]]
+file = "mods/pling.pw.toml"
+hash = "dfc73c6ed21d8be632f3d253bd23a921b1e690107a0cd70c63c55a5568278bfd"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib-fabric.pw.toml"
+hash = "8e59815b193e52f162b5ded34a4b1dfdac31b880893ab286ac12a970903ceb4b"
 metafile = true
 
 [[files]]
@@ -399,6 +2211,11 @@ hash = "3a938b8893f42c5f82c8fe0f83156b040484c80e437a46f72a77a283fa372902"
 metafile = true
 
 [[files]]
+file = "mods/tooltipfix.pw.toml"
+hash = "3fdc9a7558c912db84c2b62845896e74a1633450a0d2a0721bce6a382b842213"
+metafile = true
+
+[[files]]
 file = "mods/trinkets.pw.toml"
 hash = "49f5590e6160266691eaca6948b33a3a2763e590ed4bcf90189f13650066c84e"
 metafile = true
@@ -409,8 +2226,28 @@ hash = "54f57765ec22a3c0afc5b3071cc8868c4f62a8aa2a75afd987d138875cb49938"
 metafile = true
 
 [[files]]
+file = "mods/wmitaf.pw.toml"
+hash = "a48872af569129f395747f81ff8e274a443d0504f0f7e9106dbaf0726e1a47cf"
+metafile = true
+
+[[files]]
 file = "mods/wthit.pw.toml"
 hash = "c78ed024370e83d09df73b5eb722612a3f48d65005f47539fb383b9186a5532f"
+metafile = true
+
+[[files]]
+file = "mods/xl-packets-fabric.pw.toml"
+hash = "010437f1fe7ae2ea2690354120886f04a6c69f05c99861d3479e43bbbeed1cde"
+metafile = true
+
+[[files]]
+file = "mods/yosbr.pw.toml"
+hash = "7c2712882baa2ed177b9b961cc1052b857f11ed1455609f9e9f01332c0317f12"
+metafile = true
+
+[[files]]
+file = "mods/zoomify.pw.toml"
+hash = "42653e0671bbbde6f2ac3fa3af3b7068b7c83f2d9f8091dbaa24c758464d7a19"
 metafile = true
 
 [[files]]
