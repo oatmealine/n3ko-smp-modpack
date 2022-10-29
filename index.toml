@@ -254,6 +254,11 @@ hash = "fdebc54ee80be90757fae74011431710cf07d1df5ffaf81678a5c2c8f2d32a2b"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "689beb7c10f85f12f08d2b5198e02c8ef72bf3a5372e390d76c7412cbc807296"
+metafile = true
+
+[[files]]
 file = "mods/item-model-fix.pw.toml"
 hash = "4b74568ba118a4d5dbc425a66e67af8362cef53d6b33f9c235a5a05f45d593f2"
 metafile = true
@@ -391,4 +396,9 @@ metafile = true
 [[files]]
 file = "mods/wthit.pw.toml"
 hash = "c78ed024370e83d09df73b5eb722612a3f48d65005f47539fb383b9186a5532f"
+metafile = true
+
+[[files]]
+file = "mods/zoomify.pw.toml"
+hash = "42653e0671bbbde6f2ac3fa3af3b7068b7c83f2d9f8091dbaa24c758464d7a19"
 metafile = true
