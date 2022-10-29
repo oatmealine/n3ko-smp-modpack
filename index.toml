@@ -78,7 +78,7 @@ hash = "8fd7696b3df52be0187e4fe1611c9e23ab22fec772dc3331547beb0b52aaf170"
 
 [[files]]
 file = "config/openloader/resources/vineboom/pack.mcmeta"
-hash = "7e1469fc55b0cc081f7d498b81fc3ebfee5fb14d2357d64db3a2d321dd66788b"
+hash = "56b8f82f389e0e7c361621c6168ce9169d8efd1d4fec28826ac9d149ab5a682b"
 
 [[files]]
 file = "config/origins_server.toml"
@@ -402,3 +402,15 @@ metafile = true
 file = "mods/zoomify.pw.toml"
 hash = "42653e0671bbbde6f2ac3fa3af3b7068b7c83f2d9f8091dbaa24c758464d7a19"
 metafile = true
+
+[[files]]
+file = "shaderpacks/Complementary Shaders v4.6.zip"
+hash = "aa7f493d7d95e3b6785beba19cd2a5d5df579e6f66dbc56e3de7c4cfdc0aea74"
+
+[[files]]
+file = "shaderpacks/Sildur's Enhanced Default v1.14 Fast.zip"
+hash = "8cd55ca8b38f04a7bc18f94f6d266b7570de46b4efcb65341027fe9351fb15f1"
+
+[[files]]
+file = "shaderpacks/Sildur's Vibrant Shaders v1.41 High.zip"
+hash = "bd3abfcb5b4d688d84f7ffe24c336a126ad1671e9a82ab54b2f466c648f1526a"
