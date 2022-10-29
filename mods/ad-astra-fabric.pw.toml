@@ -1,0 +1,8 @@
+name = "Ad Astra!"
+filename = "ad-astra-1.0.5-1.18.2.jar"
+side = "both"
+
+[download]
+url = "https://oat.zone/f/ad-astra-1.0.5.jar"
+hash-format = "sha256"
+hash = "43569ab4b5908995f14d702e158c0569df503101375924e23eba1ce87249e61c"

@@ -1,0 +1,13 @@
+name = "Spectrum"
+filename = "spectrum-1.5.7-1.18.2-magic.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3rc31Hgo/versions/kTZb0MBv/spectrum-1.5.7-1.18.2-magic.jar"
+hash-format = "sha1"
+hash = "30d25d146890bf9267efb4af77fb9e2522ba8852"
+
+[update]
+[update.modrinth]
+mod-id = "3rc31Hgo"
+version = "kTZb0MBv"

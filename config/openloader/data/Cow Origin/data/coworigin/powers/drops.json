@@ -1,0 +1,22 @@
+{
+	"name": "Sliced Up",
+	"description": "When hit, you have a small chance of dropping leather, and an extremely small chance of dropping raw beef.",
+
+	"type": "origins:action_when_hit",
+	"bientity_action": {
+		"type": "origins:target_action",
+		"action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute if predicate coworigin:random_leather at @s run summon item ~ ~ ~ {Item: {id: \"minecraft:leather\", Count: 1b}, PickupDelay: 20}"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute if predicate coworigin:random_beef at @s run summon item ~ ~ ~ {Item: {id: \"minecraft:beef\", Count: 1b}, PickupDelay: 20}"
+				}
+			]
+		}
+	}
+}

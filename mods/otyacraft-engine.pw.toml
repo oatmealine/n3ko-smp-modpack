@@ -1,0 +1,13 @@
+name = "Otyacraft Engine [Forge/Fabric]"
+filename = "otyacraftengine-fabric-1.18.2-2.14.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "711f76e3c4f13b2b2a4a0ec454e0517eb1f71ab2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3754866
+project-id = 400337

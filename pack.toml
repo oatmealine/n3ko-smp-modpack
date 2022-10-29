@@ -1,0 +1,13 @@
+name = "N3KO SMP 1.18.2"
+author = "oatmealine, Cardboxneko, Rya"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "ec74db32239e0cfbf730f45177e3ab16732482803721564575dd2de735630b7f"
+
+[versions]
+fabric = "0.14.10"
+minecraft = "1.18.2"

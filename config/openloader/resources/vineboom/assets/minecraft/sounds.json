@@ -1,0 +1,25 @@
+{
+	"item.spyglass.use": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "item/spyglass/use",
+				"volume": 0.5,
+				"pitch": 1
+			}
+		],
+		"subtitle": "subtitles.item.spyglass.use"
+	},
+	"item.spyglass.stop_using": {
+		"replace": false,
+		"sounds": [
+			{
+				"name": "item/spyglass/stop",
+				"volume": 0.5,
+				"pitch": 1
+			}
+		],
+		"subtitle": "subtitles.item.spyglass.stop_using"
+	}
+
+}

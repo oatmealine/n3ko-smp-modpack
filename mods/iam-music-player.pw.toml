@@ -1,0 +1,13 @@
+name = "Iam Music Player"
+filename = "iammusicplayer-fabric-1.18.2-3.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZHHXRhiU/versions/1.18.2-3.9-Fabric/iammusicplayer-fabric-1.18.2-3.9.jar"
+hash-format = "sha1"
+hash = "af014940652414f57cbec4de337d7ae73978ffe5"
+
+[update]
+[update.modrinth]
+mod-id = "ZHHXRhiU"
+version = "MCecxO19"

@@ -1,0 +1,13 @@
+name = "[TFB] Anthro Origins"
+filename = "[TFB][1.18+Fabric]Anthro_Origins_v1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8fb2a6d566bc33d665b66c8eb86a279e04b71c9b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4017446
+project-id = 562211

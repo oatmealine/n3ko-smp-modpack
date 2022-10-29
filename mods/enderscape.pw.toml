@@ -1,0 +1,13 @@
+name = "Enderscape"
+filename = "enderscape-0.3.4-1.18.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e183c5be8494505770ab435ea7e017e79e21dd31"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3873999
+project-id = 536638

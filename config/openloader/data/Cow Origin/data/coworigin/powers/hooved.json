@@ -1,0 +1,22 @@
+{
+	"name": "Hard Hooved",
+	"description": "Unarmed attacks deals 1.00x more damage.",
+
+	"type": "origins:modify_damage_dealt",
+	"condition": {
+		"type": "origins:equipped_item",
+		"equipment_slot": "mainhand",
+		"item_condition": {
+			"type": "origins:empty"
+		}
+	},
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "player"
+	},
+	"modifier": {
+		"name": "Incrase damage by 100%",
+		"operation": "addition",
+		"value": 2
+	}
+}
