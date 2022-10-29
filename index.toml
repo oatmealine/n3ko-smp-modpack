@@ -1,6 +1,26 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Spectrum.json5"
+hash = "782b75e9745afa1f41edfddb44a1196df0c5e58691c304ef0f8ee40253d98cb4"
+
+[[files]]
+file = "config/bclib/main.json"
+hash = "08711cc547b990b371caadcfd84a306fc8ce42cf9766914e17dcfd5078b9e9f8"
+
+[[files]]
+file = "config/bclib/server.json"
+hash = "dd0b11f0c1b03f5624524a5b2b309404c020be1e4bee961bd85a20bcdf03d4d3"
+
+[[files]]
+file = "config/create-common.toml"
+hash = "9e160add67830ba94c1683e1da28c8b9a6c63b33087c093e27c329f2ef853a40"
+
+[[files]]
+file = "config/debugify.json"
+hash = "c6a76414122b48284665b596b076961d10522d4d1cba97511aaa5c453897e95e"
+
+[[files]]
 file = "config/openloader/data/Cow Origin/README.md"
 hash = "18a6109465935de1467cf1839e813c2ae18aad1c9ed8ee967316d494d29968e7"
 
@@ -61,12 +81,16 @@ file = "config/openloader/resources/vineboom/pack.mcmeta"
 hash = "7e1469fc55b0cc081f7d498b81fc3ebfee5fb14d2357d64db3a2d321dd66788b"
 
 [[files]]
+file = "config/origins_server.toml"
+hash = "27f407419c3e3c29513fcc0c423a181e80da82c928190e68d05fd29d0d638302"
+
+[[files]]
 file = "config/pehkui/config.json"
 hash = "4636ebda37f9e7effb81ce1f9e526e35dcfe5a431f660ef33b3dcef35b784f58"
 
 [[files]]
 file = "mods/ad-astra-fabric.pw.toml"
-hash = "e5747dab7cf08bee2a062de60685217771615b8276f607e1ad6c6595e9b13197"
+hash = "935c3e494a728b096ac75d057d7eaa0f91027c59bd59d352738a94e88e91b50e"
 metafile = true
 
 [[files]]
@@ -215,8 +239,8 @@ hash = "f19e328fe42f91d1b65e244ee5bcf70f1e5305a27278945098ea85af82e05d0d"
 metafile = true
 
 [[files]]
-file = "mods/here-be-no-dragons.pw.toml"
-hash = "b521cb1efedc7ce0443e6df6ea00c10beb0000c769f36812840ba83abc7aa520"
+file = "mods/figura.pw.toml"
+hash = "25af0cbb0e6c510cbba95a7d5dbe264b8d91b69549b186f50bde498d954c2b91"
 metafile = true
 
 [[files]]
