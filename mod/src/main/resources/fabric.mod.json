@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "n3komod",
+  "version": "${version}",
+
+  "name": "N3KO MC",
+  "description": "The N3KO SMP dumb content mod.",
+  "authors": [
+    "oatmealine"
+  ],
+  "contact": {
+    "sources": "https://github.com/oatmealine/n3ko-smp-modpack/tree/main/mod"
+  },
+
+  "license": "Unlicense",
+  "icon": "assets/n3ko/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "zone.oat.n3komod.N3KOMod"
+    ]
+  },
+  "mixins": [
+    "n3ko.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.18",
+    "java": ">=17"
+  }
+}
