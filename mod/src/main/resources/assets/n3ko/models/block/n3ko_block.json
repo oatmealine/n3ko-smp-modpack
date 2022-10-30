@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "down": "n3ko:block/n3ko_block_sm",
+    "up": "n3ko:block/n3ko_block_sm",
+    "north": "n3ko:block/n3ko_block_p",
+    "east": "n3ko:block/n3ko_block_n",
+    "south": "n3ko:block/n3ko_block_p",
+    "west": "n3ko:block/n3ko_block_n"
+  }
+}
