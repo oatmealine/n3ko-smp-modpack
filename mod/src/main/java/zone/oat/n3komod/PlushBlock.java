@@ -43,6 +43,7 @@ public class PlushBlock extends BlockWithEntity {
       .solidBlock(N3KOBlocks::never)
       .suffocates(N3KOBlocks::never)
       .blockVision(N3KOBlocks::never)
+      .breakInstantly()
     );
     this.setDefaultState(
       this.stateManager.getDefaultState().with(FACING, Direction.NORTH)
