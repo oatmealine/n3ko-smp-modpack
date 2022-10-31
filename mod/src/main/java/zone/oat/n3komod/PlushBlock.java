@@ -20,11 +20,15 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.IntProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -32,7 +36,8 @@ import net.minecraft.world.World;
 import zone.oat.n3komod.client.N3KOPackets;
 
 public class PlushBlock extends BlockWithEntity {
-  public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+  //public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+  public static final IntProperty ROTATION = Properties.ROTATION;
 
   public PlushBlock() {
     super(FabricBlockSettings
@@ -46,7 +51,7 @@ public class PlushBlock extends BlockWithEntity {
       .breakInstantly()
     );
     this.setDefaultState(
-      this.stateManager.getDefaultState().with(FACING, Direction.NORTH)
+      this.stateManager.getDefaultState().with(ROTATION, Integer.valueOf(0))
     );
   }
 
@@ -67,7 +72,7 @@ public class PlushBlock extends BlockWithEntity {
 
   @Override
   protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-    builder.add(FACING);
+    builder.add(ROTATION);
   }
 
   @Override
@@ -77,40 +82,22 @@ public class PlushBlock extends BlockWithEntity {
 
   @Override
   public BlockState getPlacementState(ItemPlacementContext ctx) {
-    return this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite());
+    return this.getDefaultState().with(ROTATION, MathHelper.floor((double) ((180.0F + ctx.getPlayerYaw()) * 16.0F / 360.0F) + 0.5) & 15);
   }
 
   @Override
   public VoxelShape getOutlineShape(BlockState state, BlockView blockView, BlockPos pos, ShapeContext context) {
-    Direction dir = state.get(FACING);
-
-    Vector3d p = new Vector3d(5.0/16D, 0.0/16D, 5.25/16D);
+    // grab from blockbench
+    Vector3d p = new Vector3d(5.0/16D, 0.0/16D, 5.0/16D);
     Vector3d s = new Vector3d(6.0/16D, 12.0/16D, 6.0/16D);
 
-    switch(dir) {
-      case NORTH:
-        return VoxelShapes.cuboid(
-          5/16D, 0, 5.25/16D,
-          11/16D, 12/16D, 11.25/16D
-        );
-      case WEST:
-        return VoxelShapes.cuboid(
-          5.25/16D, 0, 5/16D,
-          11.25/16D, 12/16D, 11/16D
-        );
-      case EAST:
-        return VoxelShapes.cuboid(
-          4.75/16D, 0, 5/16D,
-          10.75/16D, 12/16D, 11/16D
-        );
-      case SOUTH:
-        return VoxelShapes.cuboid(
-          5/16D, 0, 4.75/16D,
-          11/16D, 12/16D, 10.75/16D
-        );
-      default:
-        return VoxelShapes.fullCube();
-    }
+    Vector3d min = p;
+    Vector3d max = new Vector3d(p.x + s.x, p.y + s.y, p.z + s.z);
+
+    return VoxelShapes.cuboid(
+      min.x, min.y, min.z,
+      max.x, max.y, max.z
+    );
   }
 
   @Override

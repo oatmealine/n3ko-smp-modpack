@@ -3,6 +3,7 @@ package zone.oat.n3komod.client.render.block_entity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.SignBlock;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayers;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -41,8 +42,8 @@ public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockE
 
     matrices.translate(-off, 0.0, -off);
     //matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion((blockEntity.getWorld().getTime() + tickDelta) * 4));
-    matrices.multiply(state.get(PlushBlock.FACING).getRotationQuaternion());
-    matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-90));
+    matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(-((float)(state.get(SignBlock.ROTATION) * 360) / 16.0F)));
+    //matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-90));
 
     if (blockEntity.isSquished) {
       float squishAmt = 1.0f - Ease.outSine(((float)blockEntity.squishTicks + tickDelta) / PlushBlockEntity.SQUISH_DURATION);
