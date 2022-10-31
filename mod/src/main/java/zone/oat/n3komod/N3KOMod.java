@@ -19,9 +19,8 @@ public class N3KOMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("burunyuu");
-
 		N3KOBlocks.init();
 		N3KOItems.init();
+		N3KOBlockEntities.init();
 	}
 }

@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "zone.oat.n3komod.N3KOMod"
+    ],
+    "client": [
+      "zone.oat.n3komod.client.N3KOModClient"
     ]
   },
   "mixins": [
