@@ -48,8 +48,9 @@ public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockE
     if (blockEntity.isSquished) {
       float squishAmt = 1.0f - Ease.outSine(((float)blockEntity.squishTicks + tickDelta) / PlushBlockEntity.SQUISH_DURATION);
       float squishAnimX = (float)Math.sin(t) * 0.6f;
-      float squishAnimY = (float)Math.cos(t) * 0.6f;
-      matrices.scale(1.0f + squishAnimX * squishAmt, 1.0f, 1.0f + squishAnimY * squishAmt);
+      float squishAnimY = (float)Math.sin(t + Math.PI * 0.5) * 0.1f;
+      float squishAnimZ = (float)Math.cos(t) * 0.6f;
+      matrices.scale(1.0f + squishAnimX * squishAmt, 1.0f + squishAnimY * squishAmt, 1.0f + squishAnimZ * squishAmt);
     }
 
     matrices.translate(off, 0.0, off);

@@ -77,6 +77,10 @@ file = "config/openloader/data/Cow Origin/pack.mcmeta"
 hash = "5f4e3cc3a17c5af14781c25f2f5b2857490db23c8b4aed5fe53e6de879e2b33e"
 
 [[files]]
+file = "config/openloader/data/Dragon Origin.zip"
+hash = "456203a4b667f83dff11e337893cd3bef588db05dd2f692cb28ae1c74db7f15e"
+
+[[files]]
 file = "config/openloader/data/Vanilla Tweaks Crafting/Selected Packs.txt"
 hash = "92577c3e43c69e0764fb887c7e81d80927871cd253ce2be17841ac64cd0108b2"
 
