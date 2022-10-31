@@ -21,10 +21,12 @@ public class N3KOBlocks {
   public static Block N3KO_BLOCK = new BlockWithTooltip(FabricBlockSettings.of(Material.METAL).strength(2.0f), List.of("block.n3ko.n3ko_block.tooltip"));
 
   public static Block SHE_PLUSH = new PlushBlock();
+  public static Block PLUSH_BASE = new PlushBlock();
 
   public static void init() {
     Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "n3ko_block"), N3KO_BLOCK);
 
     Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "she_plush"), SHE_PLUSH);
+    Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "plush_base"), PLUSH_BASE);
   }
 }

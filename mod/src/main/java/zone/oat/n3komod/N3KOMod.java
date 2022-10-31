@@ -22,5 +22,6 @@ public class N3KOMod implements ModInitializer {
 		N3KOBlocks.init();
 		N3KOItems.init();
 		N3KOBlockEntities.init();
+		N3KOSounds.init();
 	}
 }

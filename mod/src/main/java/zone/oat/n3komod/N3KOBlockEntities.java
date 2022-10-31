@@ -6,9 +6,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class N3KOBlockEntities {
-  public static BlockEntityType<PlushBlockEntity> SHE_PLUSH_BLOCK_ENTITY = FabricBlockEntityTypeBuilder.create(PlushBlockEntity::new, N3KOBlocks.SHE_PLUSH).build();
+  public static BlockEntityType<PlushBlockEntity> PLUSH_BLOCK_ENTITY = FabricBlockEntityTypeBuilder.create(
+    PlushBlockEntity::new,
+    N3KOBlocks.SHE_PLUSH,
+    N3KOBlocks.PLUSH_BASE
+  ).build();
 
   public static void init() {
-    Registry.register( Registry.BLOCK_ENTITY_TYPE, new Identifier(N3KOMod.NAMESPACE, "she_plush_block_entity"), SHE_PLUSH_BLOCK_ENTITY);
+    Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(N3KOMod.NAMESPACE, "plush_block_entity"), PLUSH_BLOCK_ENTITY);
   }
 }

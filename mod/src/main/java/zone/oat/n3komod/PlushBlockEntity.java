@@ -3,6 +3,7 @@ package zone.oat.n3komod;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BellBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -20,7 +21,7 @@ public class PlushBlockEntity extends BlockEntity {
   public boolean isSquished;
 
   public PlushBlockEntity(BlockPos pos, BlockState state) {
-    super(N3KOBlockEntities.SHE_PLUSH_BLOCK_ENTITY, pos, state);
+    super(N3KOBlockEntities.PLUSH_BLOCK_ENTITY, pos, state);
   }
 
   public static void tick(World world, BlockPos pos, BlockState state, PlushBlockEntity blockEntity) {

@@ -31,8 +31,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import zone.oat.n3komod.client.N3KOPackets;
 
-import javax.swing.*;
-
 public class PlushBlock extends BlockWithEntity {
   public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
 
@@ -116,7 +114,7 @@ public class PlushBlock extends BlockWithEntity {
 
   @Override
   public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-    return checkType(type, N3KOBlockEntities.SHE_PLUSH_BLOCK_ENTITY, (world1, pos, state1, be) -> PlushBlockEntity.tick(world1, pos, state1, be));
+    return checkType(type, N3KOBlockEntities.PLUSH_BLOCK_ENTITY, (world1, pos, state1, be) -> PlushBlockEntity.tick(world1, pos, state1, be));
   }
 
   @Override

@@ -28,8 +28,9 @@ import java.util.List;
 public class N3KOModClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
-    BlockEntityRendererRegistry.register(N3KOBlockEntities.SHE_PLUSH_BLOCK_ENTITY, PlushBlockEntityRenderer::new);
+    BlockEntityRendererRegistry.register(N3KOBlockEntities.PLUSH_BLOCK_ENTITY, PlushBlockEntityRenderer::new);
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.SHE_PLUSH, RenderLayer.getTranslucent());
+    BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.PLUSH_BASE, RenderLayer.getTranslucent());
 
     N3KOPackets.init();
   }
