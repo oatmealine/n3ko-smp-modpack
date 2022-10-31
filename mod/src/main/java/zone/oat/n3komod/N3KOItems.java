@@ -15,10 +15,12 @@ public class N3KOItems {
   public static BlockItem N3KO_BLOCK = createBlockItem(N3KOBlocks.N3KO_BLOCK, N3KOMod.ITEM_GROUP);
   public static BlockItem SHE_PLUSH = createBlockItem(N3KOBlocks.SHE_PLUSH, N3KOMod.ITEM_GROUP);
   public static BlockItem PLUSH_BASE = createBlockItem(N3KOBlocks.PLUSH_BASE, N3KOMod.ITEM_GROUP);
+  public static BlockItem SHE_BLOCK = createBlockItem(N3KOBlocks.SHE_BLOCK, N3KOMod.ITEM_GROUP);
 
   public static void init() {
     Registry.register(Registry.ITEM, new Identifier(N3KOMod.NAMESPACE, "n3ko_block"), N3KO_BLOCK);
     Registry.register(Registry.ITEM, new Identifier(N3KOMod.NAMESPACE, "she_plush"), SHE_PLUSH);
     Registry.register(Registry.ITEM, new Identifier(N3KOMod.NAMESPACE, "plush_base"), PLUSH_BASE);
+    Registry.register(Registry.ITEM, new Identifier(N3KOMod.NAMESPACE, "she_block"), SHE_BLOCK);
   }
 }
