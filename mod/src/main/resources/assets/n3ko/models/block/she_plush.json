@@ -128,11 +128,11 @@
 			"translation": [0, 4, 0]
 		},
 		"ground": {
-			"translation": [0, 0.5, 0],
+			"translation": [0, 3.5, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [20, -20, 0],
+			"rotation": [45, -45, 0],
 			"translation": [0, 2.25, 0]
 		},
 		"head": {
