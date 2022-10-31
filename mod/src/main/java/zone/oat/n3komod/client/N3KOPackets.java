@@ -16,10 +16,6 @@ public class N3KOPackets {
     ClientPlayNetworking.registerGlobalReceiver(SQUISH_PLUSH, (client, handler, buf, responseSender) -> {
       BlockPos target = buf.readBlockPos();
       client.execute(() -> {
-        // Everything in this lambda is run on the render thread
-        //ClientBlockHighlighting.highlightBlock(client, target);
-        N3KOMod.LOGGER.info("hewwo");
-
         BlockEntity plush = MinecraftClient.getInstance().world.getBlockEntity(target);
         if (plush instanceof PlushBlockEntity) {
           ((PlushBlockEntity) plush).onUse();

@@ -16,6 +16,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3f;
 import net.minecraft.util.registry.Registry;
+import zone.oat.n3komod.Ease;
 import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.PlushBlock;
 import zone.oat.n3komod.PlushBlockEntity;
@@ -44,7 +45,7 @@ public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockE
     matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-90));
 
     if (blockEntity.isSquished) {
-      float squishAmt = 1.0f - (float)blockEntity.squishTicks / PlushBlockEntity.SQUISH_DURATION;
+      float squishAmt = 1.0f - Ease.outSine(((float)blockEntity.squishTicks + tickDelta) / PlushBlockEntity.SQUISH_DURATION);
       float squishAnimX = (float)Math.sin(t) * 0.6f;
       float squishAnimY = (float)Math.cos(t) * 0.6f;
       matrices.scale(1.0f + squishAnimX * squishAmt, 1.0f, 1.0f + squishAnimY * squishAmt);
