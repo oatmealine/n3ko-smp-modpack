@@ -1,11 +1,12 @@
-package zone.oat.n3komod;
+package zone.oat.n3komod.registry;
 
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import zone.oat.n3komod.util.ModIdentifier;
 
 public class N3KOSounds {
-  public static final Identifier SQUEAK = new Identifier(N3KOMod.NAMESPACE, "squeak");
+  public static final Identifier SQUEAK = new ModIdentifier("squeak");
   public static SoundEvent SQUEAK_EVENT = new SoundEvent(SQUEAK);
 
   public static void init() {

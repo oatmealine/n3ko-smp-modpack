@@ -1,4 +1,4 @@
-package zone.oat.n3komod.client.render.block_entity;
+package zone.oat.n3komod.client.render.blockentity;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -13,15 +13,10 @@ import net.minecraft.client.render.block.entity.BlockEntityRenderer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3f;
-import net.minecraft.util.registry.Registry;
-import zone.oat.n3komod.Ease;
-import zone.oat.n3komod.N3KOMod;
-import zone.oat.n3komod.PlushBlock;
-import zone.oat.n3komod.PlushBlockEntity;
-import zone.oat.n3komod.client.N3KOModClient;
+import zone.oat.n3komod.util.Ease;
+import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
 
 import java.util.Random;
 

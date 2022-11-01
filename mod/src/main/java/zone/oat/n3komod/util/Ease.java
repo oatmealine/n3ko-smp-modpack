@@ -1,4 +1,4 @@
-package zone.oat.n3komod;
+package zone.oat.n3komod.util;
 
 import org.apache.commons.lang3.NotImplementedException;
 

@@ -1,16 +1,16 @@
-package zone.oat.n3komod;
+package zone.oat.n3komod.registry;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.entity.EntityType;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
+import zone.oat.n3komod.util.BlockWithTooltip;
+import zone.oat.n3komod.content.blocks.PlushBlock;
+import zone.oat.n3komod.util.ModIdentifier;
 
 import java.util.List;
 
@@ -25,12 +25,16 @@ public class N3KOBlocks {
 
   public static Block SHE_BLOCK = new BlockWithTooltip(FabricBlockSettings.of(Material.METAL).strength(0.5f), List.of("block.n3ko.she_block.tooltip"));
 
+  public static Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
+
   public static void init() {
-    Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "n3ko_block"), N3KO_BLOCK);
+    Registry.register(Registry.BLOCK, new ModIdentifier("n3ko_block"), N3KO_BLOCK);
 
-    Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "she_plush"), SHE_PLUSH);
-    Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "plush_base"), PLUSH_BASE);
+    Registry.register(Registry.BLOCK, new ModIdentifier("she_plush"), SHE_PLUSH);
+    Registry.register(Registry.BLOCK, new ModIdentifier("plush_base"), PLUSH_BASE);
 
-    Registry.register(Registry.BLOCK, new Identifier(N3KOMod.NAMESPACE, "she_block"), SHE_BLOCK);
+    Registry.register(Registry.BLOCK, new ModIdentifier("she_block"), SHE_BLOCK);
+
+    Registry.register(Registry.BLOCK, new ModIdentifier("thread_ground"), THREAD_GROUND);
   }
 }

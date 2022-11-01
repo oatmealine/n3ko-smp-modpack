@@ -3,10 +3,11 @@
   "minVersion": "0.8",
   "package": "zone.oat.n3komod.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
+  "mixins": [],
   "client": [
+    "BackgroundRendererMixin"
   ],
+  "server": [],
   "injectors": {
     "defaultRequire": 1
   }

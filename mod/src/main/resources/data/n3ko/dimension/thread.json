@@ -1,0 +1,18 @@
+{
+  "type": "n3ko:thread",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "n3ko:thread_ground",
+          "height": 16
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

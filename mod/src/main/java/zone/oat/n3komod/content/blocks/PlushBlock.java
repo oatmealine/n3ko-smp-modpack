@@ -1,4 +1,4 @@
-package zone.oat.n3komod;
+package zone.oat.n3komod.content.blocks;
 
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
@@ -19,20 +19,21 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Box;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import zone.oat.n3komod.registry.N3KOBlockEntities;
+import zone.oat.n3komod.registry.N3KOBlocks;
+import zone.oat.n3komod.registry.N3KOSounds;
+import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
 import zone.oat.n3komod.client.N3KOPackets;
 
 public class PlushBlock extends BlockWithEntity {

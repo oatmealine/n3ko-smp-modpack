@@ -1,4 +1,4 @@
-package zone.oat.n3komod;
+package zone.oat.n3komod.util;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.item.TooltipContext;

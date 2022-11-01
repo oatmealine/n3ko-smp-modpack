@@ -1,18 +1,10 @@
-package zone.oat.n3komod;
+package zone.oat.n3komod.content.blockentity;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BellBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import zone.oat.n3komod.registry.N3KOBlockEntities;
 
 public class PlushBlockEntity extends BlockEntity {
   public static final int SQUISH_DURATION = 8;

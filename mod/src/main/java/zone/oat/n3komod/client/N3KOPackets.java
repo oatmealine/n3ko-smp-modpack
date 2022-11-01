@@ -5,12 +5,11 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import zone.oat.n3komod.N3KOBlockEntities;
-import zone.oat.n3komod.N3KOMod;
-import zone.oat.n3komod.PlushBlockEntity;
+import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
+import zone.oat.n3komod.util.ModIdentifier;
 
 public class N3KOPackets {
-  public static Identifier SQUISH_PLUSH = new Identifier(N3KOMod.NAMESPACE, "squish_plush");
+  public static Identifier SQUISH_PLUSH = new ModIdentifier("squish_plush");
 
   public static void init() {
     ClientPlayNetworking.registerGlobalReceiver(SQUISH_PLUSH, (client, handler, buf, responseSender) -> {
