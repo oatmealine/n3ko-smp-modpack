@@ -27,8 +27,6 @@ public class N3KOModClient implements ClientModInitializer {
 
     DimensionRenderingRegistry.registerSkyRenderer(N3KODimensions.THREAD_REGISTRY_KEY, threadSkyRenderer);
 
-    MinecraftClient.getInstance().execute(() -> {
-      threadSkyRenderer.makeSkyShader();
-    });
+    ClientSpriteRegistryCallback.EVENT.register((atlasTexture, registry) -> MinecraftClient.getInstance().execute(threadSkyRenderer::makeSkyShader));
   }
 }

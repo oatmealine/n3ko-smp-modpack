@@ -4,7 +4,8 @@
 
 varying vec2 texCoord;
 uniform float GameTime;
-
+uniform vec2 InSize;
+uniform vec2 OutSize;
 
 
 
@@ -64,23 +65,24 @@ vec3 palette(in float t) {
     return a + b * cos(6.28318 * (c * t + d));
 }
 
-void main()
-{
-    vec2 fragCoord = texCoord.xy;
-    vec2 p = fragCoord.xy;
-	
-	float w = (p.x - 0.5);
-    float h = (p.y - 0.5);
-	float distanceFromCenter = sqrt(w * w + h * h);
+void main() {
+    float size = min(OutSize.x, OutSize.y);
+    vec2 mult = OutSize / size;
+    vec2 offset = (1.0 - mult) / 2.0;
+    vec2 p = texCoord.xy * mult + offset;
+
+    vec2 c = p - 0.5;
+	float distanceFromCenter = length(c);
 	
     // * 0.5 = frequency
 	float sinArg = distanceFromCenter * 30.0 - GameTime * 6.0;
 	float slope = cos(sinArg);
 	
     // * 0.5 = tsuyoi
-	p += normalize(vec2(w, h)) * slope * 0.001;
+	p += normalize(c) * slope * 0.001;
 	
     float value = pow(pattern(p), 2.2); // more "islands"
     vec3 color = palette(value);
     gl_FragColor = vec4(1.0 - color.x, 1.0 - color.y, 1.0 - color.z, 1.0);
+    //gl_FragColor = vec4(fract(texCoord.x), fract(texCoord.y), 0.0, 1.0);
 }
