@@ -15,6 +15,10 @@ import zone.oat.n3komod.util.ModIdentifier;
 import java.util.List;
 
 public class N3KOBlocks {
+  private static Block register(String id, Block block) {
+    return Registry.register(Registry.BLOCK, new ModIdentifier(id), block);
+  }
+
   public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) { return false; }
   public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos) { return false; }
 
@@ -28,13 +32,13 @@ public class N3KOBlocks {
   public static Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
 
   public static void init() {
-    Registry.register(Registry.BLOCK, new ModIdentifier("n3ko_block"), N3KO_BLOCK);
+    register("n3ko_block", N3KO_BLOCK);
 
-    Registry.register(Registry.BLOCK, new ModIdentifier("she_plush"), SHE_PLUSH);
-    Registry.register(Registry.BLOCK, new ModIdentifier("plush_base"), PLUSH_BASE);
+    register("she_plush", SHE_PLUSH);
+    register("plush_base", PLUSH_BASE);
 
-    Registry.register(Registry.BLOCK, new ModIdentifier("she_block"), SHE_BLOCK);
+    register("she_block", SHE_BLOCK);
 
-    Registry.register(Registry.BLOCK, new ModIdentifier("thread_ground"), THREAD_GROUND);
+    register("thread_ground", THREAD_GROUND);
   }
 }
