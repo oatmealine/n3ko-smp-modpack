@@ -6,6 +6,7 @@
     "north": "n3ko:block/n3ko_block_p",
     "east": "n3ko:block/n3ko_block_n",
     "south": "n3ko:block/n3ko_block_p",
-    "west": "n3ko:block/n3ko_block_n"
+    "west": "n3ko:block/n3ko_block_n",
+    "particle": "n3ko:block/n3ko_block_sm"
   }
 }
