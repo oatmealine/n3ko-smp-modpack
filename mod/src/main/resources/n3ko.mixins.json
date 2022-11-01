@@ -6,7 +6,10 @@
   "mixins": [],
   "client": [
     "BackgroundRendererMixin",
-    "PostProcessShaderMixin"
+    "DisableCaveNoiseMixin",
+    "PostProcessShaderMixin",
+    "ShaderResizeMixin",
+    "SkyboxRenderMixin"
   ],
   "server": [],
   "injectors": {

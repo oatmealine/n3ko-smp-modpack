@@ -16,7 +16,7 @@ import zone.oat.n3komod.registry.N3KODimensions;
 public class BackgroundRendererMixin {
   @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/CubicSampler;sampleColor(Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/util/CubicSampler$RgbFetcher;)Lnet/minecraft/util/math/Vec3d;"))
   private static Vec3d injected(Vec3d pos, CubicSampler.RgbFetcher rgbFetcher) {
-    boolean cancel = !MinecraftClient.getInstance().world.method_40134().matchesId(N3KODimensions.THREAD);
+    boolean cancel = !N3KODimensions.isInThread();
     if (!cancel) {
       return new Vec3d(1, 1, 1);
     } else {
