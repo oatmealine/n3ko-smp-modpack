@@ -2,20 +2,23 @@ package zone.oat.n3komod.client.render;
 
 
 import com.google.gson.JsonSyntaxException;
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderContext;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gl.Framebuffer;
 import net.minecraft.client.gl.ShaderEffect;
+import net.minecraft.client.gl.VertexBuffer;
 import net.minecraft.client.render.*;
 import net.minecraft.client.util.Window;
-import net.minecraft.resource.ResourceManager;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Matrix4f;
+import net.minecraft.util.math.Vec3f;
 import org.jetbrains.annotations.Nullable;
 import zone.oat.n3komod.N3KOMod;
-import zone.oat.n3komod.util.ModIdentifier;
 
 import java.io.IOException;
+import java.util.function.Supplier;
 
 public class ThreadSkyRenderHandler implements DimensionRenderingRegistry.SkyRenderer {
 
@@ -25,48 +28,84 @@ public class ThreadSkyRenderHandler implements DimensionRenderingRegistry.SkyRen
   private int oldWidth;
   private int oldHeight;
 
+  private VertexBuffer vertexBuffer;
+
   private final MinecraftClient mc = MinecraftClient.getInstance();
 
-  public static void drawSphereFaces(Tessellator tessellator, BufferBuilder builder,
-                                     float cx, float cy, float cz,
-                                     float r, int subd,
-                                     float red, float grn, float blu, float alpha)
-  {
+  public static void buildSphere(BufferBuilder builder, int stack, int slice, float radius, Vec3f center, float r, float g, float b, float alpha) {
+    float r0, r1, alpha0, alpha1, x0, x1, y0, y1, z0, z1, beta;
+    float stackStep = (float) (Math.PI / stack);
+    float sliceStep = (float) (Math.PI / slice);
+    for (int i = 0; i < stack; ++i) {
+      alpha0 = (float) (-Math.PI / 2 + i * stackStep);
+      alpha1 = alpha0 + stackStep;
+      r0 = (float) (radius * Math.cos(alpha0));
+      r1 = (float) (radius * Math.cos(alpha1));
 
-    float step = (float)Math.PI / (subd/2);
-    int num_steps180 = (int)(Math.PI / step)+1;
-    int num_steps360 = (int)(2*Math.PI / step);
-    for (int i = 0; i <= num_steps360; i++)
-    {
-      float theta = i * step;
-      float thetaprime = theta+step;
-      builder.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_COLOR);  // quad strip to quads
-      float xb = 0;
-      float zb = 0;
-      float xbp = 0;
-      float zbp = 0;
-      float yp = r;
-      for (int j = 0; j <= num_steps180; j++)
-      {
-        float phi = j * step;
-        float x = r * (float)Math.sin(phi) * (float)Math.cos(theta);
-        float z = r * (float)Math.sin(phi) * (float)Math.sin(theta);
-        float y = r * (float)Math.cos(phi);
-        float xp = r * (float)Math.sin(phi) * (float)Math.cos(thetaprime);
-        float zp = r * (float)Math.sin(phi) * (float)Math.sin(thetaprime);
-        builder.vertex(xb + cx, yp + cy, zb + cz).color(red, grn, blu, alpha).next();
-        builder.vertex(xbp + cx, yp + cy, zbp + cz).color(red, grn, blu, alpha).next();
-        builder.vertex(xp + cx, y + cy, zp + cz).color(red, grn, blu, alpha).next();
-        builder.vertex(x + cx, y + cy, z + cz).color(red, grn, blu, alpha).next();
-        xb = x;
-        zb = z;
-        xbp = xp;
-        zbp = zp;
-        yp = y;
+      y0 = (float) (radius * Math.sin(alpha0));
+      y1 = (float) (radius * Math.sin(alpha1));
+
+      for (int j = 0; j < (slice << 1); ++j) {
+        beta = j * sliceStep;
+        x0 = (float) (r0 * Math.cos(beta));
+        x1 = (float) (r1 * Math.cos(beta));
+
+        z0 = (float) (-r0 * Math.sin(beta));
+        z1 = (float) (-r1 * Math.sin(beta));
+
+        builder.vertex(x0 + center.getX(), y0 + center.getY(), z0 + center.getZ())
+                .color(r, g, b, alpha)
+                .next();
+        builder.vertex(x1 + center.getX(), y1 + center.getY(), z1 + center.getZ())
+                .color(r, g, b, alpha)
+                .next();
       }
-      tessellator.draw();
     }
   }
+
+  public void renderSphere(MatrixStack matrices, Matrix4f projection, int stack, int slice, float radius, Vec3f center, float r, float g, float b, float alpha) {
+    Tessellator tessellator = Tessellator.getInstance();
+    BufferBuilder builder = tessellator.getBuffer();
+    builder.begin(VertexFormat.DrawMode.TRIANGLE_STRIP, VertexFormats.POSITION_COLOR);
+
+    buildSphere(builder, stack, slice, radius, center, r, g, b, alpha);
+
+    if (vertexBuffer == null) {
+      vertexBuffer = new VertexBuffer();
+    }
+    vertexBuffer.bind();
+    builder.end();
+    vertexBuffer.upload(builder);
+
+    RenderSystem.enableDepthTest();
+
+
+    matrices.push();
+    RenderSystem.lineWidth(1f);
+
+    RenderSystem.setShader(GameRenderer::getPositionColorShader);
+
+    vertexBuffer.setShader(matrices.peek().getPositionMatrix(), projection, GameRenderer.getPositionColorShader());
+
+    matrices.pop();
+
+    VertexBuffer.unbind();
+  }
+
+  public class ThreadShaderSupplier implements Supplier<Shader> {
+    private Shader shader;
+
+    @Override
+    public Shader get() {
+      return shader;
+    }
+
+    public void set(Shader shader) {
+      this.shader = shader;
+    }
+  }
+
+  ThreadShaderSupplier supplier = new ThreadShaderSupplier();
 
   public void makeSkyShader() {
     if (this.fbmPerlinShader != null) {
@@ -103,14 +142,12 @@ public class ThreadSkyRenderHandler implements DimensionRenderingRegistry.SkyRen
 
   @Override
   public void render(WorldRenderContext context) {
-    render();
+    render(context.matrixStack(), context.projectionMatrix());
   }
-  public void render() {
-    Tessellator tessellator = Tessellator.getInstance();
-    BufferBuilder builder = tessellator.getBuffer();
-
-    drawSphereFaces(tessellator, builder, 0, 0, 0, 5, 5, 1, 1, 1, 0.6f);
-
+  public void render(MatrixStack matrices, Matrix4f projection) {
+    //RenderSystem.setShader();
+    RenderSystem.setShader(GameRenderer::getPositionColorShader);
+    renderSphere(matrices, projection, 10, 10, 200f, new Vec3f(0.0f, 0.0f, 0.0f), 0.0f, 0.0f, 0.0f, 1.0f);
     //this.fbmPerlinShader.render(context.tickDelta());
     //this.mc.getFramebuffer().beginWrite(false);
   }

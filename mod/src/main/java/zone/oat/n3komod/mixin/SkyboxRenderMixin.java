@@ -15,14 +15,14 @@ import zone.oat.n3komod.registry.N3KODimensions;
 @Mixin(WorldRenderer.class)
 public class SkyboxRenderMixin {
   @Inject(method = "renderSky(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/util/math/Matrix4f;FLnet/minecraft/client/render/Camera;ZLjava/lang/Runnable;)V", at = @At("HEAD"), cancellable = true)
-  private void renderDimensionSkybox(MatrixStack matrices, Matrix4f matrix4f, float tickDelta, Camera camera, boolean bl, Runnable runnable, CallbackInfo ci) {
+  private void renderDimensionSkybox(MatrixStack matrices, Matrix4f projection, float tickDelta, Camera camera, boolean bl, Runnable runnable, CallbackInfo ci) {
     boolean cancel = !N3KODimensions.isInThread();
 
     runnable.run();
     if (cancel) {
       ci.cancel();
     } else {
-      N3KOModClient.threadSkyRenderer.render();
+      N3KOModClient.threadSkyRenderer.render(matrices, projection);
     }
   }
 }
