@@ -18,7 +18,7 @@ public class BackgroundRendererMixin {
   private static Vec3d injected(Vec3d pos, CubicSampler.RgbFetcher rgbFetcher) {
     boolean cancel = !N3KODimensions.isInThread();
     if (!cancel) {
-      return new Vec3d(1, 1, 1);
+      return new Vec3d(0.5, 0.6, 0.8);
     } else {
       return CubicSampler.sampleColor(pos, rgbFetcher);
     }

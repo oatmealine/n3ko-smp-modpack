@@ -7,9 +7,7 @@
   "client": [
     "BackgroundRendererMixin",
     "DisableCaveNoiseMixin",
-    "PostProcessShaderMixin",
-    "ShaderResizeMixin",
-    "SkyboxRenderMixin"
+    "GameRendererMixin"
   ],
   "server": [],
   "injectors": {
