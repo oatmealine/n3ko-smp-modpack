@@ -22,15 +22,4 @@ public class DisableCaveNoiseMixin {
     boolean cancel = !N3KODimensions.isInThread();
     if (cancel) ci.cancel();
   }
-
-  /*
-  @Inject(method = "getMoodPercentage", at = @At(value = "HEAD"), cancellable = true)
-  private void injected(CallbackInfoReturnable<Float> cir) {
-    if (N3KODimensions.isInThread()) {
-      cir.setReturnValue(0.0f);
-    } else {
-      cir.cancel();
-    }
-  }
-  */
 }

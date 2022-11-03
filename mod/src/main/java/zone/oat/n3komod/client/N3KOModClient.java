@@ -5,8 +5,10 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
+import net.fabricmc.loader.impl.lib.sat4j.core.Vec;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.dimension.DimensionType;
 import zone.oat.n3komod.client.render.ThreadSkyRenderHandler;
 import zone.oat.n3komod.registry.N3KOBlockEntities;
@@ -16,6 +18,7 @@ import zone.oat.n3komod.registry.N3KODimensions;
 
 public class N3KOModClient implements ClientModInitializer {
   public static final ThreadSkyRenderHandler threadSkyRenderer = new ThreadSkyRenderHandler();
+  public static final Vec3d threadFogColor = new Vec3d(0.929f, 0.8509f, 0.929f);
 
   @Override
   public void onInitializeClient() {

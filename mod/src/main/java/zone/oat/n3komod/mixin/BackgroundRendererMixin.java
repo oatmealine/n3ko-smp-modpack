@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import zone.oat.n3komod.N3KOMod;
+import zone.oat.n3komod.client.N3KOModClient;
 import zone.oat.n3komod.registry.N3KODimensions;
 
 @Mixin(BackgroundRenderer.class)
@@ -18,7 +19,7 @@ public class BackgroundRendererMixin {
   private static Vec3d injected(Vec3d pos, CubicSampler.RgbFetcher rgbFetcher) {
     boolean cancel = !N3KODimensions.isInThread();
     if (!cancel) {
-      return new Vec3d(0.5, 0.6, 0.8);
+      return N3KOModClient.threadFogColor;
     } else {
       return CubicSampler.sampleColor(pos, rgbFetcher);
     }
