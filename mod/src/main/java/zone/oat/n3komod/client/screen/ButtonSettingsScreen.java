@@ -67,9 +67,11 @@ public class ButtonSettingsScreen extends Screen {
     private void updateURLField() {
         if (isURLValid()) {
             this.confirmButton.active = true;
+            this.previewButton.active = true;
             this.urlField.setEditableColor(0xFFFFFF);
         } else {
             this.confirmButton.active = false;
+            this.previewButton.active = false;
             this.urlField.setEditableColor(0xFF0000);
         }
     }
