@@ -1,4 +1,4 @@
-package zone.oat.n3komod.content.blocks;
+package zone.oat.n3komod.content.block;
 
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
@@ -34,7 +34,7 @@ import zone.oat.n3komod.registry.N3KOBlockEntities;
 import zone.oat.n3komod.registry.N3KOBlocks;
 import zone.oat.n3komod.registry.N3KOSounds;
 import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
-import zone.oat.n3komod.client.N3KOPackets;
+import zone.oat.n3komod.networking.N3KOS2CPackets;
 
 public class PlushBlock extends BlockWithEntity {
   //public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
@@ -115,7 +115,7 @@ public class PlushBlock extends BlockWithEntity {
       PacketByteBuf buf = PacketByteBufs.create();
       buf.writeBlockPos(pos);
       for (ServerPlayerEntity serverPlayer : PlayerLookup.tracking((ServerWorld) world, pos)) {
-        ServerPlayNetworking.send(serverPlayer, N3KOPackets.SQUISH_PLUSH, buf);
+        ServerPlayNetworking.send(serverPlayer, N3KOS2CPackets.SQUISH_PLUSH, buf);
       }
 
       world.playSound(

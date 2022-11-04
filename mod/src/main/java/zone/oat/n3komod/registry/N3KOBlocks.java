@@ -8,9 +8,9 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
-import zone.oat.n3komod.content.blocks.ButtonBlock;
+import zone.oat.n3komod.content.block.ButtonBlock;
 import zone.oat.n3komod.util.BlockWithTooltip;
-import zone.oat.n3komod.content.blocks.PlushBlock;
+import zone.oat.n3komod.content.block.PlushBlock;
 import zone.oat.n3komod.util.ModIdentifier;
 
 import java.util.List;

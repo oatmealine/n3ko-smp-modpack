@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.dimension.DimensionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import zone.oat.n3komod.networking.N3KOC2SPackets;
 import zone.oat.n3komod.registry.*;
 import zone.oat.n3komod.util.ModIdentifier;
 
@@ -27,5 +28,6 @@ public class N3KOMod implements ModInitializer {
 		N3KOBlockEntities.init();
 		N3KOSounds.init();
 		N3KOCommands.init();
+		N3KOC2SPackets.init();
 	}
 }

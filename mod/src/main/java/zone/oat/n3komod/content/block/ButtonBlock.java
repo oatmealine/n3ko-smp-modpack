@@ -1,12 +1,19 @@
-package zone.oat.n3komod.content.blocks;
+package zone.oat.n3komod.content.block;
 
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.enums.WallMountLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -25,16 +32,21 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
+import zone.oat.n3komod.client.screen.ButtonSettingsScreen;
+import zone.oat.n3komod.client.sound.AudioBuffer;
+import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
+import zone.oat.n3komod.networking.N3KOS2CPackets;
 
 import java.util.Random;
 
 // largely copypasted from AbstractButtonBlock
-public class ButtonBlock extends Block {
+// this is a fucking mess
+public class ButtonBlock extends BlockWithEntity {
     public static final BooleanProperty POWERED = Properties.POWERED;
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final EnumProperty<WallMountLocation> FACE = Properties.WALL_MOUNT_LOCATION;
 
-    public static final int PRESS_TICKS = 60;
+    public static final int PRESS_TICKS = 40;
 
     public ButtonBlock(Settings settings) {
         super(settings);
@@ -45,14 +57,49 @@ public class ButtonBlock extends Block {
     }
 
     @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
+
+    private void sendPackets(BlockPos pos, World world) {
+        if (world.isClient()) return;
+
+        PacketByteBuf buf = PacketByteBufs.create();
+        buf.writeBlockPos(pos);
+        for (ServerPlayerEntity serverPlayer : PlayerLookup.tracking((ServerWorld) world, pos)) {
+            ServerPlayNetworking.send(serverPlayer, N3KOS2CPackets.PRESS_BUTTON, buf);
+        }
+    }
+
+    @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if (player.isSneaking()) {
+            if (world.isClient) {
+                ButtonSettingsScreen.open(pos);
+            }
+            return ActionResult.success(world.isClient);
+        }
+
         if (state.get(POWERED)) {
             return ActionResult.CONSUME;
         } else {
             this.powerOn(state, world, pos);
-            this.playClickSound(player, world, pos, true);
+            //this.playClickSound(player, world, pos, true);
+            this.sendPackets(pos, world);
             world.emitGameEvent(player, GameEvent.BLOCK_PRESS, pos);
             return ActionResult.success(world.isClient);
+        }
+    }
+
+    public static void playSound(World world, BlockPos pos) {
+        if (!world.isClient()) return;
+        BlockEntity be = world.getBlockEntity(pos);
+        if (be instanceof ButtonBlockEntity) {
+            ButtonBlockEntity button = (ButtonBlockEntity) be;
+            if (button.getURL() != null && !button.getURL().trim().equals("")) {
+                AudioBuffer buf = new AudioBuffer(button.getURL());
+                buf.play();
+            }
         }
     }
 
@@ -93,17 +140,14 @@ public class ButtonBlock extends Block {
         world.updateNeighborsAlways(pos.offset(getDirection(state).getOpposite()), this);
     }
 
-    protected void playClickSound(@Nullable PlayerEntity player, WorldAccess world, BlockPos pos, boolean powered) {
-        //world.playSound(powered ? player : null, pos, this.getClickSound(powered), SoundCategory.BLOCKS, 0.3F, powered ? 0.6F : 0.5F);
+    private SoundEvent getClickSound(boolean powered) {
+        return powered ? SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON : SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF;
     }
 
-    /*
-    @Nullable
-    @Override
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+    protected void playClickSound(@Nullable PlayerEntity player, WorldAccess world, BlockPos pos, boolean powered) {
+        if (powered) return;
+        world.playSound(powered ? player : null, pos, this.getClickSound(powered), SoundCategory.BLOCKS, 0.3F, powered ? 0.6F : 0.5F);
     }
-    */
 
     @Override
     public BlockState rotate(BlockState state, BlockRotation rotation) {
@@ -180,5 +224,10 @@ public class ButtonBlock extends Block {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING, POWERED, FACE);
+    }
+
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new ButtonBlockEntity(pos, state);
     }
 }

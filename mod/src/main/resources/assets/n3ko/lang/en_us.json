@@ -7,5 +7,14 @@
   "block.n3ko.she_block.tooltip": "§7she...",
   "block.n3ko.thread_ground": "Thread Ground",
 
-  "subtitles.n3ko.squeak": "Plushie gets squished"
+  "subtitles.n3ko.squeak": "Plushie gets squished",
+
+  "gui.n3ko.text.button_settings": "Audio File",
+  "gui.n3ko.text.format": "Must be §lOGG Vorbis format§r!!!! If in doubt, yell at oat",
+  "gui.n3ko.text.preview": "Preview",
+  "gui.n3ko.text.preview_stop": "Stop",
+  "gui.n3ko.text.preview_error": "Error!",
+  "gui.n3ko.text.notes.0": "If you get an error, check your log! It'll contain (hopefully)",
+  "gui.n3ko.text.notes.1": "helpful information about the error.",
+  "gui.n3ko.text.button_name": "Label"
 }

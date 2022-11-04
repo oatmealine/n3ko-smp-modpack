@@ -19,7 +19,6 @@ public class DisableCaveNoiseMixin {
   // dumb. hacky. stupid. i don't care
   @Inject(method = "tick", at = @At(value = "HEAD"), cancellable = true)
   private void injected(CallbackInfo ci) {
-    boolean cancel = !N3KODimensions.isInThread();
-    if (cancel) ci.cancel();
+    if (N3KODimensions.isInThread()) ci.cancel();
   }
 }
