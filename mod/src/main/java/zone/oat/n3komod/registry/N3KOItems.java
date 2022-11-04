@@ -23,6 +23,7 @@ public class N3KOItems {
   public static BlockItem PLUSH_BASE = createBlockItem(N3KOBlocks.PLUSH_BASE, N3KOMod.ITEM_GROUP);
   public static BlockItem SHE_BLOCK = createBlockItem(N3KOBlocks.SHE_BLOCK, N3KOMod.ITEM_GROUP);
   public static BlockItem THREAD_GROUND = createBlockItem(N3KOBlocks.THREAD_GROUND, N3KOMod.ITEM_GROUP);
+  public static BlockItem BUTTON_RED = createBlockItem(N3KOBlocks.BUTTON_RED, N3KOMod.ITEM_GROUP);
 
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);
@@ -30,5 +31,6 @@ public class N3KOItems {
     register("plush_base", PLUSH_BASE);
     register("she_block", SHE_BLOCK);
     register("thread_ground", THREAD_GROUND);
+    register("button_red", BUTTON_RED);
   }
 }

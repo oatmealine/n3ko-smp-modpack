@@ -1,0 +1,6 @@
+{
+  "parent": "n3ko:block/button",
+  "textures": {
+    "texture": "n3ko:block/button_magenta"
+  }
+}

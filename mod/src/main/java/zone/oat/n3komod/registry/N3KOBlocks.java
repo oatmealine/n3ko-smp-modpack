@@ -8,6 +8,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
+import zone.oat.n3komod.content.blocks.ButtonBlock;
 import zone.oat.n3komod.util.BlockWithTooltip;
 import zone.oat.n3komod.content.blocks.PlushBlock;
 import zone.oat.n3komod.util.ModIdentifier;
@@ -31,6 +32,8 @@ public class N3KOBlocks {
 
   public static Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
 
+  public static Block BUTTON_RED = new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(2f).noCollision());
+
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);
 
@@ -40,5 +43,7 @@ public class N3KOBlocks {
     register("she_block", SHE_BLOCK);
 
     register("thread_ground", THREAD_GROUND);
+
+    register("button_red", BUTTON_RED);
   }
 }

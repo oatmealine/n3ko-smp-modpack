@@ -25,6 +25,7 @@ public class N3KOModClient implements ClientModInitializer {
     BlockEntityRendererRegistry.register(N3KOBlockEntities.PLUSH_BLOCK_ENTITY, PlushBlockEntityRenderer::new);
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.SHE_PLUSH, RenderLayer.getTranslucent());
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.PLUSH_BASE, RenderLayer.getTranslucent());
+    BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.BUTTON_RED, RenderLayer.getCutout());
 
     N3KOPackets.init();
 
