@@ -27,6 +27,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -46,6 +47,23 @@ public class ButtonBlock extends BlockWithEntity {
     public static final BooleanProperty POWERED = Properties.POWERED;
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final EnumProperty<WallMountLocation> FACE = Properties.WALL_MOUNT_LOCATION;
+
+    protected static final VoxelShape CEILING_X_SHAPE = Block.createCuboidShape(4.0, 10.0, 4.0, 12.0, 16.0, 12.0);
+    protected static final VoxelShape CEILING_Z_SHAPE = Block.createCuboidShape(4.0, 10.0, 4.0, 12.0, 16.0, 12.0);
+    protected static final VoxelShape FLOOR_X_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 6.0, 12.0);
+    protected static final VoxelShape FLOOR_Z_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 6.0, 12.0);
+    protected static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(4.0, 4.0, 10.0, 12.0, 12.0, 16.0);
+    protected static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(4.0, 4.0, 0.0, 12.0, 12.0, 6.0);
+    protected static final VoxelShape WEST_SHAPE = Block.createCuboidShape(10.0, 4.0, 4.0, 16.0, 12.0, 12.0);
+    protected static final VoxelShape EAST_SHAPE = Block.createCuboidShape(0.0, 4.0, 4.0, 6.0, 12.0, 12.0);
+    protected static final VoxelShape CEILING_X_PRESSED_SHAPE = Block.createCuboidShape(4.0, 11.0, 4.0, 12.0, 16.0, 12.0);
+    protected static final VoxelShape CEILING_Z_PRESSED_SHAPE = Block.createCuboidShape(4.0, 11.0, 4.0, 12.0, 16.0, 12.0);
+    protected static final VoxelShape FLOOR_X_PRESSED_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 5.0, 12.0);
+    protected static final VoxelShape FLOOR_Z_PRESSED_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 5.0, 12.0);
+    protected static final VoxelShape NORTH_PRESSED_SHAPE = Block.createCuboidShape(4.0, 4.0, 11.0, 12.0, 12.0, 16.0);
+    protected static final VoxelShape SOUTH_PRESSED_SHAPE = Block.createCuboidShape(4.0, 4.0, 0.0, 12.0, 12.0, 5.0);
+    protected static final VoxelShape WEST_PRESSED_SHAPE = Block.createCuboidShape(11.0, 4.0, 4.0, 16.0, 12.0, 12.0);
+    protected static final VoxelShape EAST_PRESSED_SHAPE = Block.createCuboidShape(0.0, 4.0, 4.0, 5.0, 12.0, 12.0);
 
     private static final ButtonBlockCache AUDIO_CACHE = new ButtonBlockCache();
 
@@ -221,6 +239,39 @@ public class ButtonBlock extends BlockWithEntity {
                 return Direction.UP;
             default:
                 return state.get(FACING);
+        }
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        Direction direction = state.get(FACING);
+        boolean bl = state.get(POWERED);
+        switch((WallMountLocation)state.get(FACE)) {
+            case FLOOR:
+                if (direction.getAxis() == Direction.Axis.X) {
+                    return bl ? FLOOR_X_PRESSED_SHAPE : FLOOR_X_SHAPE;
+                }
+
+                return bl ? FLOOR_Z_PRESSED_SHAPE : FLOOR_Z_SHAPE;
+            case WALL:
+                switch(direction) {
+                    case EAST:
+                        return bl ? EAST_PRESSED_SHAPE : EAST_SHAPE;
+                    case WEST:
+                        return bl ? WEST_PRESSED_SHAPE : WEST_SHAPE;
+                    case SOUTH:
+                        return bl ? SOUTH_PRESSED_SHAPE : SOUTH_SHAPE;
+                    case NORTH:
+                    default:
+                        return bl ? NORTH_PRESSED_SHAPE : NORTH_SHAPE;
+                }
+            case CEILING:
+            default:
+                if (direction.getAxis() == Direction.Axis.X) {
+                    return bl ? CEILING_X_PRESSED_SHAPE : CEILING_X_SHAPE;
+                } else {
+                    return bl ? CEILING_Z_PRESSED_SHAPE : CEILING_Z_SHAPE;
+                }
         }
     }
 

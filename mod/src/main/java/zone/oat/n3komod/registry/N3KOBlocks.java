@@ -32,7 +32,7 @@ public class N3KOBlocks {
 
   public static Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
 
-  public static Block BUTTON_RED = new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(2f).noCollision());
+  public static Block BUTTON_RED = new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(2f));
 
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);

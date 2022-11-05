@@ -1,4 +1,4 @@
-#version 120
+#version 150
 #define PI 3.14159265358979323846
 
 varying vec2 texCoord0;
