@@ -19,11 +19,9 @@ public class N3KOC2SPackets {
             BlockPos target = buf.readBlockPos();
             String url = buf.readString();
             String label = buf.readString();
-            N3KOMod.LOGGER.info("got packet: {}", url);
             server.execute(() -> {
-                BlockEntity entity = MinecraftClient.getInstance().world.getBlockEntity(target);
+                BlockEntity entity = player.world.getBlockEntity(target);
                 if (entity instanceof ButtonBlockEntity button) {
-                    N3KOMod.LOGGER.info("setting url to {}", url);
                     button.setURL(url);
                     button.setLabel(label);
                     BlockState state = player.world.getBlockState(target);
