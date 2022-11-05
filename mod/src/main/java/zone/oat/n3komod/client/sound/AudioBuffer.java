@@ -1,6 +1,7 @@
 package zone.oat.n3komod.client.sound;
 
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.client.sound.Source;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.openal.AL10;
 import org.lwjgl.stb.STBVorbis;
 import org.lwjgl.system.MemoryStack;
@@ -88,18 +89,25 @@ public class AudioBuffer {
         return buffer;
     }
 
-    public AudioSource play() {
-        AudioSource source = new AudioSource();
-        source.setBuffer(this);
+    public Source play() {
+        // THIS IS DERANGED
+        // please don't do what i'm doing, if at all possible
+        // thanks
+        Source source = Source.create();
+        assert source != null;
+        AL10.alSourcei(source.pointer, 4105, this.buffer);
         source.play();
 
         return source;
     }
 
-    public AudioSource play(BlockPos pos) {
-        AudioSource source = new AudioSource();
-        source.setPosition(pos.getX(), pos.getY(), pos.getZ());
-        source.setAttenuation(true);
+    public Source play(Vec3d pos) {
+        Source source = Source.create();
+        assert source != null;
+        AL10.alSourcei(source.pointer, 4105, this.buffer);
+        source.setPosition(pos);
+        source.setAttenuation(32f);
+        source.setRelative(false);
         source.play();
 
         return source;

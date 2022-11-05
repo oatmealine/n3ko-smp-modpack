@@ -26,6 +26,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -100,7 +101,7 @@ public class ButtonBlock extends BlockWithEntity {
             ButtonBlockEntity button = (ButtonBlockEntity) be;
             if (button.getURL() != null && !button.getURL().trim().equals("")) {
                 AudioBuffer buf = AUDIO_CACHE.getBuffer(button.getURL());
-                buf.play();
+                buf.play(new Vec3d((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5));
             }
         }
     }

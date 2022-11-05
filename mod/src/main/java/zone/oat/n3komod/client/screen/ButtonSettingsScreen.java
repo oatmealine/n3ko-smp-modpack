@@ -7,7 +7,9 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.widget.TextFieldWidget;
+import net.minecraft.client.sound.Source;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -15,7 +17,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import zone.oat.n3komod.client.sound.AudioBuffer;
-import zone.oat.n3komod.client.sound.AudioSource;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.networking.N3KOC2SPackets;
 
@@ -30,7 +31,7 @@ public class ButtonSettingsScreen extends Screen {
     private ButtonWidget confirmButton;
     private ButtonWidget previewButton;
     @Nullable
-    private AudioSource previewSource;
+    private Source previewSource;
     @Nullable
     private AudioBuffer previewBuffer;
     private String previewBufferURL;
@@ -110,7 +111,8 @@ public class ButtonSettingsScreen extends Screen {
                     previewBuffer = null;
                     previewButton.setMessage(PREVIEW_ERROR_TEXT);
                 } else {
-                    previewSource = previewBuffer.play();
+                    PlayerEntity player = MinecraftClient.getInstance().player;
+                    previewSource = previewBuffer.play(player.getPos());
                     previewButton.setMessage(PREVIEW_STOP_TEXT);
                 }
             }
@@ -160,8 +162,8 @@ public class ButtonSettingsScreen extends Screen {
     @Override
     public void tick() {
         if (previewSource != null) {
-            boolean active = previewSource.tick();
-            if (!active) {
+            previewSource.tick();
+            if (!previewSource.isPlaying()) {
                 previewSource = null;
                 previewButton.setMessage(PREVIEW_TEXT);
             }
