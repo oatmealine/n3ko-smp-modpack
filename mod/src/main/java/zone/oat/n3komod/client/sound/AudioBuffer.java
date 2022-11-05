@@ -6,6 +6,7 @@ import org.lwjgl.openal.AL10;
 import org.lwjgl.stb.STBVorbis;
 import org.lwjgl.system.MemoryStack;
 import zone.oat.n3komod.N3KOMod;
+import zone.oat.n3komod.mixin.SourceAccessorMixin;
 import zone.oat.n3komod.util.Util;
 
 import java.io.IOException;
@@ -89,24 +90,15 @@ public class AudioBuffer {
         return buffer;
     }
 
-    public Source play() {
+    public Source play(Vec3d pos) {
         // THIS IS DERANGED
         // please don't do what i'm doing, if at all possible
         // thanks
-        Source source = Source.create();
+        Source source = SourceAccessorMixin.invokeCreate();
         assert source != null;
-        AL10.alSourcei(source.pointer, 4105, this.buffer);
-        source.play();
-
-        return source;
-    }
-
-    public Source play(Vec3d pos) {
-        Source source = Source.create();
-        assert source != null;
-        AL10.alSourcei(source.pointer, 4105, this.buffer);
+        AL10.alSourcei(((SourceAccessorMixin) source).getPointer(), 4105, this.buffer);
         source.setPosition(pos);
-        source.setAttenuation(32f);
+        source.setAttenuation(16f);
         source.setRelative(false);
         source.play();
 

@@ -2,10 +2,3 @@ accessWidener v1 named
 
 # Lnet/minecraft/client/render/GameRenderer;loadShader(Lnet/minecraft/resource/ResourceFactory;Ljava/lang/String;Lnet/minecraft/client/render/VertexFormat;)Lnet/minecraft/client/render/Shader;
 accessible method net/minecraft/client/render/GameRenderer loadShader (Lnet/minecraft/resource/ResourceFactory;Ljava/lang/String;Lnet/minecraft/client/render/VertexFormat;)Lnet/minecraft/client/render/Shader;
-
-# don't Worry About It
-# Lnet/minecraft/client/sound/Source;create()Lnet/minecraft/client/sound/Source;
-accessible method net/minecraft/client/sound/Source create ()Lnet/minecraft/client/sound/Source;
-
-# Lnet/minecraft/client/sound/Source;pointer:I
-accessible field net/minecraft/client/sound/Source pointer I
