@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.enums.WallMountLocation;
+import net.minecraft.client.sound.Source;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.network.PacketByteBuf;
@@ -117,9 +118,11 @@ public class ButtonBlock extends BlockWithEntity {
         BlockEntity be = world.getBlockEntity(pos);
         if (be instanceof ButtonBlockEntity) {
             ButtonBlockEntity button = (ButtonBlockEntity) be;
-            if (button.getURL() != null && !button.getURL().trim().equals("")) {
-                AudioBuffer buf = AUDIO_CACHE.getBuffer(button.getURL());
-                buf.play(new Vec3d((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5));
+            if (button.url != null && !button.url.trim().equals("")) {
+                AudioBuffer buf = AUDIO_CACHE.getBuffer(button.url);
+                Source source = buf.play(new Vec3d((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5));
+                source.setPitch(button.pitch);
+                source.setVolume(button.volume);
             }
         }
     }

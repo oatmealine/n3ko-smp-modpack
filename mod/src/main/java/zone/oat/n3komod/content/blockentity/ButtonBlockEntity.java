@@ -11,8 +11,15 @@ import org.jetbrains.annotations.Nullable;
 import zone.oat.n3komod.registry.N3KOBlockEntities;
 
 public class ButtonBlockEntity extends BlockEntity {
-    private String url = "";
-    private String label = "";
+    public static final float MIN_PITCH = 0.2f;
+    public static final float MAX_PITCH = 5.0f;
+    public static final float MIN_VOLUME = 0.0f;
+    public static final float MAX_VOLUME = 2.0f;
+
+    public String url = "";
+    public String label = "";
+    public float pitch = 1.0f;
+    public float volume = 1.0f;
 
     public ButtonBlockEntity(BlockPos pos, BlockState state) {
         super(N3KOBlockEntities.BUTTON_BLOCK_ENTITY, pos, state);
@@ -22,6 +29,8 @@ public class ButtonBlockEntity extends BlockEntity {
     public void writeNbt(NbtCompound nbt) {
         nbt.putString("url", url);
         nbt.putString("label", label);
+        nbt.putFloat("pitch", pitch);
+        nbt.putFloat("volume", volume);
         super.writeNbt(nbt);
     }
 
@@ -30,22 +39,8 @@ public class ButtonBlockEntity extends BlockEntity {
         super.readNbt(nbt);
         url = nbt.getString("url");
         label = nbt.getString("label");
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
-        this.markDirty();
-    }
-    public String getLabel() {
-        return this.label;
-    }
-
-    public void setURL(String url) {
-        this.url = url;
-        this.markDirty();
-    }
-    public String getURL() {
-        return this.url;
+        pitch = nbt.getFloat("pitch");
+        volume = nbt.getFloat("volume");
     }
 
     @Nullable
