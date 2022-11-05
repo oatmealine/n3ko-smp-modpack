@@ -121,9 +121,16 @@ public class ButtonSettingsScreen extends Screen {
         if (blockEntity != null && blockEntity.getLabel() != null) this.labelField.setText(blockEntity.getLabel());
 
         confirmButton = addDrawableChild(new ButtonWidget(x - 50, y + 64, 100, 20, new TranslatableText("gui.done"), (button) -> {
+            // cleanup
             if (previewSource != null && previewSource.isPlaying()) {
                 previewSource.stop();
+                previewSource = null;
             }
+            if (previewBuffer != null) {
+                previewBuffer.close();
+                previewBuffer = null;
+            }
+
             if (isURLValid()) {
                 PacketByteBuf buf = PacketByteBufs.create();
                 buf.writeBlockPos(this.pos);

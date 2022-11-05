@@ -46,6 +46,8 @@ public class ButtonBlock extends BlockWithEntity {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final EnumProperty<WallMountLocation> FACE = Properties.WALL_MOUNT_LOCATION;
 
+    private static final ButtonBlockCache AUDIO_CACHE = new ButtonBlockCache();
+
     public static final int PRESS_TICKS = 40;
 
     public ButtonBlock(Settings settings) {
@@ -97,7 +99,7 @@ public class ButtonBlock extends BlockWithEntity {
         if (be instanceof ButtonBlockEntity) {
             ButtonBlockEntity button = (ButtonBlockEntity) be;
             if (button.getURL() != null && !button.getURL().trim().equals("")) {
-                AudioBuffer buf = new AudioBuffer(button.getURL());
+                AudioBuffer buf = AUDIO_CACHE.getBuffer(button.getURL());
                 buf.play();
             }
         }
@@ -231,3 +233,4 @@ public class ButtonBlock extends BlockWithEntity {
         return new ButtonBlockEntity(pos, state);
     }
 }
+
