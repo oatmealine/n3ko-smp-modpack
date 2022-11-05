@@ -6,9 +6,11 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.enums.WallMountLocation;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.sound.Source;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -20,6 +22,8 @@ import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
@@ -40,6 +44,7 @@ import zone.oat.n3komod.client.sound.AudioBuffer;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.networking.N3KOS2CPackets;
 
+import java.util.List;
 import java.util.Random;
 
 // largely copypasted from AbstractButtonBlock
@@ -286,6 +291,11 @@ public class ButtonBlock extends BlockWithEntity {
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
         return new ButtonBlockEntity(pos, state);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> origTooltip, TooltipContext tooltipContext) {
+        origTooltip.add(new TranslatableText("block.n3ko.button.tooltip"));
     }
 }
 

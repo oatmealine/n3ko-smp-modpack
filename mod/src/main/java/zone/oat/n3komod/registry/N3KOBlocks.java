@@ -3,6 +3,7 @@ package zone.oat.n3komod.registry;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.math.BlockPos;
@@ -32,7 +33,26 @@ public class N3KOBlocks {
 
   public static Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
 
-  public static Block BUTTON_RED = new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(2f));
+  private static Block createButton(MapColor color) {
+    return new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(2f).mapColor(color));
+  }
+
+  public static Block BUTTON_BLACK = createButton(MapColor.BLACK);
+  public static Block BUTTON_BLUE = createButton(MapColor.BLUE);
+  public static Block BUTTON_BROWN = createButton(MapColor.BROWN);
+  public static Block BUTTON_CYAN = createButton(MapColor.CYAN);
+  public static Block BUTTON_GREEN = createButton(MapColor.GREEN);
+  public static Block BUTTON_GRAY = createButton(MapColor.GRAY);
+  public static Block BUTTON_LIGHT_BLUE = createButton(MapColor.LIGHT_BLUE);
+  public static Block BUTTON_LIGHT_GRAY = createButton(MapColor.LIGHT_GRAY);
+  public static Block BUTTON_LIME = createButton(MapColor.LIME);
+  public static Block BUTTON_MAGENTA = createButton(MapColor.MAGENTA);
+  public static Block BUTTON_ORANGE = createButton(MapColor.ORANGE);
+  public static Block BUTTON_PINK = createButton(MapColor.PINK);
+  public static Block BUTTON_PURPLE = createButton(MapColor.PURPLE);
+  public static Block BUTTON_RED = createButton(MapColor.RED);
+  public static Block BUTTON_WHITE = createButton(MapColor.WHITE);
+  public static Block BUTTON_YELLOW = createButton(MapColor.YELLOW);
 
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);
@@ -44,6 +64,21 @@ public class N3KOBlocks {
 
     register("thread_ground", THREAD_GROUND);
 
+    register("button_black", BUTTON_BLACK);
+    register("button_blue", BUTTON_BLUE);
+    register("button_brown", BUTTON_BROWN);
+    register("button_cyan", BUTTON_CYAN);
+    register("button_green", BUTTON_GREEN);
+    register("button_gray", BUTTON_GRAY);
+    register("button_light_blue", BUTTON_LIGHT_BLUE);
+    register("button_light_gray", BUTTON_LIGHT_GRAY);
+    register("button_lime", BUTTON_LIME);
+    register("button_magenta", BUTTON_MAGENTA);
+    register("button_orange", BUTTON_ORANGE);
+    register("button_pink", BUTTON_PINK);
+    register("button_purple", BUTTON_PURPLE);
     register("button_red", BUTTON_RED);
+    register("button_white", BUTTON_WHITE);
+    register("button_yellow", BUTTON_YELLOW);
   }
 }

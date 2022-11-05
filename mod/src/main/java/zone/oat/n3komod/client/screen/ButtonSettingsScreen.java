@@ -164,7 +164,7 @@ public class ButtonSettingsScreen extends Screen {
             } else {
                 String url = this.urlField.getText();
                 if (!URL_REGEX.matcher(url).matches()) return;
-                if (!url.equals(previewBufferURL)) {
+                if (!url.equals(previewBufferURL) || this.previewBuffer == null) {
                     previewBuffer = new AudioBuffer(url);
                     previewBufferURL = url;
                 }
