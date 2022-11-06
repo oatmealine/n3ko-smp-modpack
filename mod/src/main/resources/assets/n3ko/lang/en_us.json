@@ -35,5 +35,15 @@
   "gui.n3ko.text.notes.1": "helpful information about the error.",
   "gui.n3ko.text.button_name": "Label",
   "gui.n3ko.text.pitch": "Pitch: %s",
-  "gui.n3ko.text.volume": "Volume: %s"
+  "gui.n3ko.text.volume": "Volume: %s",
+
+  "menu.n3ko.singleplayer": "Start New Game",
+  "menu.n3ko.multiplayer": "Find Multiplayer Game",
+  "menu.n3ko.options": "Options",
+  "menu.n3ko.modmenu": "Addons",
+  "menu.n3ko.dupes": "Dupes",
+  "menu.n3ko.demos": "Demos",
+  "menu.n3ko.saves": "Saves",
+  "menu.n3ko.quit": "Quit",
+  "menu.n3ko.version": "You are on the minecraft-1.18 branch. Click here to find out more. (%s)"
 }

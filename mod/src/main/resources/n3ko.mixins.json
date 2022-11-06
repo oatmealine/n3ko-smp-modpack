@@ -8,6 +8,8 @@
     "BackgroundRendererMixin",
     "DisableCaveNoiseMixin",
     "GameRendererMixin",
+    "LoadCustomTitleScreenMixin",
+    "RedirectTitleScreenMixin",
     "SourceAccessorMixin"
   ],
   "server": [],
