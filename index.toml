@@ -2226,6 +2226,11 @@ hash = "4785f5b4b9a75755565abbe3c43e13b4c07bc32c48c540f24a137e134bba3ee5"
 metafile = true
 
 [[files]]
+file = "mods/super-secret-revival.pw.toml"
+hash = "2cf722dc9f83ced952e17291165451f5a946e1171fe32968a5882f429c070ccc"
+metafile = true
+
+[[files]]
 file = "mods/terrestria.pw.toml"
 hash = "978d9ba60f5c54e96c7f53d3ac41818c0058f364bc521e41fbaf10d9ddfa42a7"
 metafile = true
