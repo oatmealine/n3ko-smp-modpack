@@ -1,7 +1,8 @@
 #version 150
 #define PI 3.14159265358979323846
 
-varying vec2 texCoord0;
+in vec2 texCoord0;
+
 uniform float GameTime;
 uniform vec2 InSize;
 uniform vec2 OutSize;
