@@ -2286,6 +2286,11 @@ hash = "010437f1fe7ae2ea2690354120886f04a6c69f05c99861d3479e43bbbeed1cde"
 metafile = true
 
 [[files]]
+file = "mods/yigd.pw.toml"
+hash = "3f081aa79d1afb0b290c3324be4410212845e497d0bdc5c788471c447a2cdc80"
+metafile = true
+
+[[files]]
 file = "mods/yosbr.pw.toml"
 hash = "7c2712882baa2ed177b9b961cc1052b857f11ed1455609f9e9f01332c0317f12"
 metafile = true
