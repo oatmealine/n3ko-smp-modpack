@@ -2061,6 +2061,11 @@ hash = "4b74568ba118a4d5dbc425a66e67af8362cef53d6b33f9c235a5a05f45d593f2"
 metafile = true
 
 [[files]]
+file = "mods/jamlib.pw.toml"
+hash = "34cf204f9b291735f08270c26d8b8e091055bf55aa388af0f2248616059a0c27"
+metafile = true
+
+[[files]]
 file = "mods/koroworld-lib.pw.toml"
 hash = "05e941d52781766cc84c653366dc05dca118facd3b993cdd9686370f244359fb"
 metafile = true
@@ -2178,6 +2183,11 @@ metafile = true
 [[files]]
 file = "mods/revelationary.pw.toml"
 hash = "99005398da800d641c7af808a9b56093f1c07e37540d6ec670afd4180bd84852"
+metafile = true
+
+[[files]]
+file = "mods/right-click-harvest.pw.toml"
+hash = "1b05810e30a220182a020210f3e79f70fcbc6590624d782ff93c72f6e2774d02"
 metafile = true
 
 [[files]]
