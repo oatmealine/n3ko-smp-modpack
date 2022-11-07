@@ -1,6 +1,7 @@
 #version 150
 
-varying vec2 texCoord0;
+in vec2 texCoord0;
+
 uniform float GameTime;
 uniform vec2 InSize;
 uniform vec2 OutSize;
