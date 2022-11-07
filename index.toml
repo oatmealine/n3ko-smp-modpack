@@ -25,10 +25,6 @@ file = "config/debugify.json"
 hash = "c6a76414122b48284665b596b076961d10522d4d1cba97511aaa5c453897e95e"
 
 [[files]]
-file = "config/isxander-main-menu-credits.json"
-hash = "a6f8069cef5ba85c0b7c4c63a97fb14bb62364ff09978187fefa8f3bc9d4c3c0"
-
-[[files]]
 file = "config/lithium.properties"
 hash = "5e2a2e50262e7229eea1f5d6cfb1cfee79fdca8fd6552a6c433e02417c5634c7"
 
@@ -2093,11 +2089,6 @@ metafile = true
 [[files]]
 file = "mods/lovely_snails.pw.toml"
 hash = "b8c6a8b674c85002ba0d4feb98f02522424680d2bffbf68d592d45bcaf382330"
-metafile = true
-
-[[files]]
-file = "mods/main-menu-credits.pw.toml"
-hash = "1527caee4fc4f26b525a41a95dd07dae21ab3c8d2c391237c79396abf7e9b2d7"
 metafile = true
 
 [[files]]
