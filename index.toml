@@ -1813,6 +1813,10 @@ file = "config/pehkui/config.json"
 hash = "4636ebda37f9e7effb81ce1f9e526e35dcfe5a431f660ef33b3dcef35b784f58"
 
 [[files]]
+file = "config/yosbr/config/modmenu.json"
+hash = "1c00d21b7c00444c64d244581244b2121fb025412c539245c47eee3ed61efd14"
+
+[[files]]
 file = "config/yosbr/options.txt"
 hash = "30bc75e0c70b81f06f30ba18bf6e631c65a644d94e0f604ec358176d6ad2ceda"
 
@@ -2039,6 +2043,11 @@ metafile = true
 [[files]]
 file = "mods/iceberg-fabric.pw.toml"
 hash = "60f6269fd7d2aa52defc49fc4963a6736581b341910c7e537c9dbcb97525f83c"
+metafile = true
+
+[[files]]
+file = "mods/image2map.pw.toml"
+hash = "e5c379d5e64dd43d210bb3d56896c779b0c2914192f48b2afd5f49b6f5dde095"
 metafile = true
 
 [[files]]
