@@ -1861,6 +1861,11 @@ hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
 metafile = true
 
 [[files]]
+file = "mods/badstdout.pw.toml"
+hash = "893c68376d94e2385584cc798e205eecf8de15d79e352bdebc5bc487a2200c19"
+metafile = true
+
+[[files]]
 file = "mods/bclib.pw.toml"
 hash = "2f5ef6eda6aa829f6fc70cc4d16da89acebc933709d666fd382d848c841b6c86"
 metafile = true
