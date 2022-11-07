@@ -1916,6 +1916,11 @@ hash = "0a055db2f9f07e55e121a5fc6dea915dd66bbdbb50ce5c80f98803ade5914276"
 metafile = true
 
 [[files]]
+file = "mods/chimes.pw.toml"
+hash = "04aaad3253c8d5b0f40f48b92b5f1beb0c6615643cbb29c53c6b7de7f57eefcb"
+metafile = true
+
+[[files]]
 file = "mods/cinderscapes.pw.toml"
 hash = "7f9e55e68d368516e8d8b93f4716ffdb87fcbdc64def7478b2db0ede13609e79"
 metafile = true
