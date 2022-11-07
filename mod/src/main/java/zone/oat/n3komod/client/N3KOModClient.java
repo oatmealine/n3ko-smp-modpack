@@ -16,7 +16,6 @@ import zone.oat.n3komod.registry.N3KODimensions;
 
 public class N3KOModClient implements ClientModInitializer {
   public static final ThreadSkyRenderHandler threadSkyRenderer = new ThreadSkyRenderHandler();
-  public static final Vec3d threadFogColor = new Vec3d(0.929f, 0.8509f, 0.929f);
 
   @Override
   public void onInitializeClient() {
