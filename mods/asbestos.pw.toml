@@ -1,0 +1,13 @@
+name = "Asbestos Removal"
+filename = "asbestos-1.2.1-1.18.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GU7uv6Xw/versions/1.2.1-1.18/asbestos-1.2.1-1.18.2.jar"
+hash-format = "sha1"
+hash = "25ee0b1bd0f17695ce76fc195a8dd488f53673a2"
+
+[update]
+[update.modrinth]
+mod-id = "GU7uv6Xw"
+version = "uXeMPWNW"

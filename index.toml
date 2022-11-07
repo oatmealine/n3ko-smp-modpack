@@ -1851,6 +1851,11 @@ hash = "ccf1f3f81ce91c460704f8371e1a737343701eb5bd64d1937b18e26d5816b522"
 metafile = true
 
 [[files]]
+file = "mods/asbestos.pw.toml"
+hash = "36aacfcfcdab35f63ef5576a95c05322a3596f461007b4e99a42d05054121ae8"
+metafile = true
+
+[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
 metafile = true
