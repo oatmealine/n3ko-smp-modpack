@@ -1,0 +1,8 @@
+name = "N3KO SMP Mod"
+filename = "n3ko-mc-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://oat.zone/f/n3ko-mc-1.0.0.jar"
+hash-format = "sha1"
+hash = "32bde9eff37e5cae4e27bcc6dd7dcd19714e1609"

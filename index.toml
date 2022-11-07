@@ -2107,6 +2107,11 @@ hash = "37b69a71c010cb7e4d10a84a7c0e44373566ddb19aaaf4428ff2bb9ade0692e1"
 metafile = true
 
 [[files]]
+file = "mods/n3ko-mod.pw.toml"
+hash = "3f19605eac87cec2912c49e05dd0db1a0f27deedeabf3dd33a14d1599cbe1104"
+metafile = true
+
+[[files]]
 file = "mods/open-loader.pw.toml"
 hash = "a259b4f251c2f694f3b07f2ef979e726bee9351e9e9af862d6e21eeb9d9fa4f9"
 metafile = true
