@@ -45,5 +45,9 @@
   "menu.n3ko.demos": "Demos",
   "menu.n3ko.saves": "Saves",
   "menu.n3ko.quit": "Quit",
-  "menu.n3ko.version": "You are on the minecraft-1.18 branch. Click here to find out more. (%s)"
+  "menu.n3ko.version": "You are on the minecraft-1.18 branch. Click here to find out more. ( %s )",
+
+  "menu.n3ko.credits.0": "The §lN3KO SMP§r modpack",
+  "menu.n3ko.credits.1": "§7by Cardboxneko, oatmealine and Rya",
+  "menu.n3ko.credits.2": "Minecraft %s (Fabric), %s mods"
 }

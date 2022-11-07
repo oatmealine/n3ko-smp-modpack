@@ -7,7 +7,7 @@
   "client": [
     "BackgroundRendererMixin",
     "DisableCaveNoiseMixin",
-    "GameRendererMixin",
+    "ShaderLoaderMixin",
     "LoadCustomTitleScreenMixin",
     "RedirectTitleScreenMixin",
     "SourceAccessorMixin"

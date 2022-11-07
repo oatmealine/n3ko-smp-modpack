@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.math.Vec3d;
+import zone.oat.n3komod.client.render.N3KOShaders;
 import zone.oat.n3komod.client.render.ThreadSkyRenderHandler;
 import zone.oat.n3komod.networking.N3KOS2CPackets;
 import zone.oat.n3komod.registry.N3KOBlockEntities;
@@ -28,5 +29,7 @@ public class N3KOModClient implements ClientModInitializer {
 
     DimensionRenderingRegistry.registerSkyRenderer(N3KODimensions.THREAD_REGISTRY_KEY, threadSkyRenderer);
     //ClientSpriteRegistryCallback.EVENT.register((atlasTexture, registry) -> MinecraftClient.getInstance().execute(threadSkyRenderer::makeSkyShader));
+
+    N3KOShaders.getShaders();
   }
 }

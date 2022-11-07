@@ -48,7 +48,7 @@ float pattern(in vec2 p) {
     vec2 bScale = vec2(2.0);
     float b = fbm((p + a) * bScale + bPos);
 
-    vec2 cPos = vec2(-0.6, -0.5) + vec2(-GameTime * 0.101, GameTime*0.02) * 2.;
+    vec2 cPos = vec2(-0.6, -0.5) + vec2(-GameTime * 0.101, GameTime *0.02) * 2.;
     vec2 cScale = vec2(2.6);
     float c = fbm((p + b) * cScale + cPos);
     return c;
@@ -61,7 +61,7 @@ float fuck(in float val, in float in_min, in float in_max, in float out_min, in 
 vec3 palette(in float t) {
     vec3 a = vec3(0.0, 0.0, 0.0);
     vec3 b = vec3(1.0, 1.0, 0.9);
-    vec3 c = vec3(fuck(sin(GameTime*0.2),-1.0,1.0,0.12,0.15), fuck(sin(GameTime*0.3),-1.0,1.0,0.17,0.2), fuck(cos(GameTime*0.3),-1.0,1.0,0.17,0.2));
+    vec3 c = vec3(fuck(sin(GameTime *0.2), -1.0, 1.0, 0.12, 0.15), fuck(sin(GameTime *0.3), -1.0, 1.0, 0.17, 0.2), fuck(cos(GameTime *0.3), -1.0, 1.0, 0.17, 0.2));
     vec3 d = vec3(1.0, 1.0, 1.0);
     return a + b * cos(6.28318 * (c * t + d));
 }

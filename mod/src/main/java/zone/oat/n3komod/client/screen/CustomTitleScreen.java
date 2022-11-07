@@ -41,27 +41,6 @@ public class CustomTitleScreen extends Screen {
   private String splashText;
   private static final Identifier MINECRAFT_TITLE_TEXTURE = new Identifier("textures/gui/title/minecraft.png");
   private static final Identifier EDITION_TITLE_TEXTURE = new Identifier("textures/gui/title/edition.png");
-  private static final Identifier[] BACKGROUNDS = {
-    new ModIdentifier("textures/gui/title/background/background_1.png"),
-    new ModIdentifier("textures/gui/title/background/background_2.png"),
-    new ModIdentifier("textures/gui/title/background/background_3.png"),
-    new ModIdentifier("textures/gui/title/background/background_4.png"),
-    new ModIdentifier("textures/gui/title/background/background_5.png"),
-    new ModIdentifier("textures/gui/title/background/background_6.png"),
-    new ModIdentifier("textures/gui/title/background/background_7.png"),
-  };
-  private static final Integer[][] BACKGROUND_SIZES = {
-    {1079, 861},
-    {750, 748},
-    {1080, 1044},
-    {1881, 944},
-    {896, 896},
-    {689, 662},
-    {640, 596},
-  };
-  private static final float SLIDESHOW_IMAGE_LENGTH = 400f;
-  private static final float TRANSITION_LENGTH = 30f;
-  private static float t = TRANSITION_LENGTH;
 
   private PressableTextWidget version;
 
@@ -97,13 +76,7 @@ public class CustomTitleScreen extends Screen {
   }
 
   private static CompletableFuture<Void> loadBackgroundTexturesAsync(TextureManager textureManager, Executor executor) {
-    CompletableFuture<?>[] completableFutures = new CompletableFuture[BACKGROUNDS.length];
-
-    for(int i = 0; i < completableFutures.length; ++i) {
-      completableFutures[i] = textureManager.loadTextureAsync(BACKGROUNDS[i], executor);
-    }
-
-    return CompletableFuture.allOf(completableFutures);
+    return SlideshowBackground.loadBackgroundTexturesAsync(textureManager, executor);
   }
 
   public CustomTitleScreen() {
@@ -135,16 +108,6 @@ public class CustomTitleScreen extends Screen {
 
   private int getLogoY() {
     return this.height / 12;
-  }
-
-  private void openLink(String url) {
-    this.client.setScreen(new ConfirmChatLinkScreen(openInBrowser -> {
-      if (openInBrowser) {
-        Util.getOperatingSystem().open(url);
-      }
-
-      this.client.setScreen(this);
-    }, url, true));
   }
 
   @Override
@@ -274,45 +237,10 @@ public class CustomTitleScreen extends Screen {
 
     version = this.addDrawableChild(
       new SmallPressableTextWidget(
-        versionX - 8, 6, versionWidth, 7, VERSION_TEXT, button -> openLink("https://github.com/oatmealine/n3ko-smp-modpack"), this.textRenderer
+        versionX - 8, 6, versionWidth, 7, VERSION_TEXT, button -> this.client.setScreen(new CreditsScreen(this)), this.textRenderer
       )
     );
     version.setAlpha(0.8f);
-  }
-
-  private void renderBackground(MatrixStack matrices, float a, int backgroundIndex, float alpha) {
-    matrices.push();
-
-    Identifier bg = BACKGROUNDS[backgroundIndex];
-    Integer[] backgroundSize = BACKGROUND_SIZES[backgroundIndex];
-    float baseScale = Math.max(this.width/(float)backgroundSize[0], this.height/(float)backgroundSize[1]);
-    Vector2f overscan = new Vector2f(backgroundSize[0] * baseScale - this.width, backgroundSize[1] * baseScale - this.height);
-
-    RenderSystem.setShader(GameRenderer::getPositionTexShader);
-    RenderSystem.setShaderTexture(0, bg);
-    RenderSystem.enableBlend();
-    RenderSystem.blendFunc(GlStateManager.SrcFactor.SRC_ALPHA, GlStateManager.DstFactor.ONE_MINUS_SRC_ALPHA);
-    RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, alpha);
-
-    float scale = MathHelper.lerp(a, 1.1f, 1.2f);
-    float angle = MathHelper.lerp(a, -1f, 3f);
-
-    matrices.translate(this.width/2f, this.height/2f, 0f);
-    matrices.scale(scale, scale, 1f);
-    matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(angle));
-    drawTexture(
-      matrices,
-        (int) Math.floor(-overscan.getX()/2f - this.width/2f),
-        (int) Math.floor(-overscan.getY()/2f - this.height/2f),
-        this.width + (int) Math.ceil(overscan.getX()),
-        this.height + (int) Math.ceil(overscan.getY()),
-        0.0F,
-        0.0F,
-        1, 1, 1, 1
-    );
-    matrices.translate(-this.width/2f, -this.height/2f, 0f);
-
-    matrices.pop();
   }
 
   @Override
@@ -320,17 +248,7 @@ public class CustomTitleScreen extends Screen {
     int logoX = getXPadding();
     int logoY = getLogoY();
 
-    t += delta;
-
-    int index = (int) Math.floor(t / SLIDESHOW_IMAGE_LENGTH) % BACKGROUNDS.length;
-    int previousIndex = (index - 1 + BACKGROUNDS.length) % BACKGROUNDS.length;
-    float a = (t % SLIDESHOW_IMAGE_LENGTH) / SLIDESHOW_IMAGE_LENGTH;
-    float transition = MathHelper.clamp(a / (TRANSITION_LENGTH / SLIDESHOW_IMAGE_LENGTH), 0f, 1f);
-
-    if (transition < 1f) {
-      renderBackground(matrices, a + 1f, previousIndex, 1f);
-    }
-    renderBackground(matrices, a, index, transition);
+    SlideshowBackground.render(matrices, delta, this.width, this.height);
 
     RenderSystem.disableBlend();
     RenderSystem.setShader(GameRenderer::getPositionTexShader);
