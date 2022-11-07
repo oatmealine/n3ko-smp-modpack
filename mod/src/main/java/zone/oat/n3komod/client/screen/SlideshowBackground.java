@@ -18,6 +18,7 @@ import static net.minecraft.client.gui.DrawableHelper.drawTexture;
 
 public class SlideshowBackground {
   private static final Identifier[] BACKGROUNDS = {
+    new ModIdentifier("textures/gui/title/background/background_0.png"),
     new ModIdentifier("textures/gui/title/background/background_1.png"),
     new ModIdentifier("textures/gui/title/background/background_2.png"),
     new ModIdentifier("textures/gui/title/background/background_3.png"),
@@ -27,6 +28,7 @@ public class SlideshowBackground {
     new ModIdentifier("textures/gui/title/background/background_7.png"),
   };
   private static final Integer[][] BACKGROUND_SIZES = {
+    {854, 480},
     {1079, 861},
     {750, 748},
     {1080, 1044},

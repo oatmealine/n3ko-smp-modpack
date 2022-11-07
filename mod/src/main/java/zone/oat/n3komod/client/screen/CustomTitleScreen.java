@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.terraformersmc.modmenu.gui.ModsScreen;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.SharedConstants;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.gui.screen.*;
@@ -34,13 +35,11 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
 public class CustomTitleScreen extends Screen {
-  public static final Text VERSION_TEXT = new TranslatableText("menu.n3ko.version", FabricLoader.getInstance().getModContainer("n3komod").get().getMetadata().getVersion().getFriendlyString());
+  public static final Text VERSION_TEXT = new TranslatableText("menu.n3ko.version", SharedConstants.getGameVersion().getName(), FabricLoader.getInstance().getModContainer("n3komod").get().getMetadata().getVersion().getFriendlyString());
   private static final Identifier ACCESSIBILITY_ICON_TEXTURE = new Identifier("textures/gui/accessibility.png");
-  private final boolean isMinceraft;
   @Nullable
   private String splashText;
-  private static final Identifier MINECRAFT_TITLE_TEXTURE = new Identifier("textures/gui/title/minecraft.png");
-  private static final Identifier EDITION_TITLE_TEXTURE = new Identifier("textures/gui/title/edition.png");
+  private static final Identifier TITLE_TEXTURE = new ModIdentifier("textures/gui/title/n3kosmp.png");
 
   private PressableTextWidget version;
 
@@ -81,13 +80,11 @@ public class CustomTitleScreen extends Screen {
 
   public CustomTitleScreen() {
     super(new TranslatableText("narrator.screen.title"));
-    this.isMinceraft = (double)new Random().nextFloat() < 1.0E-4;
   }
 
   public static CompletableFuture<Void> loadTexturesAsync(TextureManager textureManager, Executor executor) {
     return CompletableFuture.allOf(
-      textureManager.loadTextureAsync(MINECRAFT_TITLE_TEXTURE, executor),
-      textureManager.loadTextureAsync(EDITION_TITLE_TEXTURE, executor),
+      textureManager.loadTextureAsync(TITLE_TEXTURE, executor),
       loadBackgroundTexturesAsync(textureManager, executor)
     );
   }
@@ -107,7 +104,7 @@ public class CustomTitleScreen extends Screen {
   }
 
   private int getLogoY() {
-    return this.height / 12;
+    return this.height / 18;
   }
 
   @Override
@@ -119,11 +116,11 @@ public class CustomTitleScreen extends Screen {
     int versionWidth = this.textRenderer.getWidth(VERSION_TEXT) - 1;
     int versionX = this.width - versionWidth;
     int buttonsX = getXPadding();
-    int buttonsY = getLogoY() * 2 + 50;
+    int buttonsY = getLogoY() * 2 + 70;
 
     int buttonHeight = 12;
     int buttonSpacing = buttonHeight + 1;
-    int buttonSectionSpacing = 7;
+    int buttonSectionSpacing = 6;
 
     this.addDrawableChild(new PressableTextWidget(
       buttonsX,
@@ -265,32 +262,23 @@ public class CustomTitleScreen extends Screen {
     DrawableHelper.fill(matrices, 0, this.height - 24, this.width, this.height, 0x70111111);
 
     RenderSystem.setShader(GameRenderer::getPositionTexShader);
-    RenderSystem.setShaderTexture(0, MINECRAFT_TITLE_TEXTURE);
+    RenderSystem.setShaderTexture(0, TITLE_TEXTURE);
     RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-    if (this.isMinceraft) {
-      this.drawWithOutline(logoX, logoY, (x, y) -> {
-        this.drawTexture(matrices, x + 0, y, 0, 0, 99, 44);
-        this.drawTexture(matrices, x + 99, y, 129, 0, 27, 44);
-        this.drawTexture(matrices, x + 99 + 26, y, 126, 0, 3, 44);
-        this.drawTexture(matrices, x + 99 + 26 + 3, y, 99, 0, 26, 44);
-        this.drawTexture(matrices, x + 155, y, 0, 45, 155, 44);
-      });
-    } else {
-      this.drawWithOutline(logoX, logoY, (x, y) -> {
-        this.drawTexture(matrices, x + 0, y, 0, 0, 155, 44);
-        this.drawTexture(matrices, x + 155, y, 0, 45, 155, 44);
-      });
-    }
+    this.drawWithOutline(logoX, logoY, (x, y) -> {
+      this.drawTexture(matrices, x, y, 0, 0, 256, 256);
+    });
 
+    /*
     RenderSystem.setShaderTexture(0, EDITION_TITLE_TEXTURE);
     drawTexture(matrices, logoX + 88, logoY + 37, 0.0F, 0.0F, 98, 14, 128, 16);
+    */
 
     if (this.splashText != null) {
       matrices.push();
-      matrices.translate(260d, logoY + 40.0, 0.0);
+      matrices.translate(155d, logoY + 45.0, 0.0);
       matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(-20.0F));
       float h = 1.8F - MathHelper.abs(MathHelper.sin((float)(Util.getMeasuringTimeMs() % 1000L) / 1000.0F * (float) (Math.PI * 2)) * 0.1F);
-      h = h * 100.0F / (float)(this.textRenderer.getWidth(this.splashText) + 32);
+      h = h * 0.8f * 100.0F / (float)(this.textRenderer.getWidth(this.splashText) + 32);
       matrices.scale(h, h, h);
       drawCenteredText(matrices, this.textRenderer, this.splashText, 0, -8, 16776960);
       matrices.pop();
