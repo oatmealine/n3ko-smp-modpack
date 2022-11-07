@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "ad_astra:desh_nugget",
+      "count": 4
+    },
+    {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 27000
+    },
+    {
+      "tag": "n3ko:concrete_powders"
+    }
+  ],
+  "results": [
+    {
+      "item": "n3ko:wet_drywall",
+      "count": 8
+    }
+  ],
+  "heatRequirement": "none"
+}

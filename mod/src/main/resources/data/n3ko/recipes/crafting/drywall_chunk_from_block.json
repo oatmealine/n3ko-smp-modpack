@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "n3ko:drywall_block"
+    }
+  ],
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "n3ko:drywall_chunk"
+  },
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "n3ko:block/drywall_top",
+    "side": "n3ko:block/drywall_side"
+  }
+}

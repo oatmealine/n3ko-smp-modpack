@@ -23,6 +23,9 @@
   "block.n3ko.button_white": "White Sound Button",
   "block.n3ko.button_yellow": "Yellow Sound Button",
   "block.n3ko.button.tooltip": "§7Shift-right click to edit",
+  "item.n3ko.wet_drywall": "Wet Drywall",
+  "item.n3ko.drywall_chunk": "Drywall Chunk",
+  "block.n3ko.drywall_block": "Drywall Block",
 
   "subtitles.n3ko.squeak": "Plushie gets squished",
 

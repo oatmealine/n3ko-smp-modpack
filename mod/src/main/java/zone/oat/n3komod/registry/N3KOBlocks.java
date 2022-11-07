@@ -54,6 +54,8 @@ public class N3KOBlocks {
   public static Block BUTTON_WHITE = createButton(MapColor.WHITE);
   public static Block BUTTON_YELLOW = createButton(MapColor.YELLOW);
 
+  public static Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4f, 1.8f));
+
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);
 
@@ -80,5 +82,7 @@ public class N3KOBlocks {
     register("button_red", BUTTON_RED);
     register("button_white", BUTTON_WHITE);
     register("button_yellow", BUTTON_YELLOW);
+
+    register("drywall_block", DRYWALL_BLOCK);
   }
 }

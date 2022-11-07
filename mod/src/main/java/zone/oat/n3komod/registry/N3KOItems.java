@@ -2,11 +2,10 @@ package zone.oat.n3komod.registry;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.registry.Registry;
 import zone.oat.n3komod.N3KOMod;
+import zone.oat.n3komod.content.item.DrywallChunk;
 import zone.oat.n3komod.util.ModIdentifier;
 
 public class N3KOItems {
@@ -39,6 +38,16 @@ public class N3KOItems {
   public static BlockItem BUTTON_RED = createBlockItem(N3KOBlocks.BUTTON_RED, N3KOMod.ITEM_GROUP);
   public static BlockItem BUTTON_WHITE = createBlockItem(N3KOBlocks.BUTTON_WHITE, N3KOMod.ITEM_GROUP);
   public static BlockItem BUTTON_YELLOW = createBlockItem(N3KOBlocks.BUTTON_YELLOW, N3KOMod.ITEM_GROUP);
+  public static BlockItem DRYWALL_BLOCK = createBlockItem(N3KOBlocks.DRYWALL_BLOCK, N3KOMod.ITEM_GROUP);
+
+  public static Item WET_DRYWALL = new Item(new FabricItemSettings().group(N3KOMod.ITEM_GROUP));
+  public static Item DRYWALL_CHUNK = new DrywallChunk(new FabricItemSettings().group(N3KOMod.ITEM_GROUP).food(
+    new FoodComponent.Builder()
+      .hunger(2)
+      .saturationModifier(0.3f)
+      .alwaysEdible()
+      .build()
+  ));
 
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);
@@ -62,5 +71,9 @@ public class N3KOItems {
     register("button_red", BUTTON_RED);
     register("button_white", BUTTON_WHITE);
     register("button_yellow", BUTTON_YELLOW);
+    register("drywall_block", DRYWALL_BLOCK);
+
+    register("wet_drywall", WET_DRYWALL);
+    register("drywall_chunk", DRYWALL_CHUNK);
   }
 }
