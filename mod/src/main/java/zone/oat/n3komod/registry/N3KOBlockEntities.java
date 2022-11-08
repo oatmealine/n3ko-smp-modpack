@@ -1,7 +1,6 @@
 package zone.oat.n3komod.registry;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
-import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.registry.Registry;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
@@ -12,7 +11,7 @@ public class N3KOBlockEntities {
   public static BlockEntityType<PlushBlockEntity> PLUSH_BLOCK_ENTITY = FabricBlockEntityTypeBuilder.create(
     PlushBlockEntity::new,
     N3KOBlocks.SHE_PLUSH,
-    N3KOBlocks.PLUSH_BASE
+    N3KOBlocks.NOEL_PLUSH
   ).build();
 
   public static BlockEntityType<ButtonBlockEntity> BUTTON_BLOCK_ENTITY = FabricBlockEntityTypeBuilder.create(

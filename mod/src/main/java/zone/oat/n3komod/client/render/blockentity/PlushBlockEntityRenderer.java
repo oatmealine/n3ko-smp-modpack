@@ -1,5 +1,6 @@
 package zone.oat.n3komod.client.render.blockentity;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;
@@ -37,7 +38,7 @@ public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockE
 
     matrices.translate(-off, 0.0, -off);
     //matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion((blockEntity.getWorld().getTime() + tickDelta) * 4));
-    matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(-((float)(state.get(SignBlock.ROTATION) * 360) / 16.0F)));
+    matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(-((float)(state.get(SignBlock.ROTATION) * 360) / 16f + 180f)));
     //matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-90));
 
     if (blockEntity.isSquished) {

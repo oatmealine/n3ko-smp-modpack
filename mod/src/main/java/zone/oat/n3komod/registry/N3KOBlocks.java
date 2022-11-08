@@ -27,7 +27,7 @@ public class N3KOBlocks {
   public static Block N3KO_BLOCK = new BlockWithTooltip(FabricBlockSettings.of(Material.METAL).strength(2.0f), List.of("block.n3ko.n3ko_block.tooltip"));
 
   public static Block SHE_PLUSH = new PlushBlock();
-  public static Block PLUSH_BASE = new PlushBlock();
+  public static Block NOEL_PLUSH = new PlushBlock();
 
   public static Block SHE_BLOCK = new BlockWithTooltip(FabricBlockSettings.of(Material.METAL).strength(0.5f), List.of("block.n3ko.she_block.tooltip"));
 
@@ -53,6 +53,9 @@ public class N3KOBlocks {
   public static Block BUTTON_RED = createButton(MapColor.RED);
   public static Block BUTTON_WHITE = createButton(MapColor.WHITE);
   public static Block BUTTON_YELLOW = createButton(MapColor.YELLOW);
+  public static Block[] BUTTONS = {
+    BUTTON_BLACK, BUTTON_BLUE, BUTTON_BROWN, BUTTON_CYAN, BUTTON_GREEN, BUTTON_GRAY, BUTTON_LIGHT_BLUE, BUTTON_LIGHT_GRAY, BUTTON_LIME, BUTTON_MAGENTA, BUTTON_ORANGE, BUTTON_PINK, BUTTON_PURPLE, BUTTON_RED, BUTTON_WHITE, BUTTON_YELLOW
+  };
 
   public static Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4f, 1.8f));
 
@@ -60,7 +63,7 @@ public class N3KOBlocks {
     register("n3ko_block", N3KO_BLOCK);
 
     register("she_plush", SHE_PLUSH);
-    register("plush_base", PLUSH_BASE);
+    register("noel_plush", NOEL_PLUSH);
 
     register("she_block", SHE_BLOCK);
 
