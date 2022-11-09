@@ -9,7 +9,6 @@ import java.util.Objects;
 
 public class N3KOShaders {
   public static ShaderProvider threadSky = new ShaderProvider("fbm-perlin", VertexFormats.POSITION_TEXTURE_COLOR);
-  public static ShaderProvider shaderBG = new ShaderProvider("n3ko-shader-bg", VertexFormats.POSITION_TEXTURE_COLOR);
 
   public static List<ShaderProvider> getShaders() {
     return Arrays.stream(N3KOShaders.class.getDeclaredFields())
