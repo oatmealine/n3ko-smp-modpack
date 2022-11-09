@@ -3,6 +3,12 @@
   "block.n3ko.n3ko_block": "N3KO SMP Block",
   "block.n3ko.n3ko_block.tooltip": "§7holy shit. holy fucking shit",
   "block.n3ko.she_plush": "She Plush",
+  "block.n3ko.she_plush.tooltip.0": "§7It's said that this plush is unsquishable, and",
+  "block.n3ko.she_plush.tooltip.1": "§7the squishing is just part of your imagination..",
+  "block.n3ko.noel_plush": "Noel Plush",
+  "block.n3ko.noel_plush.tooltip.0": "§7It's everyone's favorite noodle devouring raccoon",
+  "block.n3ko.noel_plush.tooltip.1": "§7gremlin, Noel! And now YOU can fit her inside of",
+  "block.n3ko.noel_plush.tooltip.2": "§7your home, for only §l4.99$§r§7!",
   "block.n3ko.she_block": "She Block",
   "block.n3ko.she_block.tooltip": "§7she...",
   "block.n3ko.thread_ground": "Thread Ground",
@@ -26,6 +32,8 @@
   "item.n3ko.wet_drywall": "Wet Drywall",
   "item.n3ko.drywall_chunk": "Drywall Chunk",
   "block.n3ko.drywall_block": "Drywall Block",
+
+  "tooltip.n3ko.more_info": "§7Hold [§r%s§7] for more info",
 
   "subtitles.n3ko.squeak": "Plushie gets squished",
 

@@ -9,10 +9,12 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.util.math.Vector3d;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -21,6 +23,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -35,12 +38,18 @@ import zone.oat.n3komod.registry.N3KOBlocks;
 import zone.oat.n3komod.registry.N3KOSounds;
 import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
 import zone.oat.n3komod.networking.N3KOS2CPackets;
+import zone.oat.n3komod.util.BlockWithTooltip;
+
+import java.util.List;
 
 public class PlushBlock extends BlockWithEntity {
   //public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
   public static final IntProperty ROTATION = Properties.ROTATION;
 
-  public PlushBlock() {
+  public final String tooltipPrefix;
+  public final boolean onlyShowWithShift;
+
+  public PlushBlock(String tooltipPrefix, boolean onlyShowWithShift) {
     super(FabricBlockSettings
       .of(Material.WOOL)
       .sounds(BlockSoundGroup.WOOL)
@@ -54,7 +63,11 @@ public class PlushBlock extends BlockWithEntity {
     this.setDefaultState(
       this.stateManager.getDefaultState().with(ROTATION, Integer.valueOf(0))
     );
+    this.tooltipPrefix = tooltipPrefix;
+    this.onlyShowWithShift = onlyShowWithShift;
   }
+  public PlushBlock(String tooltipPrefix) { this(tooltipPrefix, false); }
+  public PlushBlock() { this(""); }
 
   @Override
   public BlockRenderType getRenderType(BlockState state) {
@@ -130,5 +143,10 @@ public class PlushBlock extends BlockWithEntity {
       return ActionResult.SUCCESS;
     }
     return ActionResult.PASS;
+  }
+
+  @Override
+  public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> origTooltip, TooltipContext tooltipContext) {
+    BlockWithTooltip.appendTooltip(origTooltip, this.tooltipPrefix, this.onlyShowWithShift);
   }
 }
