@@ -1,15 +1,13 @@
 package zone.oat.n3komod.registry;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 import zone.oat.n3komod.content.block.ButtonBlock;
+import zone.oat.n3komod.content.block.GiantsBlock;
 import zone.oat.n3komod.content.block.PlushBlock;
 import zone.oat.n3komod.util.ModIdentifier;
 
@@ -58,6 +56,8 @@ public class N3KOBlocks {
 
   public static Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4f, 1.8f));
 
+  public static GiantsBlock GIANT_COBBLESTONE = new GiantsBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE));
+
   public static void init() {
     register("n3ko_block", N3KO_BLOCK);
 
@@ -86,5 +86,7 @@ public class N3KOBlocks {
     register("button_yellow", BUTTON_YELLOW);
 
     register("drywall_block", DRYWALL_BLOCK);
+
+    register("giant_cobblestone", GIANT_COBBLESTONE);
   }
 }

@@ -2,5 +2,8 @@
   "squeak": {
     "sounds": [ "n3ko:squeak" ],
     "subtitle": "subtitles.n3ko.squeak"
+  },
+  "silence": {
+    "sounds": [ "n3ko:silence" ]
   }
 }

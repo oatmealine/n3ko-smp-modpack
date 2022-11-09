@@ -6,6 +6,7 @@ import net.minecraft.item.*;
 import net.minecraft.util.registry.Registry;
 import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.content.item.DrywallChunk;
+import zone.oat.n3komod.content.item.block.BigBlockItem;
 import zone.oat.n3komod.util.ModIdentifier;
 
 public class N3KOItems {
@@ -39,6 +40,7 @@ public class N3KOItems {
   public static BlockItem BUTTON_WHITE = createBlockItem(N3KOBlocks.BUTTON_WHITE, N3KOMod.ITEM_GROUP);
   public static BlockItem BUTTON_YELLOW = createBlockItem(N3KOBlocks.BUTTON_YELLOW, N3KOMod.ITEM_GROUP);
   public static BlockItem DRYWALL_BLOCK = createBlockItem(N3KOBlocks.DRYWALL_BLOCK, N3KOMod.ITEM_GROUP);
+  public static BlockItem GIANT_COBBLESTONE = new BigBlockItem(N3KOBlocks.GIANT_COBBLESTONE, new FabricItemSettings().group(N3KOMod.ITEM_GROUP));
 
   public static Item WET_DRYWALL = new Item(new FabricItemSettings().group(N3KOMod.ITEM_GROUP));
   public static Item DRYWALL_CHUNK = new DrywallChunk(new FabricItemSettings().group(N3KOMod.ITEM_GROUP).food(
@@ -72,6 +74,7 @@ public class N3KOItems {
     register("button_white", BUTTON_WHITE);
     register("button_yellow", BUTTON_YELLOW);
     register("drywall_block", DRYWALL_BLOCK);
+    register("giant_cobblestone", GIANT_COBBLESTONE);
 
     register("wet_drywall", WET_DRYWALL);
     register("drywall_chunk", DRYWALL_CHUNK);

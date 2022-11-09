@@ -18,27 +18,27 @@ import java.util.function.Consumer;
 
 @Mixin(GameRenderer.class)
 public class ShaderLoaderMixin {
-  private boolean addedToList = true;
-  private ResourceManager manager;
+  private boolean n3ko$addedToList = true;
+  private ResourceManager n3ko$manager;
 
   @Redirect(method = "loadShaders", at = @At(value = "INVOKE", target = "Ljava/util/List;add(Ljava/lang/Object;)Z"))
   <E> boolean injectIntoList(List instance, E e) throws IOException {
-    if (!addedToList) {
+    if (!n3ko$addedToList) {
       List<ShaderProvider> shaders = N3KOShaders.getShaders();
       for (ShaderProvider s : shaders) {
         instance.add(Pair.of(
-          s.createShader(manager),
+          s.createShader(n3ko$manager),
           (Consumer<Shader>) shader -> s.setShader(shader)
         ));
       }
-      addedToList = true;
+      n3ko$addedToList = true;
     }
     return instance.add(e);
   }
 
   @Inject(method = "reload", at = @At(value = "HEAD"))
   void injected(ResourceManager manager, CallbackInfo ci) {
-    this.addedToList = false;
-    this.manager = manager;
+    this.n3ko$addedToList = false;
+    this.n3ko$manager = manager;
   }
 }

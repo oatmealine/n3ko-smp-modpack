@@ -10,7 +10,9 @@
     "RedirectTitleScreenMixin",
     "ShaderLoaderMixin",
     "SourceAccessorMixin",
-    "TooltipMixin"
+    "TooltipMixin",
+    "bigblock.InteractWithOriginMixin",
+    "bigblock.ShowBlockDamageMixin"
   ],
   "server": [],
   "injectors": {
