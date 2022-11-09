@@ -10,7 +10,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 import zone.oat.n3komod.content.block.ButtonBlock;
-import zone.oat.n3komod.util.BlockWithTooltip;
 import zone.oat.n3komod.content.block.PlushBlock;
 import zone.oat.n3komod.util.ModIdentifier;
 
@@ -24,12 +23,12 @@ public class N3KOBlocks {
   public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) { return false; }
   public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos) { return false; }
 
-  public static Block N3KO_BLOCK = new BlockWithTooltip(FabricBlockSettings.of(Material.METAL).strength(2.0f), "block.n3ko.n3ko_block.tooltip");
+  public static Block N3KO_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(2.0f));
 
-  public static Block SHE_PLUSH = new PlushBlock("block.n3ko.she_plush.tooltip", true);
-  public static Block NOEL_PLUSH = new PlushBlock("block.n3ko.noel_plush.tooltip", true);
+  public static Block SHE_PLUSH = new PlushBlock();
+  public static Block NOEL_PLUSH = new PlushBlock();
 
-  public static Block SHE_BLOCK = new BlockWithTooltip(FabricBlockSettings.of(Material.METAL).strength(0.5f), "block.n3ko.she_block.tooltip");
+  public static Block SHE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(0.5f));
 
   public static Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
 

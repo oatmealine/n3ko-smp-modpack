@@ -46,10 +46,7 @@ public class PlushBlock extends BlockWithEntity {
   //public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
   public static final IntProperty ROTATION = Properties.ROTATION;
 
-  public final String tooltipPrefix;
-  public final boolean onlyShowWithShift;
-
-  public PlushBlock(String tooltipPrefix, boolean onlyShowWithShift) {
+  public PlushBlock() {
     super(FabricBlockSettings
       .of(Material.WOOL)
       .sounds(BlockSoundGroup.WOOL)
@@ -63,11 +60,7 @@ public class PlushBlock extends BlockWithEntity {
     this.setDefaultState(
       this.stateManager.getDefaultState().with(ROTATION, Integer.valueOf(0))
     );
-    this.tooltipPrefix = tooltipPrefix;
-    this.onlyShowWithShift = onlyShowWithShift;
   }
-  public PlushBlock(String tooltipPrefix) { this(tooltipPrefix, false); }
-  public PlushBlock() { this(""); }
 
   @Override
   public BlockRenderType getRenderType(BlockState state) {
@@ -143,10 +136,5 @@ public class PlushBlock extends BlockWithEntity {
       return ActionResult.SUCCESS;
     }
     return ActionResult.PASS;
-  }
-
-  @Override
-  public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> origTooltip, TooltipContext tooltipContext) {
-    BlockWithTooltip.appendTooltip(origTooltip, this.tooltipPrefix, this.onlyShowWithShift);
   }
 }
