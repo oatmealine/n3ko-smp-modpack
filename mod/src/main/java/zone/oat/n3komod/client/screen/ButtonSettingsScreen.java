@@ -148,9 +148,9 @@ public class ButtonSettingsScreen extends Screen {
         // alas, i, Jill "oatmealine" Monoids, am not a maker of good decisions or ideas.
         // so i will proceed to do it anyways in hopes that the many obvious issues this
         // has are never run into, and i get away with the crimes i've committed.
-        int xoffset = -26;
+        int urlOffset = -26;
 
-        urlField = addDrawableChild(new TextFieldWidget(textRenderer, x + xoffset - 100, y, 200, 20, Text.of("https://oat.zone/f/hi.ogg")));
+        urlField = addDrawableChild(new TextFieldWidget(textRenderer, x + urlOffset - 100, y, 200, 20, Text.of("https://oat.zone/f/hi.ogg")));
         urlField.setMaxLength(128);
         if (blockEntity != null && blockEntity.url != null) this.urlField.setText(blockEntity.url);
         urlField.setTextFieldFocused(true);
@@ -158,7 +158,7 @@ public class ButtonSettingsScreen extends Screen {
             updateURLField();
         });
 
-        previewButton = addDrawableChild(new ButtonWidget(x + 105 + xoffset, y, 50, 20, PREVIEW_TEXT, (button) -> {
+        previewButton = addDrawableChild(new ButtonWidget(x + 105 + urlOffset, y, 50, 20, PREVIEW_TEXT, (button) -> {
             if (previewSource != null && previewSource.isPlaying()) {
                 previewSource.stop();
             } else {
@@ -203,10 +203,16 @@ public class ButtonSettingsScreen extends Screen {
             this.close();
         }));
 
-        pitch = addDrawableChild(new SettingsSlider(x - 91, y + 64, 90, 1f, MIN_PITCH, MAX_PITCH, "gui.n3ko.text.pitch"));
+        int slidersOffset = -21;
+
+        pitch = addDrawableChild(new SettingsSlider(x - 91 + slidersOffset, y + 64, 90, 1f, MIN_PITCH, MAX_PITCH, "gui.n3ko.text.pitch"));
         if (blockEntity != null) this.pitch.setValue(blockEntity.pitch);
-        volume = addDrawableChild(new SettingsSlider(x + 1, y + 64, 90, 1f, MIN_VOLUME, MAX_VOLUME, "gui.n3ko.text.volume"));
+        volume = addDrawableChild(new SettingsSlider(x + 1 + slidersOffset, y + 64, 90, 1f, MIN_VOLUME, MAX_VOLUME, "gui.n3ko.text.volume"));
         if (blockEntity != null) this.volume.setValue(blockEntity.volume);
+        addDrawableChild(new ButtonWidget(x + 93 + slidersOffset, y + 64, 40, 20, new TranslatableText("controls.reset"), (button) -> {
+            volume.setValue(1.0f);
+            pitch.setValue(1.0f);
+        }));
 
         updateURLField();
     }

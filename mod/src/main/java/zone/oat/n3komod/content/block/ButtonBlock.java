@@ -39,6 +39,7 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
+import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.client.screen.ButtonSettingsScreen;
 import zone.oat.n3komod.client.sound.AudioBuffer;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
@@ -111,23 +112,29 @@ public class ButtonBlock extends BlockWithEntity {
             return ActionResult.CONSUME;
         } else {
             this.powerOn(state, world, pos);
-            //this.playClickSound(player, world, pos, true);
-            this.sendPackets(pos, world);
             world.emitGameEvent(player, GameEvent.BLOCK_PRESS, pos);
+
+            if (world.getBlockEntity(pos) instanceof ButtonBlockEntity button && !button.url.trim().equals("")) {
+                this.sendPackets(pos, world);
+            } else {
+                playClickSound(player, world, pos, true);
+            }
+
             return ActionResult.success(world.isClient);
         }
     }
 
     public static void playSound(World world, BlockPos pos) {
-        if (!world.isClient()) return;
         BlockEntity be = world.getBlockEntity(pos);
-        if (be instanceof ButtonBlockEntity) {
-            ButtonBlockEntity button = (ButtonBlockEntity) be;
+        if (be instanceof ButtonBlockEntity button) {
             if (button.url != null && !button.url.trim().equals("")) {
+                if (!world.isClient()) return;
                 AudioBuffer buf = AUDIO_CACHE.getBuffer(button.url);
                 Source source = buf.play(new Vec3d((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5));
                 source.setPitch(button.pitch);
                 source.setVolume(button.volume);
+            } else {
+                playClickSound(null, world, pos, true);
             }
         }
     }
@@ -169,13 +176,12 @@ public class ButtonBlock extends BlockWithEntity {
         world.updateNeighborsAlways(pos.offset(getDirection(state).getOpposite()), this);
     }
 
-    private SoundEvent getClickSound(boolean powered) {
+    private static SoundEvent getClickSound(boolean powered) {
         return powered ? SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON : SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF;
     }
 
-    protected void playClickSound(@Nullable PlayerEntity player, WorldAccess world, BlockPos pos, boolean powered) {
-        if (powered) return;
-        world.playSound(powered ? player : null, pos, this.getClickSound(powered), SoundCategory.BLOCKS, 0.3F, powered ? 0.6F : 0.5F);
+    protected static void playClickSound(@Nullable PlayerEntity player, WorldAccess world, BlockPos pos, boolean powered) {
+        world.playSound(powered ? player : null, pos, getClickSound(powered), SoundCategory.BLOCKS, 0.3F, powered ? 0.6F : 0.5F);
     }
 
     @Override
