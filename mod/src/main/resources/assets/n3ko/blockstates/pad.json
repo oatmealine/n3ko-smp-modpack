@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "n3ko:block/pad",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "n3ko:block/pad",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "n3ko:block/pad"
+    },
+    "facing=west": {
+      "model": "n3ko:block/pad",
+      "y": 90
+    }
+  }
+}

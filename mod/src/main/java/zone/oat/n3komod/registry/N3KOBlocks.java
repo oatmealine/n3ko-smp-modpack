@@ -14,6 +14,7 @@ import net.minecraft.world.BlockView;
 import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.content.block.ButtonBlock;
 import zone.oat.n3komod.content.block.GiantsBlock;
+import zone.oat.n3komod.content.block.PadBlock;
 import zone.oat.n3komod.content.block.PlushBlock;
 import zone.oat.n3komod.util.ModIdentifier;
 
@@ -57,6 +58,8 @@ public class N3KOBlocks implements BlockRegistryContainer {
   };
 
   public static final Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4f, 1.8f));
+
+  public static final Block PAD = new PadBlock(FabricBlockSettings.of(Material.METAL).strength(0.8f, 1.8f));
 
   @BlockRegistryContainer.NoBlockItem
   public static final GiantsBlock GIANT_COBBLESTONE = new GiantsBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE));
