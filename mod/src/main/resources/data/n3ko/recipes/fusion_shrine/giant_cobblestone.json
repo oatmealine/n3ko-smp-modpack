@@ -1,0 +1,21 @@
+{
+  "type": "spectrum:fusion_shrine",
+  "time": 600,
+  "experience": 0.0,
+  "fluid": "minecraft:water",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 64
+    }
+  ],
+  "result" : {
+    "item": "n3ko:giant_cobblestone"
+  },
+  "required_advancement": "spectrum:build_fusion_shrine",
+  "world_conditions": [],
+  "during_crafting_effects": [ "nothing", "visual_explosions_on_shrine", "nothing", "nothing" ],
+  "finish_crafting_effect": "lightning_on_shrine",
+  "disable_yield_upgrades": true,
+  "description": "recipe.n3ko.fusion_shrine.explanation.giant_cobblestone"
+}

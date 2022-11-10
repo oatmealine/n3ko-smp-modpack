@@ -1,4 +1,4 @@
-package zone.oat.n3komod.mixin;
+package zone.oat.n3komod.mixin.titlescreen;
 
 import net.minecraft.client.texture.TextureManager;
 import org.spongepowered.asm.mixin.Mixin;

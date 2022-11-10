@@ -1,4 +1,4 @@
-package zone.oat.n3komod.mixin;
+package zone.oat.n3komod.mixin.shader;
 
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.render.GameRenderer;

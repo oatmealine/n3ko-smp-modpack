@@ -1,4 +1,4 @@
-package zone.oat.n3komod.mixin;
+package zone.oat.n3komod.mixin.sound;
 
 import net.minecraft.client.sound.Source;
 import org.spongepowered.asm.mixin.Mixin;

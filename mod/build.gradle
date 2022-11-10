@@ -25,6 +25,7 @@ repositories {
 	maven { url = "https://maven.tterrag.com/" } // Registrate and Flywheel
 	maven { url = "https://maven.cafeteria.dev" } // Fake Player API
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
+	maven { url 'https://maven.wispforest.io' } // owo
 }
 
 dependencies {
@@ -45,6 +46,9 @@ dependencies {
 	modRuntimeOnly("dev.architectury:architectury-fabric:${project.architectury_version}") // for REI
 	modRuntimeOnly("me.shedaniel.cloth:basic-math:0.6.0") // for REI
 	modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}") { transitive = false }
+
+	modImplementation "io.wispforest:owo-lib:${project.owo_version}"
+	include "io.wispforest:owo-sentinel:${project.owo_version}"
 }
 
 loom {

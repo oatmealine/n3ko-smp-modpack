@@ -1,4 +1,4 @@
-package zone.oat.n3komod.mixin;
+package zone.oat.n3komod.mixin.titlescreen;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;

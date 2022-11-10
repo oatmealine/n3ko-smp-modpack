@@ -6,10 +6,9 @@ import org.lwjgl.openal.AL10;
 import org.lwjgl.stb.STBVorbis;
 import org.lwjgl.system.MemoryStack;
 import zone.oat.n3komod.N3KOMod;
-import zone.oat.n3komod.mixin.SourceAccessorMixin;
+import zone.oat.n3komod.mixin.sound.SourceAccessorMixin;
 import zone.oat.n3komod.util.Util;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -18,7 +17,6 @@ import java.net.http.HttpResponse;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.nio.ShortBuffer;
-import java.util.Objects;
 
 public class AudioBuffer {
     private static final HttpClient CLIENT = HttpClient.newBuilder().build();

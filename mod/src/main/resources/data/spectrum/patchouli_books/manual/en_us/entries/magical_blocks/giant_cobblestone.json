@@ -1,0 +1,22 @@
+{
+  "name": "Giant Cobblestone",
+  "icon": "n3ko:giant_cobblestone",
+  "advancement": "spectrum:build_fusion_shrine",
+  "category": "spectrum:magical_blocks_category",
+  "pages": [
+    "Giant Cobblestone",
+    {
+      "type": "spectrum:fusion_shrine_crafting",
+      "title": "Giant Cobblestone",
+      "recipe": "n3ko:fusion_shrine/giant_cobblestone",
+      "text": "Giant Cobblestone"
+    },
+    "Giant Cobblestone",
+    {
+      "type": "patchouli:spotlight",
+      "title": "Giant Cobblestone",
+      "item": "n3ko:giant_cobblestone",
+      "text": "Giant Cobblestone"
+    }
+  ]
+}

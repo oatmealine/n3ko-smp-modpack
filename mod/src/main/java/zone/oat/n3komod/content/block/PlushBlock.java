@@ -9,12 +9,10 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.util.math.Vector3d;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -23,7 +21,6 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -38,9 +35,6 @@ import zone.oat.n3komod.registry.N3KOBlocks;
 import zone.oat.n3komod.registry.N3KOSounds;
 import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
 import zone.oat.n3komod.networking.N3KOS2CPackets;
-import zone.oat.n3komod.util.BlockWithTooltip;
-
-import java.util.List;
 
 public class PlushBlock extends BlockWithEntity {
   //public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
@@ -127,7 +121,7 @@ public class PlushBlock extends BlockWithEntity {
       world.playSound(
         null,
         pos,
-        N3KOSounds.SQUEAK_EVENT,
+        N3KOSounds.SQUEAK,
         SoundCategory.BLOCKS,
         0.7f,
         0.9f + world.getRandom().nextFloat() * 0.2f
