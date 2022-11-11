@@ -28,6 +28,7 @@ public class N3KOBlocks implements BlockRegistryContainer {
 
   public static final Block SHE_PLUSH = new PlushBlock();
   public static final Block NOEL_PLUSH = new PlushBlock();
+  public static final Block ZEPH_PLUSH = new PlushBlock();
 
   public static final Block SHE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(0.5f));
 
