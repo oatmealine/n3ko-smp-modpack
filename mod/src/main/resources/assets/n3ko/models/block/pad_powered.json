@@ -1,0 +1,6 @@
+{
+  "parent": "n3ko:block/pad",
+  "textures": {
+    "texture": "n3ko:block/pad_powered"
+  }
+}

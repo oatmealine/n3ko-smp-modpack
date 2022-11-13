@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "n3ko:block/pad",
+      "model": "n3ko:block/pad_powered",
       "y": 270
     },
     "facing=north": {
-      "model": "n3ko:block/pad",
+      "model": "n3ko:block/pad_powered",
       "y": 180
     },
     "facing=south": {
-      "model": "n3ko:block/pad"
+      "model": "n3ko:block/pad_powered"
     },
     "facing=west": {
-      "model": "n3ko:block/pad",
+      "model": "n3ko:block/pad_powered",
       "y": 90
     }
   }
