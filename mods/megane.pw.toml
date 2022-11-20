@@ -1,13 +1,13 @@
 name = "megane"
-filename = "megane-7.9.0.jar"
+filename = "megane-7.9.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/ZNk5S5U6/versions/FbzNoGRJ/megane-7.9.0.jar"
+url = "https://cdn.modrinth.com/data/ZNk5S5U6/versions/c5WqbOJL/megane-7.9.1.jar"
 hash-format = "sha1"
-hash = "5341e7c86c543553000b7e464d78c9817e82c200"
+hash = "70ddfdd96254999976e1dd4a68fd29bac29f39fa"
 
 [update]
 [update.modrinth]
 mod-id = "ZNk5S5U6"
-version = "FbzNoGRJ"
+version = "c5WqbOJL"

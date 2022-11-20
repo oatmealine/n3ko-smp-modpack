@@ -1832,7 +1832,7 @@ metafile = true
 
 [[files]]
 file = "mods/alloy-forgery.pw.toml"
-hash = "373c21a5d84b809b2d643de005eeff29694525ca5ee68d4b61c6aeb16ea3a239"
+hash = "fb06b7606250d5efc72cb43fcd862f1ff1be79fac783acea28055f9ff0681147"
 metafile = true
 
 [[files]]
@@ -1857,7 +1857,7 @@ metafile = true
 
 [[files]]
 file = "mods/badpackets.pw.toml"
-hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
+hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
 metafile = true
 
 [[files]]
@@ -1992,12 +1992,12 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "21011aebe000cc840f7d1b0f51e31d4a43ee6077a00e07332f1139a71813a5da"
+hash = "9384012f50f3f22f4d60bbe0fa68232630a684550a90028abadc8160f54d7318"
 metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "6058946b7fb51a487cfdf61cba87562eda75ee38ebb16ae336c26fb24dd17c26"
+hash = "2d6dd083a7b01b1035a52c09a088137b930ea6f0f8f28ae3e0ba23f05937e3ef"
 metafile = true
 
 [[files]]
@@ -2012,7 +2012,7 @@ metafile = true
 
 [[files]]
 file = "mods/fastload.pw.toml"
-hash = "affd68e9c1f17994031a066f18788f63649099d8ebc0f131e5db49c89f1be8e6"
+hash = "07c750ab2394a9eaa5af526def7bc131fa1de7481284eb976266cb55df61c74b"
 metafile = true
 
 [[files]]
@@ -2027,7 +2027,7 @@ metafile = true
 
 [[files]]
 file = "mods/figura.pw.toml"
-hash = "25af0cbb0e6c510cbba95a7d5dbe264b8d91b69549b186f50bde498d954c2b91"
+hash = "4f1264f01d7ce002e476cb1967be8420178b2d874060b41da80e014141f678c2"
 metafile = true
 
 [[files]]
@@ -2057,7 +2057,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "689beb7c10f85f12f08d2b5198e02c8ef72bf3a5372e390d76c7412cbc807296"
+hash = "7d7ba7e53ccc1a6e5162fcc9842d8c92e412f27c01930baa7235f9e728ac51a9"
 metafile = true
 
 [[files]]
@@ -2092,7 +2092,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
+hash = "9009a697370bb3798834b690eda2c418799e4e7bd4f3439cf767bbf0cd345ab3"
 metafile = true
 
 [[files]]
@@ -2102,7 +2102,7 @@ metafile = true
 
 [[files]]
 file = "mods/megane.pw.toml"
-hash = "88d204010e68a166c3906dc710a0843fc2d69416e67953ee276603b307338a9e"
+hash = "1d15b4f366ffc9430ab6650362448777f8a99f585be792307cf329bf1bff6d4b"
 metafile = true
 
 [[files]]
@@ -2117,7 +2117,7 @@ metafile = true
 
 [[files]]
 file = "mods/n3ko-mod.pw.toml"
-hash = "ec09fd106f7c0fc9bb66f1c14656f00680d7e01dfd24ac44c4d2834a3c440385"
+hash = "8430add36cf16cad5af29dbccfe8f6e6f47829ee896d5c17476b79449c0cfe52"
 metafile = true
 
 [[files]]
@@ -2207,7 +2207,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "c4a7abf7524f6c862446dd1fd6fa5ad78e0ee2578fb82115902f879f1a949f02"
+hash = "fe16be666f6ed1c24a2ecb2c50b2e9dd8dedf07dd748f3278e771a994cdbba5b"
 metafile = true
 
 [[files]]
@@ -2247,7 +2247,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrestria.pw.toml"
-hash = "978d9ba60f5c54e96c7f53d3ac41818c0058f364bc521e41fbaf10d9ddfa42a7"
+hash = "e4b4f6fd8862320b44554444572f18f06e237263ba19752b425217f561a4bc9c"
 metafile = true
 
 [[files]]
@@ -2272,7 +2272,7 @@ metafile = true
 
 [[files]]
 file = "mods/vmp-fabric.pw.toml"
-hash = "54f57765ec22a3c0afc5b3071cc8868c4f62a8aa2a75afd987d138875cb49938"
+hash = "5ae0f7a7c74067c54646560408c4a4ce05ac3142f81f031a4b62435bf38562bf"
 metafile = true
 
 [[files]]
@@ -2282,7 +2282,7 @@ metafile = true
 
 [[files]]
 file = "mods/wthit.pw.toml"
-hash = "c78ed024370e83d09df73b5eb722612a3f48d65005f47539fb383b9186a5532f"
+hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
 metafile = true
 
 [[files]]
