@@ -1836,6 +1836,11 @@ hash = "d16ad5625096ed2f3953a5eb59c7fd54b78ced0fa7ebc91c29fb6886d1e0caff"
 metafile = true
 
 [[files]]
+file = "mods/antique-atlas.pw.toml"
+hash = "f523a4953589f77c51091f978889b0ad81ef057b192aa773bb8f6856628c83a3"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "80e7c9fd868c28612d6e9945044e274399579ab0007285f2ec50caf006c771f3"
 metafile = true
