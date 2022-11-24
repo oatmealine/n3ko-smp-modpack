@@ -1952,7 +1952,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "8c34fca924fdd83cd25f10f53329725d711da0a594abb1f1294f5a8ab35821bc"
+hash = "915c711c779fdec6e36c32cb8aec043eb15e2bab6ce3ed51290cbaeb10f7ec7a"
 metafile = true
 
 [[files]]
@@ -1987,7 +1987,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "9384012f50f3f22f4d60bbe0fa68232630a684550a90028abadc8160f54d7318"
+hash = "145dbcbac757622ec415041cdcabf07654981f84d5044c8fc16f6aa88a03ccb3"
 metafile = true
 
 [[files]]
@@ -2242,7 +2242,7 @@ metafile = true
 
 [[files]]
 file = "mods/spectrum.pw.toml"
-hash = "4785f5b4b9a75755565abbe3c43e13b4c07bc32c48c540f24a137e134bba3ee5"
+hash = "8c45621ec8b43b034e6855319606fd7436ebe4f3329fa6c7e86325574c0d28a7"
 metafile = true
 
 [[files]]
