@@ -2181,6 +2181,16 @@ hash = "8e59815b193e52f162b5ded34a4b1dfdac31b880893ab286ac12a970903ceb4b"
 metafile = true
 
 [[files]]
+file = "mods/quicksand.pw.toml"
+hash = "6b973c4b087ba49d3c5050ce26faaa3a76df7b3cea35293b6c031ba17551d1c5"
+metafile = true
+
+[[files]]
+file = "mods/quicksnad.pw.toml"
+hash = "f7a5a41bda36b56c26942a30be83a6f1253758b26abf3b509a302ede48fe2ca9"
+metafile = true
+
+[[files]]
 file = "mods/reeses-sodium-options.pw.toml"
 hash = "2ece972fd1306a38ca278d9da23656c73bc103df57709a4bdac0a0271a646f34"
 metafile = true

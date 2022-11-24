@@ -1,0 +1,13 @@
+name = "Quicksnad"
+filename = "quicksnad-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8LL35qTE/versions/1.0.1-1.18.2/quicksnad-1.0.1.jar"
+hash-format = "sha1"
+hash = "795e718160f11d87c02e38bc01acc9ab37143e4c"
+
+[update]
+[update.modrinth]
+mod-id = "8LL35qTE"
+version = "PUMpT59n"
