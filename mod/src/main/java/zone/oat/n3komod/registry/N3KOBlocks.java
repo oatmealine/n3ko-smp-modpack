@@ -8,6 +8,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
@@ -37,7 +38,7 @@ public class N3KOBlocks implements BlockRegistryContainer {
   public static final Block THREAD_GROUND = new Block(FabricBlockSettings.of(Material.STONE).strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(N3KOBlocks::never));
 
   private static Block createButton(MapColor color) {
-    return new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(2f).mapColor(color));
+    return new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.2f).mapColor(color));
   }
 
   public static final Block BUTTON_BLACK = createButton(MapColor.BLACK);
@@ -60,7 +61,7 @@ public class N3KOBlocks implements BlockRegistryContainer {
     BUTTON_BLACK, BUTTON_BLUE, BUTTON_BROWN, BUTTON_CYAN, BUTTON_GREEN, BUTTON_GRAY, BUTTON_LIGHT_BLUE, BUTTON_LIGHT_GRAY, BUTTON_LIME, BUTTON_MAGENTA, BUTTON_ORANGE, BUTTON_PINK, BUTTON_PURPLE, BUTTON_RED, BUTTON_WHITE, BUTTON_YELLOW
   };
 
-  public static final Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(0.4f, 1.8f));
+  public static final Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.BONE).strength(0.4f, 1.8f));
 
   public static final Block PAD = new PadBlock(FabricBlockSettings.of(Material.METAL).strength(0.8f, 1.8f));
 
