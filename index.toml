@@ -2096,6 +2096,11 @@ hash = "b8c6a8b674c85002ba0d4feb98f02522424680d2bffbf68d592d45bcaf382330"
 metafile = true
 
 [[files]]
+file = "mods/mealapi.pw.toml"
+hash = "4359c7cfea5b6cf575b0723ca5aa95c28ef8fc49f83e06f0b0a733cd17a1b623"
+metafile = true
+
+[[files]]
 file = "mods/megane.pw.toml"
 hash = "1d15b4f366ffc9430ab6650362448777f8a99f585be792307cf329bf1bff6d4b"
 metafile = true
