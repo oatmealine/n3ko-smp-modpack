@@ -56,6 +56,7 @@ public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockE
     BlockModelRenderer mr = rm.getModelRenderer();
     BakedModel model = rm.getModel(state);
     Random random = client.world.getRandom();
+    RenderSystem.defaultBlendFunc();
     mr.render(blockEntity.getWorld(), model, state, pos, matrices, vertexConsumers.getBuffer(RenderLayers.getBlockLayer(state)), false, random, state.getRenderingSeed(pos), overlay);
 
     matrices.pop();
