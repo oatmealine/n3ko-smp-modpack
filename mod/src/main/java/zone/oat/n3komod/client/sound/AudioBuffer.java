@@ -56,11 +56,11 @@ public class AudioBuffer {
             IntBuffer channelCount = stack.mallocInt(1);
             IntBuffer sampleRate = stack.mallocInt(1);
 
-            HttpResponse<InputStream> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofInputStream());
+            HttpResponse<byte[]> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofByteArray());
 
             if (!Util.isOK(response.statusCode())) throw new Exception("Received a non-2xx status code: " + response.statusCode());
 
-            byte[] bytes = response.body().readAllBytes();
+            byte[] bytes = response.body();
             ByteBuffer dataBuffer = stack.malloc(bytes.length);
             dataBuffer.put(0, bytes);
 
