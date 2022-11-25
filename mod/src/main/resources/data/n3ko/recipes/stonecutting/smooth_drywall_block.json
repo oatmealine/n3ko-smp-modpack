@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "n3ko:drywall_block"
+  },
+  "result": "n3ko:smooth_drywall_block"
+}

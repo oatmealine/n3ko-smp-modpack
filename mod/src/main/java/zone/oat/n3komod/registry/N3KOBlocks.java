@@ -62,6 +62,7 @@ public class N3KOBlocks implements BlockRegistryContainer {
   };
 
   public static final Block DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.BONE).strength(0.4f, 1.8f));
+  public static final Block SMOOTH_DRYWALL_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.BONE).strength(0.4f, 1.8f));
 
   public static final Block PAD = new PadBlock(FabricBlockSettings.of(Material.METAL).strength(0.8f, 1.8f));
 
