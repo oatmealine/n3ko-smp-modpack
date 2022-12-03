@@ -1,0 +1,37 @@
+{
+  "parent": "n3ko:n3ko/wet_drywall",
+  "criteria": {
+    "drywall": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "n3ko:drywall_chunk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.n3ko.drywall.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "n3ko:drywall_chunk"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.n3ko.drywall.title"
+    }
+  },
+  "requirements": [
+    [
+      "drywall"
+    ]
+  ]
+}

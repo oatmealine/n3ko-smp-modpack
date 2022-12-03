@@ -17,7 +17,6 @@ public class AdjustAncientDebrisSpawnRatesMixin {
     int size = args.get(2);
 
     if (state.getBlock().equals(Blocks.ANCIENT_DEBRIS)) {
-      N3KOMod.LOGGER.info("now at {}", size + 3);
       args.set(2, size + 3);
     }
   }

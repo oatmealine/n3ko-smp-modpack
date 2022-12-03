@@ -82,5 +82,23 @@
 
   "menu.n3ko.credits.0": "The §lN3KO SMP§r modpack",
   "menu.n3ko.credits.1": "§7by Cardboxneko, oatmealine and Rya",
-  "menu.n3ko.credits.2": "Minecraft %s (Fabric), %s mods"
+  "menu.n3ko.credits.2": "Minecraft %s (Fabric), %s mods",
+
+  "advancements.n3ko.root.title": "N3KO SMP",
+  "advancements.n3ko.root.description": "time for crab",
+
+  "advancements.n3ko.plush.title": "Marketable Plushification",
+  "advancements.n3ko.plush.description": "Obtain a plush version of a bestie directly into your pocket",
+
+  "advancements.n3ko.wet_drywall.title": "Oxymoronous Drywall",
+  "advancements.n3ko.wet_drywall.description": "Obtain wet drywall by mixing Desh Nuggets and Concrete Powder with some water",
+
+  "advancements.n3ko.drywall.title": "A Nice, Square Chunk",
+  "advancements.n3ko.drywall.description": "Smelt wet drywall to get a chunk of drywall. Now eat it. Eat it. Eat the drywall. Eat",
+
+  "advancements.n3ko.button.title": "Very Funny",
+  "advancements.n3ko.button.description": "Press a sound button",
+
+  "advancements.n3ko.giant_cobblestone.title": "Giant Cobblestone",
+  "advancements.n3ko.giant_cobblestone.description": "Giant Cobblestone"
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "n3ko:n3ko/root",
+  "criteria": {
+    "plush": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "n3ko:plushies"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.n3ko.plush.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "n3ko:she_plush"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.n3ko.plush.title"
+    }
+  },
+  "requirements": [
+    [
+      "plush"
+    ]
+  ]
+}

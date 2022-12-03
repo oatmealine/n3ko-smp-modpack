@@ -1,0 +1,35 @@
+{
+  "parent": "n3ko:n3ko/root",
+  "criteria": {
+    "button_pressed": {
+      "conditions": {
+        "location": {
+          "block": {
+            "tag": "n3ko:buttons"
+          }
+        }
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.n3ko.button.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "n3ko:button_blue"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.n3ko.button.title"
+    }
+  },
+  "requirements": [
+    [
+      "button_pressed"
+    ]
+  ]
+}

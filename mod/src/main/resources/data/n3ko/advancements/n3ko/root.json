@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "always": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/light_blue_concrete_powder.png",
+    "description": {
+      "translate": "advancements.n3ko.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "n3ko:n3ko_block"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.n3ko.root.title"
+    }
+  }
+}
