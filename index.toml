@@ -2226,6 +2226,11 @@ hash = "df365e1fc2c5121377e1738be3a7648a808167bf02610df4288ddac60c3e4e95"
 metafile = true
 
 [[files]]
+file = "mods/rsls.pw.toml"
+hash = "28599ce108e36b7d950cb7e50427294bb024d2b28fc084f267a125d08231725a"
+metafile = true
+
+[[files]]
 file = "mods/sandwichable.pw.toml"
 hash = "92c96cc5f76249f62fb2da230fc1b8e1e5cb63c499fcc37ec87c14f6a5def342"
 metafile = true
