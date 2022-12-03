@@ -1,13 +1,13 @@
 name = "Packages"
-filename = "packages-fabric-1.18.2-3.jar"
+filename = "packages-fabric-1.18.2-3.4.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/10DZYVis/versions/uGnr64QQ/packages-fabric-1.18.2-3.jar"
+url = "https://cdn.modrinth.com/data/10DZYVis/versions/IyTw3ag0/packages-fabric-1.18.2-3.4.jar"
 hash-format = "sha1"
-hash = "26f7f57afe552b927b5425eaf170444f30589ce3"
+hash = "b10b8d3ad1df663994d13b62ddb99498c22dabbc"
 
 [update]
 [update.modrinth]
 mod-id = "10DZYVis"
-version = "uGnr64QQ"
+version = "IyTw3ag0"
