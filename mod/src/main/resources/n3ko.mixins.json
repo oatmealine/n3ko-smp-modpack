@@ -4,6 +4,7 @@
   "package": "zone.oat.n3komod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AdjustAncientDebrisSpawnRatesMixin",
     "convenience.HandleEmptyLootTablesMixin"
   ],
   "client": [
