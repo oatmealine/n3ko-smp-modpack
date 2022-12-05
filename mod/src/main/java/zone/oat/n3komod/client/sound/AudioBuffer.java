@@ -1,5 +1,7 @@
 package zone.oat.n3komod.client.sound;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.sound.Source;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.openal.AL10;
@@ -18,6 +20,7 @@ import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.nio.ShortBuffer;
 
+@Environment(EnvType.CLIENT)
 public class AudioBuffer {
     private static final HttpClient CLIENT = HttpClient.newBuilder().build();
     private int buffer;

@@ -1,5 +1,7 @@
 package zone.oat.n3komod.client.screen;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.minecraft.block.entity.BlockEntity;
@@ -29,6 +31,7 @@ import java.util.regex.Pattern;
 
 import static zone.oat.n3komod.content.blockentity.ButtonBlockEntity.*;
 
+@Environment(EnvType.CLIENT)
 public class ButtonSettingsScreen extends Screen {
 
     class SettingsSlider extends SliderWidget {

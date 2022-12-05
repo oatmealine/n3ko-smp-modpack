@@ -3,6 +3,8 @@ package zone.oat.n3komod.client.screen;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.terraformersmc.modmenu.gui.ModsScreen;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.font.TextRenderer;
@@ -34,6 +36,7 @@ import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
+@Environment(EnvType.CLIENT)
 public class CustomTitleScreen extends Screen {
   public static final Text VERSION_TEXT = new TranslatableText("menu.n3ko.version", SharedConstants.getGameVersion().getName(), FabricLoader.getInstance().getModContainer("n3komod").get().getMetadata().getVersion().getFriendlyString());
   private static final Identifier ACCESSIBILITY_ICON_TEXTURE = new Identifier("textures/gui/accessibility.png");

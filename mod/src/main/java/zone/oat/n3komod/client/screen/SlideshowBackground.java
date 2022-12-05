@@ -2,6 +2,8 @@ package zone.oat.n3komod.client.screen;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.texture.TextureManager;
 import net.minecraft.client.util.math.MatrixStack;
@@ -16,6 +18,7 @@ import java.util.concurrent.Executor;
 
 import static net.minecraft.client.gui.DrawableHelper.drawTexture;
 
+@Environment(EnvType.CLIENT)
 public class SlideshowBackground {
   private static final Identifier[] BACKGROUNDS = {
     new ModIdentifier("textures/gui/title/background/background_0.png"),

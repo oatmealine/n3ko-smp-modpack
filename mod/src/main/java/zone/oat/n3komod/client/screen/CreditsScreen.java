@@ -2,6 +2,8 @@ package zone.oat.n3komod.client.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.terraformersmc.modmenu.ModMenu;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.gui.screen.ConfirmChatLinkScreen;
 import net.minecraft.client.gui.screen.Screen;
@@ -22,6 +24,7 @@ import zone.oat.n3komod.util.ModIdentifier;
 import static zone.oat.n3komod.client.render.util.BetterDrawableHelper.fillShader;
 import static zone.oat.n3komod.client.render.util.CubeRenderer.renderCube;
 
+@Environment(EnvType.CLIENT)
 public class CreditsScreen extends Screen {
   private static final Text[] LINES = {
     new TranslatableText("menu.n3ko.credits.0"),
