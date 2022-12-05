@@ -2111,6 +2111,16 @@ hash = "b8c6a8b674c85002ba0d4feb98f02522424680d2bffbf68d592d45bcaf382330"
 metafile = true
 
 [[files]]
+file = "mods/mavapi.pw.toml"
+hash = "008888eda611776319f4c814b6e7991a02b47f92810539bf25c9240fdbf47747"
+metafile = true
+
+[[files]]
+file = "mods/mavm.pw.toml"
+hash = "36507f0e0fa07a7acc8974ee0aa3ba8c2587da8be373a446974125f9b0246677"
+metafile = true
+
+[[files]]
 file = "mods/mealapi.pw.toml"
 hash = "4359c7cfea5b6cf575b0723ca5aa95c28ef8fc49f83e06f0b0a733cd17a1b623"
 metafile = true
