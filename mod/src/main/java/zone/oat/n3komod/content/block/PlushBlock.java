@@ -112,10 +112,12 @@ public class PlushBlock extends BlockWithEntity {
     if (be instanceof PlushBlockEntity) {
       if (world.isClient()) return ActionResult.SUCCESS;
 
-      PacketByteBuf buf = PacketByteBufs.create();
-      buf.writeBlockPos(pos);
-      for (ServerPlayerEntity serverPlayer : PlayerLookup.tracking((ServerWorld) world, pos)) {
-        ServerPlayNetworking.send(serverPlayer, N3KOS2CPackets.SQUISH_PLUSH, buf);
+      if (!player.world.isClient) {
+        PacketByteBuf buf = PacketByteBufs.create();
+        buf.writeBlockPos(pos);
+        for (ServerPlayerEntity serverPlayer : PlayerLookup.tracking((ServerWorld) world, pos)) {
+          ServerPlayNetworking.send(serverPlayer, N3KOS2CPackets.SQUISH_PLUSH, buf);
+        }
       }
 
       world.playSound(

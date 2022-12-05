@@ -4,11 +4,10 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import zone.oat.n3komod.N3KOMod;
+import net.minecraft.world.World;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.util.ModIdentifier;
 
@@ -24,16 +23,17 @@ public class N3KOC2SPackets {
             String label = buf.readString();
             float pitch = buf.readFloat();
             float volume = buf.readFloat();
+            World world = player.getWorld();
             server.execute(() -> {
-                BlockEntity entity = player.world.getBlockEntity(target);
+                BlockEntity entity = world.getBlockEntity(target);
                 if (entity instanceof ButtonBlockEntity button) {
                     button.url = url;
                     button.label = label;
                     button.pitch = MathHelper.clamp(pitch, MIN_PITCH, MAX_PITCH);
                     button.volume = MathHelper.clamp(volume, MIN_VOLUME, MAX_VOLUME);
                     button.markDirty();
-                    BlockState state = player.world.getBlockState(target);
-                    player.world.updateListeners(target, state, state, Block.NOTIFY_ALL);
+                    BlockState state = world.getBlockState(target);
+                    world.updateListeners(target, state, state, Block.NOTIFY_ALL);
                 }
             });
         });
