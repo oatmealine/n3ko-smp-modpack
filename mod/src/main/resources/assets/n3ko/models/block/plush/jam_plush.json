@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "n3ko:block/jam_plush",
-		"particle": "Plushy Base:texture_jam"
+		"particle": "n3ko:block/jam_plush"
 	},
 	"elements": [
 		{

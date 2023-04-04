@@ -26,6 +26,8 @@ public class N3KOModClient implements ClientModInitializer {
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.ZEPH_PLUSH, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.LEZ_PLUSH, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.JILLO_PLUSH, RenderLayer.getTranslucent());
+    BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.ULLU_PLUSH, RenderLayer.getCutout());
+    BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.JAM_PLUSH, RenderLayer.getCutout());
     BlockRenderLayerMap.INSTANCE.putBlock(N3KOBlocks.PAD, RenderLayer.getCutout());
 
     for (int i = 0; i < N3KOBlocks.BUTTONS.length; i++) {

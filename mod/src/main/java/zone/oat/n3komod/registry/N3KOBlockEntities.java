@@ -15,7 +15,9 @@ public class N3KOBlockEntities implements AutoRegistryContainer<BlockEntityType<
     N3KOBlocks.NOEL_PLUSH,
     N3KOBlocks.ZEPH_PLUSH,
     N3KOBlocks.LEZ_PLUSH,
-    N3KOBlocks.JILLO_PLUSH
+    N3KOBlocks.JILLO_PLUSH,
+    N3KOBlocks.ULLU_PLUSH,
+    N3KOBlocks.JAM_PLUSH
   ).build();
 
   public static BlockEntityType<ButtonBlockEntity> BUTTON_BLOCK_ENTITY = FabricBlockEntityTypeBuilder.create(
