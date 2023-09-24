@@ -42,6 +42,7 @@ import org.jetbrains.annotations.Nullable;
 import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.client.screen.ButtonSettingsScreen;
 import zone.oat.n3komod.client.sound.AudioBuffer;
+import zone.oat.n3komod.client.sound.AudioDownloader;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.networking.N3KOS2CPackets;
 
@@ -70,8 +71,6 @@ public class ButtonBlock extends BlockWithEntity {
     protected static final VoxelShape SOUTH_PRESSED_SHAPE = Block.createCuboidShape(4.0, 4.0, 0.0, 12.0, 12.0, 5.0);
     protected static final VoxelShape WEST_PRESSED_SHAPE = Block.createCuboidShape(11.0, 4.0, 4.0, 16.0, 12.0, 12.0);
     protected static final VoxelShape EAST_PRESSED_SHAPE = Block.createCuboidShape(0.0, 4.0, 4.0, 5.0, 12.0, 12.0);
-
-    private static final ButtonBlockCache AUDIO_CACHE = new ButtonBlockCache();
 
     public static final int PRESS_TICKS = 40;
 
@@ -128,10 +127,8 @@ public class ButtonBlock extends BlockWithEntity {
         if (be instanceof ButtonBlockEntity button) {
             if (button.url != null && !button.url.trim().equals("")) {
                 if (!world.isClient()) return;
-                AudioBuffer buf = AUDIO_CACHE.getBuffer(button.url);
-                Source source = buf.play(new Vec3d((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5));
-                source.setPitch(button.pitch);
-                source.setVolume(button.volume);
+                AudioBuffer buf = new AudioBuffer(button.url);
+                buf.playOnceLoaded((s)->{}, new Vec3d((double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5), button.volume, button.pitch);
             } else {
                 playClickSound(null, world, pos, true);
             }

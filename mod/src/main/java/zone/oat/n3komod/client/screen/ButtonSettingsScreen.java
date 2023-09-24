@@ -19,6 +19,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.client.sound.AudioBuffer;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.networking.N3KOC2SPackets;
@@ -90,8 +91,9 @@ public class ButtonSettingsScreen extends Screen {
     private static final Text PREVIEW_TEXT = Text.translatable("gui.n3ko.text.preview");
     private static final Text PREVIEW_STOP_TEXT = Text.translatable("gui.n3ko.text.preview_stop");
     private static final Text PREVIEW_ERROR_TEXT = Text.translatable("gui.n3ko.text.preview_error");
+    private static final Text PREVIEW_WAIT_TEXT = Text.translatable("gui.n3ko.text.preview_wait");
 
-    private static final Pattern URL_REGEX = Pattern.compile("^https?://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]\\.ogg$");
+    private static final Pattern URL_REGEX = Pattern.compile("^https?://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]\\.ogg([?#][-a-zA-Z0-9+&@#/%=~_|]*)?$");
 
     public ButtonSettingsScreen(BlockPos pos) {
         super(Text.of(""));
@@ -160,24 +162,30 @@ public class ButtonSettingsScreen extends Screen {
         previewButton = addDrawableChild(ButtonWidget.builder(PREVIEW_TEXT, (button) -> {
             if (previewSource != null && previewSource.isPlaying()) {
                 previewSource.stop();
+                previewSource.close();
             } else {
                 String url = this.urlField.getText();
                 if (!URL_REGEX.matcher(url).matches()) return;
                 if (!url.equals(previewBufferURL) || this.previewBuffer == null) {
-                    previewBuffer = new AudioBuffer(url);
                     previewBufferURL = url;
+                    previewBuffer = new AudioBuffer(url);
+                    previewButton.setMessage(PREVIEW_WAIT_TEXT);
                 }
-                if (previewBuffer.getHandle() == 0) {
-                    previewBuffer.close();
-                    previewBuffer = null;
-                    previewButton.setMessage(PREVIEW_ERROR_TEXT);
-                } else {
-                    PlayerEntity player = MinecraftClient.getInstance().player;
-                    previewSource = previewBuffer.play(player.getPos());
-                    previewSource.setPitch(pitch.getValue());
-                    previewSource.setVolume(volume.getValue());
-                    previewButton.setMessage(PREVIEW_STOP_TEXT);
-                }
+
+                previewBuffer.playOnceLoaded((source) -> {
+                    if (source == null) {
+                        previewBuffer.close();
+                        previewBuffer = null;
+                        previewButton.setMessage(PREVIEW_ERROR_TEXT);
+                    } else {
+                        previewSource = source;
+                        PlayerEntity player = MinecraftClient.getInstance().player;
+                        previewSource = previewBuffer.play(player.getPos());
+                        previewSource.setPitch(pitch.getValue());
+                        previewSource.setVolume(volume.getValue());
+                        previewButton.setMessage(PREVIEW_STOP_TEXT);
+                    }
+                });
             }
         })
                 .dimensions(x + 105 + urlOffset, y, 50, 20)

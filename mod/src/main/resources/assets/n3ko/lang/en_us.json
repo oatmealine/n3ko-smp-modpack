@@ -63,6 +63,7 @@
   "gui.n3ko.text.preview": "Preview",
   "gui.n3ko.text.preview_stop": "Stop",
   "gui.n3ko.text.preview_error": "Error!",
+  "gui.n3ko.text.preview_wait": "...",
   "gui.n3ko.text.notes.0": "If you get an error, check your log! It'll contain (hopefully)",
   "gui.n3ko.text.notes.1": "helpful information about the error.",
   "gui.n3ko.text.button_name": "Label",

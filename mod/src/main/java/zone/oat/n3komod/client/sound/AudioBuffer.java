@@ -4,34 +4,34 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.sound.Source;
 import net.minecraft.util.math.Vec3d;
+import org.jetbrains.annotations.Nullable;
 import org.lwjgl.openal.AL10;
 import org.lwjgl.stb.STBVorbis;
 import org.lwjgl.system.MemoryStack;
 import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.mixin.sound.SourceAccessorMixin;
-import zone.oat.n3komod.util.Util;
 
-import java.io.InputStream;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.nio.ShortBuffer;
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+import static java.util.concurrent.Executors.newFixedThreadPool;
 
 @Environment(EnvType.CLIENT)
 public class AudioBuffer {
-    private static final HttpClient CLIENT = HttpClient.newBuilder().build();
     private int buffer;
+    private boolean isLoaded = false;
+
+    public interface SourceAction {
+        void onLoad(@Nullable Source source);
+    }
+    private Queue<SourceAction> playQueue = new ArrayDeque<>();
 
     public AudioBuffer(String url) {
-        buffer = AL10.alGenBuffers();
-        HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create(url))
-            .header("User-Agent", "N3KO SMP Modpack (https://github.com/oatmealine/n3ko-smp-modpack)")
-            .build();
-        load(request);
+        buffer = 0;
+        download(url);
     }
 
     public void close() {
@@ -39,6 +39,7 @@ public class AudioBuffer {
             AL10.alDeleteBuffers(buffer);
             buffer = 0;
         }
+        isLoaded = false;
     }
 
     private int formatOf(int channels) {
@@ -52,18 +53,30 @@ public class AudioBuffer {
         return AL10.AL_FORMAT_MONO16;
     }
 
-    private void load(HttpRequest request) {
-        N3KOMod.LOGGER.debug("Loading sound file: {}", request.uri());
+    private void onLoaded() {
+        isLoaded = true;
+        while (!playQueue.isEmpty()) {
+            N3KOMod.LOGGER.info("lois... i'm iterating... fuck");
+            SourceAction action = playQueue.remove();
+            action.onLoad(play());
+        }
+    }
+    private void loadFailed() {
+        N3KOMod.LOGGER.warn("Load has failed!");
+        while (!playQueue.isEmpty()) {
+            SourceAction action = playQueue.remove();
+            action.onLoad(null);
+        }
+        close();
+    }
+
+    private boolean decodeAndLoad(byte[] bytes) {
+        buffer = AL10.alGenBuffers();
 
         try (MemoryStack stack = MemoryStack.stackPush()) {
             IntBuffer channelCount = stack.mallocInt(1);
             IntBuffer sampleRate = stack.mallocInt(1);
 
-            HttpResponse<byte[]> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofByteArray());
-
-            if (!Util.isOK(response.statusCode())) throw new Exception("Received a non-2xx status code: " + response.statusCode());
-
-            byte[] bytes = response.body();
             ByteBuffer dataBuffer = stack.malloc(bytes.length);
             dataBuffer.put(0, bytes);
 
@@ -71,11 +84,12 @@ public class AudioBuffer {
 
             if (data == null) {
                 N3KOMod.LOGGER.warn("Failed to decode sound file due to an unknown error!!");
-                return;
+                return false;
             }
 
             try {
                 AL10.alBufferData(buffer, formatOf(channelCount.get()), data, sampleRate.get());
+                return true;
             } catch (Exception e) {
                 buffer = 0;
                 N3KOMod.LOGGER.warn("Failed to upload sound file", e);
@@ -85,25 +99,83 @@ public class AudioBuffer {
             buffer = 0;
             N3KOMod.LOGGER.warn("(Potentially temporary) Error while downloading sound file", e);
         }
+
+        return false;
+    }
+
+    private void download(String url) {
+        AudioDownloader.getInstance().getData(url, (data) -> {
+            if (data == null) {
+                loadFailed();
+            } else {
+                boolean success = decodeAndLoad(data);
+                if (success) {
+                    onLoaded();
+                } else {
+                    loadFailed();
+                }
+            }
+        });
     }
 
     public int getHandle() {
         return buffer;
     }
 
-    public Source play(Vec3d pos) {
+    public Source play() {
+        if (!isLoaded) return null;
+
         // THIS IS DERANGED
         // please don't do what i'm doing, if at all possible
         // thanks
         Source source = SourceAccessorMixin.invokeCreate();
         assert source != null;
         AL10.alSourcei(((SourceAccessorMixin) source).getPointer(), 4105, this.buffer);
-        source.setPosition(pos);
         source.setAttenuation(16f);
         source.setRelative(false);
         source.play();
 
         return source;
     }
+    public Source play(Vec3d pos) {
+        Source source = play();
+        if (source == null) return null;
+        source.setPosition(pos);
+        return source;
+    }
+    public Source play(Vec3d pos, float volume, float pitch) {
+        Source source = play();
+        if (source == null) return null;
+        source.setPosition(pos);
+        source.setVolume(volume);
+        source.setPitch(pitch);
+        return source;
+    }
 
+
+    public void playOnceLoaded(SourceAction action) {
+        if (isLoaded) {
+            action.onLoad(play());
+        } else if (buffer == 0) {
+            action.onLoad(null);
+        } else {
+            playQueue.add(action);
+        }
+    }
+    public void playOnceLoaded(SourceAction action, Vec3d pos) {
+        playOnceLoaded((source) -> {
+            if (source != null) source.setPosition(pos);
+            action.onLoad(source);
+        });
+    }
+    public void playOnceLoaded(SourceAction action, Vec3d pos, float volume, float pitch) {
+        playOnceLoaded((source) -> {
+            if (source != null) {
+                source.setPosition(pos);
+                source.setVolume(volume);
+                source.setPitch(pitch);
+            }
+            action.onLoad(source);
+        });
+    }
 }
