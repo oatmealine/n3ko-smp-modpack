@@ -6,9 +6,9 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -30,7 +30,7 @@ public class TooltipMixin {
           method="getTooltip", locals= LocalCapture.CAPTURE_FAILHARD)
   public void getTooltip(@Nullable PlayerEntity player, TooltipContext context, CallbackInfoReturnable<List<Text>> ci, List<Text> tooltip) {
     ItemStack self = (ItemStack)(Object)this;
-    Identifier id = Registry.ITEM.getId(self.getItem());
+    Identifier id = Registries.ITEM.getId(self.getItem());
     if (id.getNamespace().equals(N3KOMod.NAMESPACE)) {
       String keyPrefix = self.getTranslationKey() + ".tooltip";
       BlockWithTooltip.appendTooltip(tooltip, keyPrefix, I18n.translate(keyPrefix + ".hidden").trim().equalsIgnoreCase("true"), id.getPath().equals("lez_plush") ? 0xffdfe8 : 0xFFFFFF);

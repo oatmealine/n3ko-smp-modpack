@@ -21,7 +21,7 @@ public class DrywallChunk extends Item {
     if (user instanceof PlayerEntity player) {
       Text name = player.getName();
 
-      if (name.asString().equalsIgnoreCase("cardboxneko")) {
+      if (name.getString().equalsIgnoreCase("cardboxneko")) {
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 30));
       } else {
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 160, 3));

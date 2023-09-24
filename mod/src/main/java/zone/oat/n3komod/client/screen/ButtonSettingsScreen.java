@@ -6,19 +6,15 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.ScreenTexts;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.widget.SliderWidget;
 import net.minecraft.client.gui.widget.TextFieldWidget;
-import net.minecraft.client.realms.gui.screen.RealmsSlotOptionsScreen;
 import net.minecraft.client.sound.Source;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
@@ -40,7 +36,7 @@ public class ButtonSettingsScreen extends Screen {
         private final String translationKey;
 
         public SettingsSlider(int x, int y, int width, float value, float min, float max, String translationKey) {
-            super(x, y, width, 20, LiteralText.EMPTY, 0.0);
+            super(x, y, width, 20, Text.empty(), 0.0);
             this.min = min;
             this.max = max;
             this.value = ((MathHelper.clamp(value, min, max) - min) / (max - min));
@@ -64,7 +60,7 @@ public class ButtonSettingsScreen extends Screen {
 
         @Override
         protected void updateMessage() {
-            this.setMessage(new TranslatableText(translationKey, Math.round(this.getValue() * 100f) / 100f));
+            this.setMessage(Text.translatable(translationKey, Math.round(this.getValue() * 100f) / 100f));
         }
 
         @Override
@@ -91,9 +87,9 @@ public class ButtonSettingsScreen extends Screen {
     private AudioBuffer previewBuffer;
     private String previewBufferURL;
 
-    private static final Text PREVIEW_TEXT = new TranslatableText("gui.n3ko.text.preview");
-    private static final Text PREVIEW_STOP_TEXT = new TranslatableText("gui.n3ko.text.preview_stop");
-    private static final Text PREVIEW_ERROR_TEXT = new TranslatableText("gui.n3ko.text.preview_error");
+    private static final Text PREVIEW_TEXT = Text.translatable("gui.n3ko.text.preview");
+    private static final Text PREVIEW_STOP_TEXT = Text.translatable("gui.n3ko.text.preview_stop");
+    private static final Text PREVIEW_ERROR_TEXT = Text.translatable("gui.n3ko.text.preview_error");
 
     private static final Pattern URL_REGEX = Pattern.compile("^https?://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]\\.ogg$");
 
@@ -156,12 +152,12 @@ public class ButtonSettingsScreen extends Screen {
         urlField = addDrawableChild(new TextFieldWidget(textRenderer, x + urlOffset - 100, y, 200, 20, Text.of("https://oat.zone/f/hi.ogg")));
         urlField.setMaxLength(128);
         if (blockEntity != null && blockEntity.url != null) this.urlField.setText(blockEntity.url);
-        urlField.setTextFieldFocused(true);
+        urlField.setFocused(true);
         urlField.setChangedListener(url -> {
             updateURLField();
         });
 
-        previewButton = addDrawableChild(new ButtonWidget(x + 105 + urlOffset, y, 50, 20, PREVIEW_TEXT, (button) -> {
+        previewButton = addDrawableChild(ButtonWidget.builder(PREVIEW_TEXT, (button) -> {
             if (previewSource != null && previewSource.isPlaying()) {
                 previewSource.stop();
             } else {
@@ -183,28 +179,32 @@ public class ButtonSettingsScreen extends Screen {
                     previewButton.setMessage(PREVIEW_STOP_TEXT);
                 }
             }
-        }));
+        })
+                .dimensions(x + 105 + urlOffset, y, 50, 20)
+                .build()
+        );
 
         labelField = addDrawableChild(new TextFieldWidget(textRenderer, x - 55, y + 38, 110, 20, Text.of("nut")));
         labelField.setMaxLength(16);
         if (blockEntity != null && blockEntity.label != null) this.labelField.setText(blockEntity.label);
 
-        confirmButton = addDrawableChild(new ButtonWidget(x - 50, y + 86, 100, 20, new TranslatableText("gui.done"), (button) -> {
-            // cleanup
-            if (previewSource != null && previewSource.isPlaying()) {
-                previewSource.stop();
-                previewSource = null;
-            }
-            if (previewBuffer != null) {
-                previewBuffer.close();
-                previewBuffer = null;
-            }
+        confirmButton = addDrawableChild(ButtonWidget.builder(Text.translatable("gui.done"), (button) -> {
+                // cleanup
+                if (previewSource != null && previewSource.isPlaying()) {
+                    previewSource.stop();
+                    previewSource = null;
+                }
+                if (previewBuffer != null) {
+                    previewBuffer.close();
+                    previewBuffer = null;
+                }
 
-            if (isURLValid()) {
-                sendPacket();
-            }
-            this.close();
-        }));
+                if (isURLValid()) {
+                    sendPacket();
+                }
+                this.close();
+            }).dimensions(x - 50, y + 86, 100, 20).build()
+        );
 
         int slidersOffset = -21;
 
@@ -212,25 +212,28 @@ public class ButtonSettingsScreen extends Screen {
         if (blockEntity != null) this.pitch.setValue(blockEntity.pitch);
         volume = addDrawableChild(new SettingsSlider(x + 1 + slidersOffset, y + 64, 90, 1f, MIN_VOLUME, MAX_VOLUME, "gui.n3ko.text.volume"));
         if (blockEntity != null) this.volume.setValue(blockEntity.volume);
-        addDrawableChild(new ButtonWidget(x + 93 + slidersOffset, y + 64, 40, 20, new TranslatableText("controls.reset"), (button) -> {
+        addDrawableChild(ButtonWidget.builder(Text.translatable("controls.reset"), (button) -> {
             volume.setValue(1.0f);
             pitch.setValue(1.0f);
-        }));
+        })
+            .dimensions(x + 93 + slidersOffset, y + 64, 40, 20)
+            .build()
+        );
 
         updateURLField();
     }
 
     @Override
-    public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-        this.renderBackground(matrices);
-        super.render(matrices, mouseX, mouseY, delta);
+    public void render(DrawContext ctx, int mouseX, int mouseY, float delta) {
+        this.renderBackground(ctx);
+        super.render(ctx, mouseX, mouseY, delta);
         int x = this.width / 2;
         int y = this.height / 2 - 50;
-        drawCenteredTextWithShadow(matrices, textRenderer, new TranslatableText("gui.n3ko.text.button_settings").asOrderedText(), x, y - 24, 0xFFFFFF);
-        drawCenteredTextWithShadow(matrices, textRenderer, new TranslatableText("gui.n3ko.text.format").asOrderedText(), x, y - 12, 0xFF8888);
-        drawCenteredTextWithShadow(matrices, textRenderer, new TranslatableText("gui.n3ko.text.button_name").asOrderedText(), x, y + 26, 0xFFFFFF);
-        drawCenteredTextWithShadow(matrices, textRenderer, new TranslatableText("gui.n3ko.text.notes.0").asOrderedText(), x, y + 110, 0x666666);
-        drawCenteredTextWithShadow(matrices, textRenderer, new TranslatableText("gui.n3ko.text.notes.1").asOrderedText(), x, y + 122, 0x666666);
+        ctx.drawCenteredTextWithShadow(textRenderer, Text.translatable("gui.n3ko.text.button_settings").asOrderedText(), x, y - 24, 0xFFFFFF);
+        ctx.drawCenteredTextWithShadow(textRenderer, Text.translatable("gui.n3ko.text.format").asOrderedText(), x, y - 12, 0xFF8888);
+        ctx.drawCenteredTextWithShadow(textRenderer, Text.translatable("gui.n3ko.text.button_name").asOrderedText(), x, y + 26, 0xFFFFFF);
+        ctx.drawCenteredTextWithShadow(textRenderer, Text.translatable("gui.n3ko.text.notes.0").asOrderedText(), x, y + 110, 0x666666);
+        ctx.drawCenteredTextWithShadow(textRenderer, Text.translatable("gui.n3ko.text.notes.1").asOrderedText(), x, y + 122, 0x666666);
     }
 
     @Override

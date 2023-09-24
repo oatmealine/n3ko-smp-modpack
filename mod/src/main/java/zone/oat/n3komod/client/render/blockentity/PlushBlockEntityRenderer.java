@@ -15,11 +15,10 @@ import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3f;
+import net.minecraft.util.math.RotationAxis;
+import net.minecraft.util.math.random.Random;
 import zone.oat.n3komod.util.Ease;
 import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
-
-import java.util.Random;
 
 @Environment(EnvType.CLIENT)
 public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockEntity> {
@@ -38,7 +37,7 @@ public class PlushBlockEntityRenderer implements BlockEntityRenderer<PlushBlockE
 
     matrices.translate(-off, 0.0, -off);
     //matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion((blockEntity.getWorld().getTime() + tickDelta) * 4));
-    matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(-((float)(state.get(SignBlock.ROTATION) * 360) / 16f + 180f)));
+    matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(-((float)(state.get(SignBlock.ROTATION) * 360) / 16f + 180f)));
     //matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-90));
 
     if (blockEntity.isSquished) {

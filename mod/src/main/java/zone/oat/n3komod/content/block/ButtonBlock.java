@@ -23,7 +23,6 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
@@ -32,6 +31,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -46,7 +46,6 @@ import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.networking.N3KOS2CPackets;
 
 import java.util.List;
-import java.util.Random;
 
 // largely copypasted from AbstractButtonBlock
 // this is a fucking mess
@@ -112,7 +111,7 @@ public class ButtonBlock extends BlockWithEntity {
             return ActionResult.CONSUME;
         } else {
             this.powerOn(state, world, pos);
-            world.emitGameEvent(player, GameEvent.BLOCK_PRESS, pos);
+            world.emitGameEvent(player, GameEvent.BLOCK_ACTIVATE, pos);
 
             if (world.getBlockEntity(pos) instanceof ButtonBlockEntity button && !button.url.trim().equals("")) {
                 this.sendPackets(pos, world);
@@ -142,7 +141,7 @@ public class ButtonBlock extends BlockWithEntity {
     public void powerOn(BlockState state, World world, BlockPos pos) {
         world.setBlockState(pos, state.with(POWERED, true), Block.NOTIFY_ALL);
         this.updateNeighbors(state, world, pos);
-        world.createAndScheduleBlockTick(pos, this, PRESS_TICKS);
+        world.scheduleBlockTick(pos, this, PRESS_TICKS);
     }
 
     @Override
@@ -212,7 +211,7 @@ public class ButtonBlock extends BlockWithEntity {
             if (direction.getAxis() == Direction.Axis.Y) {
                 blockState = this.getDefaultState()
                         .with(FACE, direction == Direction.UP ? WallMountLocation.CEILING : WallMountLocation.FLOOR)
-                        .with(FACING, ctx.getPlayerFacing());
+                        .with(FACING, ctx.getHorizontalPlayerFacing());
             } else {
                 blockState = this.getDefaultState().with(FACE, WallMountLocation.WALL).with(FACING, direction.getOpposite());
             }
@@ -241,7 +240,7 @@ public class ButtonBlock extends BlockWithEntity {
             world.setBlockState(pos, state.with(POWERED, Boolean.FALSE), Block.NOTIFY_ALL);
             this.updateNeighbors(state, world, pos);
             this.playClickSound(null, world, pos, false);
-            world.emitGameEvent(GameEvent.BLOCK_UNPRESS, pos);
+            world.emitGameEvent(null, GameEvent.BLOCK_DEACTIVATE, pos);
         }
     }
 
@@ -301,7 +300,7 @@ public class ButtonBlock extends BlockWithEntity {
 
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> origTooltip, TooltipContext tooltipContext) {
-        origTooltip.add(new TranslatableText("block.n3ko.button.tooltip"));
+        origTooltip.add(Text.translatable("block.n3ko.button.tooltip"));
     }
 }
 

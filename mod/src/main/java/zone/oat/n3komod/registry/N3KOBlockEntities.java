@@ -3,10 +3,10 @@ package zone.oat.n3komod.registry;
 import io.wispforest.owo.registration.reflect.AutoRegistryContainer;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
 import zone.oat.n3komod.content.blockentity.PlushBlockEntity;
-import zone.oat.n3komod.util.ModIdentifier;
 
 public class N3KOBlockEntities implements AutoRegistryContainer<BlockEntityType<?>> {
   public static BlockEntityType<PlushBlockEntity> PLUSH_BLOCK_ENTITY = FabricBlockEntityTypeBuilder.create(
@@ -42,7 +42,7 @@ public class N3KOBlockEntities implements AutoRegistryContainer<BlockEntityType<
 
   @Override
   public Registry<BlockEntityType<?>> getRegistry() {
-    return Registry.BLOCK_ENTITY_TYPE;
+    return Registries.BLOCK_ENTITY_TYPE;
   }
 
   @Override

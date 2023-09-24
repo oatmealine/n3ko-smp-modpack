@@ -9,12 +9,8 @@
   ],
   "client": [
     "TooltipMixin",
-    "bigblock.InteractWithOriginMixin",
-    "bigblock.ShowBlockDamageMixin",
     "shader.ShaderLoaderMixin",
-    "sound.SourceAccessorMixin",
-    "titlescreen.LoadCustomTitleScreenMixin",
-    "titlescreen.RedirectTitleScreenMixin"
+    "sound.SourceAccessorMixin"
   ],
   "server": [],
   "injectors": {

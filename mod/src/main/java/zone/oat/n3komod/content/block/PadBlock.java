@@ -1,15 +1,12 @@
 package zone.oat.n3komod.content.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.ShapeContext;
-import net.minecraft.client.util.math.Vector3d;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -32,15 +29,14 @@ public class PadBlock extends Block {
 
   @Override
   public BlockState getPlacementState(ItemPlacementContext ctx) {
-    return this.getDefaultState().with(FACING, ctx.getPlayerFacing());
+    return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
   }
 
-  @Override
-  public VoxelShape getOutlineShape(BlockState state, BlockView blockView, BlockPos pos, ShapeContext context) {
+  private VoxelShape getShape(BlockState state) {
     Direction dir = state.get(FACING);
 
-    Vector3d p = new Vector3d(1.0/16D, 0.0/16D, 0.5/16D);
-    Vector3d s = new Vector3d(14.0/16D, 2.0/16D, 15.0/16D);
+    Vec3d p = new Vec3d(1.0/16D, 0.0/16D, 0.5/16D);
+    Vec3d s = new Vec3d(14.0/16D, 2.0/16D, 15.0/16D);
 
     return switch (dir) {
       case NORTH -> VoxelShapes.cuboid(
@@ -57,5 +53,17 @@ public class PadBlock extends Block {
       );
       default -> VoxelShapes.fullCube();
     };
+  }
+
+  public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    return this.getShape(state);
+  }
+
+  public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    return this.getShape(state);
+  }
+
+  public BlockRenderType getRenderType(BlockState state) {
+    return BlockRenderType.MODEL;
   }
 }

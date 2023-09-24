@@ -12,7 +12,7 @@ import net.minecraft.text.OrderedText;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Vec3f;
+import net.minecraft.util.math.RotationAxis;
 import zone.oat.n3komod.N3KOMod;
 import zone.oat.n3komod.content.block.ButtonBlock;
 import zone.oat.n3komod.content.blockentity.ButtonBlockEntity;
@@ -36,10 +36,10 @@ public class ButtonBlockEntityRenderer implements BlockEntityRenderer<ButtonBloc
 
     matrices.translate(0.5, 0.5, 0.5);
     float h = -(blockState.get(ButtonBlock.FACING)).asRotation();
-    matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(h));
+    matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(h));
     if (blockState.get(ButtonBlock.FACE).equals(WallMountLocation.FLOOR)) {
-      matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180f));
-      matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(-90f));
+      matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180f));
+      matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-90f));
     }
     matrices.translate(0.0, 0.0, -0.162);
     if (blockState.get(ButtonBlock.POWERED)) {

@@ -1,6 +1,6 @@
 package zone.oat.n3komod.client.render;
 
-import net.minecraft.client.render.Shader;
+import net.minecraft.client.gl.ShaderProgram;
 import net.minecraft.client.render.VertexFormat;
 import net.minecraft.resource.ResourceManager;
 import org.jetbrains.annotations.Nullable;
@@ -18,12 +18,12 @@ public class ShaderProvider {
   }
 
   @Nullable
-  private Shader shader;
+  private ShaderProgram shader;
   @Nullable
-  public Shader getShader() { return this.shader; }
-  public void setShader(Shader shader) { this.shader = shader; }
+  public ShaderProgram getShader() { return this.shader; }
+  public void setShader(ShaderProgram shader) { this.shader = shader; }
 
-  public Shader createShader(ResourceManager resource) throws IOException {
-    return new Shader(resource, shaderName, vertexFormat);
+  public ShaderProgram createShader(ResourceManager resource) throws IOException {
+    return new ShaderProgram(resource, shaderName, vertexFormat);
   }
 }

@@ -2,6 +2,7 @@ package zone.oat.n3komod.mixin.convenience;
 
 import java.util.List;
 
+import net.minecraft.loot.context.LootContextParameterSet;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -26,16 +27,15 @@ import zone.oat.n3komod.N3KOMod;
 public class HandleEmptyLootTablesMixin {
 
   @Inject(at=@At("RETURN"), method="getDroppedStacks", cancellable=true)
-  public void getDroppedStacks(BlockState state, LootContext.Builder builder, CallbackInfoReturnable<List<ItemStack>> ci) {
-    if (ci.getReturnValue().isEmpty()) {
+  public void getDroppedStacks(BlockState state, LootContextParameterSet.Builder builder, CallbackInfoReturnable<List<ItemStack>> cir) {
+    if (cir.getReturnValue().isEmpty()) {
       AbstractBlock self = (AbstractBlock)(Object)this;
       Identifier id = self.getLootTableId();
       if (id == LootTables.EMPTY) {
         return;
       }
-      LootContext lootContext = builder.parameter(LootContextParameters.BLOCK_STATE, state).build(LootContextTypes.BLOCK);
-      ServerWorld serverWorld = lootContext.getWorld();
-      LootTable lootTable = serverWorld.getServer().getLootManager().getTable(id);
+      ServerWorld serverWorld = builder.getWorld();
+      LootTable lootTable = serverWorld.getServer().getLootManager().getLootTable(id);
       if (lootTable == LootTable.EMPTY && N3KOMod.NAMESPACE.equals(id.getNamespace()) && self.asItem() != Items.AIR) {
         ItemStack loot;
 
@@ -44,7 +44,7 @@ public class HandleEmptyLootTablesMixin {
         //} else {
         loot = new ItemStack(self.asItem());
         //}
-        ci.setReturnValue(ImmutableList.of(loot));
+        cir.setReturnValue(ImmutableList.of(loot));
       }
     }
   }

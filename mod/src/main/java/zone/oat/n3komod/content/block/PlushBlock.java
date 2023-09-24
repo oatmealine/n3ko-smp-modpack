@@ -9,7 +9,6 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.client.util.math.Vector3d;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
@@ -26,6 +25,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -41,18 +41,18 @@ public class PlushBlock extends BlockWithEntity {
   public static final IntProperty ROTATION = Properties.ROTATION;
 
   public PlushBlock() {
-    super(FabricBlockSettings
-      .of(Material.WOOL)
+    super(FabricBlockSettings.create()
       .sounds(BlockSoundGroup.WOOL)
       .nonOpaque()
       .allowsSpawning(N3KOBlocks::never)
       .solidBlock(N3KOBlocks::never)
       .suffocates(N3KOBlocks::never)
       .blockVision(N3KOBlocks::never)
+      .pistonBehavior(PistonBehavior.DESTROY)
       .breakInstantly()
     );
     this.setDefaultState(
-      this.stateManager.getDefaultState().with(ROTATION, Integer.valueOf(0))
+      this.stateManager.getDefaultState().with(ROTATION, 0)
     );
   }
 
@@ -64,11 +64,6 @@ public class PlushBlock extends BlockWithEntity {
   @Override
   public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
     return new PlushBlockEntity(pos, state);
-  }
-
-  @Override
-  public PistonBehavior getPistonBehavior(BlockState state) {
-    return PistonBehavior.DESTROY;
   }
 
   @Override
@@ -89,11 +84,11 @@ public class PlushBlock extends BlockWithEntity {
   @Override
   public VoxelShape getOutlineShape(BlockState state, BlockView blockView, BlockPos pos, ShapeContext context) {
     // grab from blockbench
-    Vector3d p = new Vector3d(5.0/16D, 0.0/16D, 5.0/16D);
-    Vector3d s = new Vector3d(6.0/16D, 12.0/16D, 6.0/16D);
+    Vec3d p = new Vec3d(5.0/16D, 0.0/16D, 5.0/16D);
+    Vec3d s = new Vec3d(6.0/16D, 12.0/16D, 6.0/16D);
 
-    Vector3d min = p;
-    Vector3d max = new Vector3d(p.x + s.x, p.y + s.y, p.z + s.z);
+    Vec3d min = p;
+    Vec3d max = new Vec3d(p.x + s.x, p.y + s.y, p.z + s.z);
 
     return VoxelShapes.cuboid(
       min.x, min.y, min.z,
@@ -103,7 +98,7 @@ public class PlushBlock extends BlockWithEntity {
 
   @Override
   public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-    return checkType(type, N3KOBlockEntities.PLUSH_BLOCK_ENTITY, (world1, pos, state1, be) -> PlushBlockEntity.tick(world1, pos, state1, be));
+    return checkType(type, N3KOBlockEntities.PLUSH_BLOCK_ENTITY, PlushBlockEntity::tick);
   }
 
   @Override
@@ -112,7 +107,7 @@ public class PlushBlock extends BlockWithEntity {
     if (be instanceof PlushBlockEntity) {
       if (world.isClient()) return ActionResult.SUCCESS;
 
-      if (!player.world.isClient) {
+      if (!player.getWorld().isClient) {
         PacketByteBuf buf = PacketByteBufs.create();
         buf.writeBlockPos(pos);
         for (ServerPlayerEntity serverPlayer : PlayerLookup.tracking((ServerWorld) world, pos)) {
